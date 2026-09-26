@@ -1,0 +1,51 @@
+{
+  "run_id": "stage7_spatiotemporal_2027_20260827_062326",
+  "status": "complete",
+  "inputs": {
+    "research_run": "stage6_research_20260827_043932",
+    "six_domain_audit_run": "stage4_kma_domains_full_audit_20260827_061934",
+    "extension_run": "stage6_kma_extensions_20260827_052309"
+  },
+  "rows": {
+    "forecast": 1330,
+    "domain_matrix": 6
+  },
+  "connection": {
+    "context_domains": [
+      "지상관측",
+      "해양관측",
+      "예특보",
+      "융합기상",
+      "세계기상",
+      "산업특화"
+    ],
+    "direct_score_domains": [
+      "지상관측"
+    ],
+    "direct_variables": [
+      "기온",
+      "습도",
+      "풍속"
+    ],
+    "score_change_rows": 0,
+    "policy": "분석 근거 6개 분야 유지; 검증 통과 ASOS만 기존 점수 근거로 승인"
+  },
+  "audit": {
+    "official_endpoints": 254,
+    "http_200": 251,
+    "permission_denied": 0,
+    "gateway_errors": 3
+  },
+  "checks": {
+    "six_domains_exact": true,
+    "all_six_context_connected": true,
+    "surface_only_direct": true,
+    "no_permission_denied": true,
+    "score_rows_preserved": true,
+    "score_values_preserved": true,
+    "forecast_range_0_100": true,
+    "missing_not_imputed": true,
+    "future_leakage_zero": true
+  },
+  "validated_at": "2026-08-27T06:23:26+09:00"
+}

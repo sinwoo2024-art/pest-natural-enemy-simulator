@@ -1,0 +1,56 @@
+{
+  "run_id": "stage6_kma_extensions_20260827_052309",
+  "source_validation": "data/reports/stage4/stage4_requested_services_validation_20260827_051951/validation.json",
+  "api_request_count": 10,
+  "approved_count": 9,
+  "actual_data_count": 9,
+  "permission_denied_count": 0,
+  "timeout_count": 1,
+  "category_summary": [
+    {
+      "분야": "산업특화",
+      "검증서비스수": 2,
+      "승인확인수": 2,
+      "실자료확인수": 2,
+      "응답행수": 97,
+      "모델직접입력수": 0
+    },
+    {
+      "분야": "세계기상",
+      "검증서비스수": 2,
+      "승인확인수": 2,
+      "실자료확인수": 2,
+      "응답행수": 7793,
+      "모델직접입력수": 0
+    },
+    {
+      "분야": "예특보",
+      "검증서비스수": 3,
+      "승인확인수": 3,
+      "실자료확인수": 3,
+      "응답행수": 1125,
+      "모델직접입력수": 0
+    },
+    {
+      "분야": "융합기상",
+      "검증서비스수": 3,
+      "승인확인수": 2,
+      "실자료확인수": 2,
+      "응답행수": 12,
+      "모델직접입력수": 0
+    }
+  ],
+  "checks": {
+    "four_categories_present": true,
+    "service_count_10": true,
+    "approved_services_have_actual_data": true,
+    "all_service_outcomes_accounted_for": true,
+    "timeout_1": true,
+    "api_key_plaintext_persisted": false,
+    "world_not_used_as_imputation": true,
+    "objective_grid_separated_from_observation": true,
+    "direct_model_inputs": 0
+  },
+  "integration_status": "validated_context_layer",
+  "validated_at": "2026-08-27T05:23:09+09:00"
+}

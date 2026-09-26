@@ -1,0 +1,51 @@
+﻿구분,이름,문서언급수,필수여부,비고
+서비스,agchmSafeManual,6,,농사로 OpenAPI 기술문서
+오퍼레이션,agchmSafeManualList,2,,기술문서·예제에서 확인
+오퍼레이션,nationList,3,,기술문서·예제에서 확인
+요청필드,CODEPAGE,1,apiKey는 환경변수만 사용,키 값 미수집·미기록
+요청필드,align,13,apiKey는 환경변수만 사용,키 값 미수집·미기록
+요청필드,apiKey,9,apiKey는 환경변수만 사용,키 값 미수집·미기록
+요청필드,border,6,apiKey는 환경변수만 사용,키 값 미수집·미기록
+요청필드,cellPadding,6,apiKey는 환경변수만 사용,키 값 미수집·미기록
+요청필드,cellSpacing,6,apiKey는 환경변수만 사용,키 값 미수집·미기록
+요청필드,charset,9,apiKey는 환경변수만 사용,키 값 미수집·미기록
+요청필드,colspan,1,apiKey는 환경변수만 사용,키 값 미수집·미기록
+요청필드,content,9,apiKey는 환경변수만 사용,키 값 미수집·미기록
+요청필드,contentType,2,apiKey는 환경변수만 사용,키 값 미수집·미기록
+요청필드,doc,1,apiKey는 환경변수만 사용,키 값 미수집·미기록
+요청필드,dquiv,2,apiKey는 환경변수만 사용,키 값 미수집·미기록
+요청필드,ep,5,apiKey는 환경변수만 사용,키 값 미수집·미기록
+요청필드,equiv,7,apiKey는 환경변수만 사용,키 값 미수집·미기록
+요청필드,htmlArea,3,apiKey는 환경변수만 사용,키 값 미수집·미기록
+요청필드,id,9,apiKey는 환경변수만 사용,키 값 미수집·미기록
+요청필드,import,10,apiKey는 환경변수만 사용,키 값 미수집·미기록
+요청필드,lang,3,apiKey는 환경변수만 사용,키 값 미수집·미기록
+요청필드,language,2,apiKey는 환경변수만 사용,키 값 미수집·미기록
+요청필드,method,6,apiKey는 환경변수만 사용,키 값 미수집·미기록
+요청필드,numOfRowsText,1,apiKey는 환경변수만 사용,키 값 미수집·미기록
+요청필드,number,6,apiKey는 환경변수만 사용,키 값 미수집·미기록
+요청필드,onclick,3,apiKey는 환경변수만 사용,키 값 미수집·미기록
+요청필드,operationNameList,1,apiKey는 환경변수만 사용,키 값 미수집·미기록
+요청필드,pageEncoding,1,apiKey는 환경변수만 사용,키 값 미수집·미기록
+요청필드,pageNo,2,apiKey는 환경변수만 사용,키 값 미수집·미기록
+요청필드,pageNoText,1,apiKey는 환경변수만 사용,키 값 미수집·미기록
+요청필드,pageSize,2,apiKey는 환경변수만 사용,키 값 미수집·미기록
+요청필드,rel,3,apiKey는 환경변수만 사용,키 값 미수집·미기록
+요청필드,resultCode,1,apiKey는 환경변수만 사용,키 값 미수집·미기록
+요청필드,resultMsg,1,apiKey는 환경변수만 사용,키 값 미수집·미기록
+요청필드,serviceName,1,apiKey는 환경변수만 사용,키 값 미수집·미기록
+요청필드,size,1,apiKey는 환경변수만 사용,키 값 미수집·미기록
+요청필드,start,2,apiKey는 환경변수만 사용,키 값 미수집·미기록
+요청필드,totalCountText,1,apiKey는 환경변수만 사용,키 값 미수집·미기록
+요청필드,xmlDOMS,1,apiKey는 환경변수만 사용,키 값 미수집·미기록
+요청필드,xmlns,3,apiKey는 환경변수만 사용,키 값 미수집·미기록
+응답필드,EN,4,,XML 예제 기반
+응답필드,api,22,,XML 예제 기반
+응답필드,apiKey,3,,XML 예제 기반
+응답필드,ex,4,,XML 예제 기반
+응답필드,items,2,,XML 예제 기반
+응답필드,numOfRows,1,,XML 예제 기반
+응답필드,pageNo,1,,XML 예제 기반
+응답필드,totalCount,1,,XML 예제 기반
+응답필드,www,18,,XML 예제 기반
+응답필드,xml,2,,XML 예제 기반

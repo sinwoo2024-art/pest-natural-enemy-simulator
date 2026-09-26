@@ -1,0 +1,42 @@
+﻿대상병해충,천적곤충명,학명,천적유형,적용수준,이용방법,근거등급,출처
+진딧물류,콜레마니진디벌,Aphidius colemani,기생성 천적,해충군,진딧물 발생 초기에 발생지점 중심으로 방사,공식 영농활용자료,농촌진흥청 농사로
+진딧물류,무당벌레,Harmonia axyridis,포식성 천적,해충군,진딧물의 성충과 약충을 포식,공식 기술자료,농촌진흥청 농사로
+진딧물류,풀잠자리붙이,Chrysopa pallens,포식성 천적,해충군,유충이 진딧물을 포식,공식 기술자료,농촌진흥청 농사로
+총채벌레류,미끌애꽃노린재,Orius laevigatus,포식성 천적,해충군,총채벌레 발생 전 사전 방사하고 발생기에 추가 방사,공식 영농활용자료,농촌진흥청 농사로
+총채벌레류,오이이리응애,Amblyseius cucumeris,포식성 천적,해충군,총채벌레 어린 유충 밀도 억제에 활용,공식 기술자료,농촌진흥청 농사로
+총채벌레류,지중해이리응애,Amblyseius swirskii,포식성 천적,해충군,시설작물의 총채벌레 초기 밀도 억제에 활용,공식 영농활용자료,농촌진흥청 농사로
+응애류,칠레이리응애,Phytoseiulus persimilis,포식성 천적,해충군,점박이응애 발생지점에 집중 방사,공식 영농활용자료,농촌진흥청 농사로
+응애류,사막이리응애,Neoseiulus californicus,포식성 천적,해충군,응애가 소량 발생해 확산되는 시기에 방사,공식 영농활용자료,농촌진흥청 농사로
+가루이류,온실가루이좀벌,Encarsia formosa,기생성 천적,해충군,가루이 약충에 기생하여 밀도를 억제,공식 기술자료,농촌진흥청 농사로
+가루이류,황온좀벌,Eretmocerus eremicus,기생성 천적,해충군,가루이 발생량이 높아지는 시기에 방사,공식 영농활용자료,농촌진흥청 농사로
+가루이류,담배장님노린재,Nesidiocoris tenuis,포식성 천적,해충군,가루이 알과 약충을 포식,공식 기술자료,농촌진흥청 농사로
+잎굴파리류,굴파리고치벌,Diglyphus isaea,기생성 천적,해충군,잎굴파리 유충에 기생하여 발생 밀도를 억제,공식 천적곤충자료,농촌진흥청 NCPMS
+복숭아순나방,송충알벌,Trichogramma dendrolimi,기생성 천적,연구단계 후보,복숭아순나방 알에 기생하나 국내 현장 적용 전 전문가 검토 필요,해외 실내·포장 연구,Pest Management Science 2021
+톱다리개미허리노린재,Ooencyrtus nezarae,Ooencyrtus nezarae,기생성 천적,연구단계 후보,톱다리개미허리노린재 알에 기생하며 국내 콩 재배지에서 발생이 확인됨,국내 발생 연구,Crop Protection 2012
+톱다리개미허리노린재,Gryon japonicum,Gryon japonicum,기생성 천적,연구단계 후보,톱다리개미허리노린재 알에 기생하며 국내 콩 재배지에서 발생이 확인됨,국내 발생 연구,Crop Protection 2012
+흰등멸구,Anagrus nilaparvatae,Anagrus nilaparvatae,기생성 천적,연구단계 후보,흰등멸구 알에 기생하지만 국내 현장 방사 전 추가 검증 필요,해외 기능반응 연구,Journal of Integrative Agriculture 2012
+애멸구,Anagrus incarnatus,Anagrus incarnatus,기생성 천적,연구단계 후보,애멸구 알에 기생하지만 국내 현장 방사 전 추가 검증 필요,해외 기주범위 연구,Applied Entomology and Zoology 1984
+혹명나방,Trichogramma japonicum,Trichogramma japonicum,기생성 천적,연구단계 후보,혹명나방 알에 기생하지만 국내 현장 적용 전 전문가 검토 필요,아시아 천적종 종합연구,Bulletin of Entomological Research 2012
+이화명나방,Trichogramma japonicum,Trichogramma japonicum,기생성 천적,연구단계 후보,이화명나방 알에 기생하지만 국내 현장 적용 전 전문가 검토 필요,해외 방사효과 연구,Chinese Journal of Applied Ecology 2010
+꽃매미,Anastatus orientalis,Anastatus orientalis,기생성 천적,연구단계 후보,꽃매미 알에 기생하며 국내외 생물적 방제 후보로 연구됨,기주범위 및 생물적 방제 연구,Frontiers in Insect Science 2023
+멸강나방류,Cotesia ruficrus,Cotesia ruficrus,기생성 천적,연구단계 후보,멸강나방 유충에 기생하지만 국내 현장 방사 전 추가 검증 필요,해외 포장 발생 연구,New Zealand Journal of Agricultural Research 1987
+깍지벌레류,깍지무당벌레,Cryptolaemus montrouzieri,포식성 천적,공식 활용자료,깍지벌레 발생 식물당 5마리 또는 제곱미터당 2~5마리를 방사하며 밀도가 낮으면 반복 방사,농촌진흥청 공식 천적곤충자료,농촌진흥청 농사로
+귤굴나방,Ageniaspis citricola,Ageniaspis citricola,기생성 천적,연구단계 후보,귤굴나방 유충에 기생하지만 국내 현장 도입 전 전문가 검토 필요,해외 고전적 생물방제 연구,Florida Entomologist 1998
+먹노린재,Telenomus gifuensis,Telenomus gifuensis,기생성 천적,연구단계 후보,먹노린재 알에 기생하는 알기생봉으로 국내 현장 적용 전 전문가 검토 필요,해외 기주 기록,Acta Hymenoptera 1958
+사과굴나방,Ageniaspis testaceipes,Ageniaspis testaceipes,기생성 천적,연구단계 후보,사과굴나방에 기생하는 기생봉으로 국내 현장 적용 전 전문가 검토 필요,해외 개체군 연구,Sekita and Yamada 1979
+고자리파리,Aleochara bilineata,Aleochara bilineata,포식·기생성 천적,연구단계 후보,성충은 고자리파리류를 포식하고 유충은 번데기에 기생하므로 국내 현장 적용 전 전문가 검토 필요,해외 사육·기주 연구,Cornell IPM·Journal of Economic Entomology 1985
+고자리파리,Aphaereta pallipes,Aphaereta pallipes,기생성 천적,연구단계 후보,고자리파리 유충에 기생하는 고치벌로 국내 현장 적용 전 전문가 검토 필요,해외 사육·기주 연구,Journal of Economic Entomology 1984
+끝동매미충,Paracentrobia andoi,Paracentrobia andoi,기생성 천적,연구단계 후보,끝동매미충 알에 기생하는 알기생봉으로 국내 현장 적용 전 전문가 검토 필요,국내 논 포장 조사,Korean Journal of Applied Entomology 1980
+끝동매미충,Gonatocerus cincticipitis,Gonatocerus cincticipitis,기생성 천적,연구단계 후보,끝동매미충 알에 기생하며 국내 분포가 확인된 알기생봉으로 현장 방사 전 추가 검증 필요,한국·일본 기주 연구,Journal of Asia-Pacific Entomology 2023
+복숭아심식나방,송충알벌,Trichogramma dendrolimi,기생성 천적,연구단계 후보,복숭아심식나방 알에 기생해 부화를 억제하지만 국내 과원 적용 전 전문가 검토 필요,해외 과원 방사 연구,Insects 2024
+사과애모무늬잎말이나방,송충알벌,Trichogramma dendrolimi,기생성 천적,연구단계 후보,사과애모무늬잎말이나방 알에 기생하며 해외 과원 시험에서 피해 감소가 확인됐으나 국내 적용 전 검토 필요,해외 과원 포장시험,Entomophaga 1988
+사과애모무늬잎말이나방,Trichogramma embryophagum,Trichogramma embryophagum,기생성 천적,연구단계 후보,사과애모무늬잎말이나방 알에 기생하며 해외 과원 시험에서 방제효과가 확인됐으나 국내 적용 전 검토 필요,해외 과원 포장시험,Entomophaga 1988
+사과애모무늬잎말이나방,Meteorus ictericus,Meteorus ictericus,기생성 천적,연구단계 후보,사과애모무늬잎말이나방 유충에 기생하는 주요 기생봉으로 국내 과원 적용 전 전문가 검토 필요,해외 과원 조사,Journal of Plant Protection Research 2010
+벼애나방,청딱지개미반날개,Paederus fuscipes,포식성 천적,공식 천적기록,농사로 천적관계 기록. 구체적인 방사 처방이 아니므로 현장 적용 전 전문가 검토와 천적 보전형 관리가 필요,공식 천적곤충자료,농촌진흥청 농사로
+벼애나방,두줄꼬마밤나방고치벌레,Cotesia ruficrus,기생성 천적,공식 천적기록,농사로 천적관계 기록. 현장에서는 비선택성 약제 영향을 줄이는 보전형 관리부터 적용,공식 천적곤충자료,농촌진흥청 농사로
+벼애나방,깔따귀쐐기노린재,Nabis ferus,포식성 천적,공식 천적기록,농사로 천적관계 기록. 방사량을 제시하는 처방 자료가 아니며 천적 보전형 방제에 우선 활용,공식 천적곤충자료,농촌진흥청 농사로
+벼애나방,대만자루맵시벌,Charops bicolor,기생성 천적,공식 천적기록,농사로 천적관계 기록. 실제 방사·증식 적용 전 지역별 전문가 검토가 필요,공식 천적곤충자료,농촌진흥청 농사로
+뿌리응애,Gaeolaelaps aculeifer,Gaeolaelaps aculeifer,포식성 천적,연구단계 후보,Rhizoglyphus robini 포식 연구 근거. 마늘 국내 포장 적용 전 전문가 검토와 현장시험 필요,해외 온실·포장 연구,Journal of Applied Ecology 1996·Biocontrol Science and Technology 2000
+주경배나무이,풀잠자리류,Chrysopidae spp.,포식성 천적,현장 보전형,농사로가 제시한 천적군. 선택성 약제와 서식처 관리로 자연발생 개체를 보전,공식 기술자료,농촌진흥청 농사로
+주경배나무이,무당벌레류,Coccinellidae spp.,포식성 천적,현장 보전형,농사로가 제시한 천적군. 발생 밀도 예찰과 천적 보전형 방제에 활용,공식 기술자료,농촌진흥청 농사로
+주경배나무이,포식성응애류,Phytoseiidae spp.,포식성 천적,현장 보전형,농사로가 제시한 천적군. 방사 처방이 아니라 저독성 약제·서식처 보전용,공식 기술자료,농촌진흥청 농사로

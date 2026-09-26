@@ -1,0 +1,53 @@
+{
+  "status": "complete",
+  "run_id": "stage20_ncpms_3year_20260828_034023",
+  "svc51_rows": 341,
+  "svc52_rows": 57467,
+  "joined_rows": 57467,
+  "unmatched_svc52_rows": 0,
+  "content_duplicate_rows": 0,
+  "missing_occurrence_rows": 0,
+  "actual_zero_rows": 46160,
+  "analysis_unit_rows": 56799,
+  "common_three_year_units": 9791,
+  "year_rows": {
+    "2024": 18001,
+    "2025": 24067,
+    "2026": 15399
+  },
+  "year_unit_rows": {
+    "2024": 17777,
+    "2025": 23623,
+    "2026": 15399
+  },
+  "year_status": {
+    "2024": "완전연도",
+    "2025": "완전연도",
+    "2026": "부분연도"
+  },
+  "selected_model": "persistence",
+  "selected_model_name": "최근연도 유지",
+  "raw_mae_best_model": "weighted_level",
+  "statistical_tie": true,
+  "parsimony_threshold_mae": 0.25,
+  "selection_rule": "최저 MAE 개선폭이 0.25점 미만이면 과적합을 피하기 위해 최근연도 유지 선택",
+  "bootstrap_repeats": 1000,
+  "selection_stability_percent": 33.8,
+  "top_two_combined_stability_percent": 100.0,
+  "selected_mae": 10.4985,
+  "selected_mae_ci95": [
+    9.9884,
+    10.9976
+  ],
+  "forecast_rows": 9791,
+  "forecast_high_confidence_rows": 0,
+  "forecast_medium_confidence_rows": 0,
+  "forecast_low_confidence_rows": 9791,
+  "normalization": {
+    "map": "각 연도 병해충·작물·지표별 P95",
+    "cross_year": "2024·2025·2026 합동 병해충·작물·지표별 공통 P95"
+  },
+  "comparison_rule": "동일 작물·병해충·시도·조사회차·측정지표의 세 연도 공통단위만 모델 검증",
+  "target_policy": "2025는 동일 NCPMS SVC51/52 승인 체계의 완전연도 발생자료이므로 목표변수로 포함",
+  "validated_at": "2026-08-28T03:40:32+09:00"
+}

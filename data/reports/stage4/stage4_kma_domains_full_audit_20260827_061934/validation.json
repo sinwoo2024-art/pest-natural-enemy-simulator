@@ -1,0 +1,71 @@
+{
+  "run_id": "stage4_kma_domains_full_audit_20260827_061934",
+  "status": "complete",
+  "key_status": "configured",
+  "key_length": 22,
+  "key_plaintext_persisted": false,
+  "categories": [
+    "지상관측",
+    "해양관측",
+    "예특보",
+    "융합기상",
+    "세계기상",
+    "산업특화"
+  ],
+  "official_documented_endpoints": 254,
+  "api_request_count": 4,
+  "reused_permission_observation_count": 250,
+  "reused_results_source": "data/reports/stage4/stage4_kma_domains_full_audit_20260827_054831/endpoint_audit.csv",
+  "http_200_count": 251,
+  "permission_denied_count": 0,
+  "timeout_count": 0,
+  "other_error_count": 3,
+  "category_summary": [
+    {
+      "category": "지상관측",
+      "documented_endpoints": 92,
+      "http_200": 92,
+      "permission_denied": 0,
+      "timeouts": 0
+    },
+    {
+      "category": "해양관측",
+      "documented_endpoints": 22,
+      "http_200": 22,
+      "permission_denied": 0,
+      "timeouts": 0
+    },
+    {
+      "category": "예특보",
+      "documented_endpoints": 43,
+      "http_200": 43,
+      "permission_denied": 0,
+      "timeouts": 0
+    },
+    {
+      "category": "융합기상",
+      "documented_endpoints": 45,
+      "http_200": 42,
+      "permission_denied": 0,
+      "timeouts": 0
+    },
+    {
+      "category": "세계기상",
+      "documented_endpoints": 46,
+      "http_200": 46,
+      "permission_denied": 0,
+      "timeouts": 0
+    },
+    {
+      "category": "산업특화",
+      "documented_endpoints": 6,
+      "http_200": 6,
+      "permission_denied": 0,
+      "timeouts": 0
+    }
+  ],
+  "permission_application_group_count": 0,
+  "permission_application_groups": [],
+  "permission_denied_services": [],
+  "validated_at": "2026-08-27T06:20:42+09:00"
+}

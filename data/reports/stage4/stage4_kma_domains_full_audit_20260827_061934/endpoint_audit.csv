@@ -1,0 +1,255 @@
+﻿category,service_name,data_api,endpoint,document_url,http_status,content_type,response_bytes_sampled,response_rows,permission_denied,error_code,elapsed_seconds
+산업특화,URL 발행 -->,1099,https://apihub.kma.go.kr/api/typ01/url/sun_sfc_day.php,https://apihub.kma.go.kr/specialApiList.do,200,text/plain,488,0,False,,0.148
+산업특화,URL 발행 -->,1100,https://apihub.kma.go.kr/api/typ01/url/sun_sfc_norm.php,https://apihub.kma.go.kr/specialApiList.do,200,text/plain,5351,73,False,,0.142
+산업특화,URL 발행 -->,1101,https://apihub.kma.go.kr/api/typ01/cgi-bin/url/nph-sun_sfc_sts_pkg,https://apihub.kma.go.kr/specialApiList.do,200,text/plain,62600,745,False,,0.467
+산업특화,URL 발행 -->,1107,https://apihub.kma.go.kr/api/typ01/cgi-bin/url/nph_sun_sat_ana_txt,https://apihub.kma.go.kr/specialApiList.do,200,text/plain,31,2,False,,0.192
+산업특화,URL 발행 -->,1108,https://apihub.kma.go.kr/api/typ01/cgi-bin/url/nph_sun_sat_txt,https://apihub.kma.go.kr/specialApiList.do,200,text/plain,31,2,False,,0.178
+산업특화,URL 발행 -->,1109,https://apihub.kma.go.kr/api/typ01/cgi-bin/url/nph_sun_nwp_txt,https://apihub.kma.go.kr/specialApiList.do,200,text/plain,31,2,False,,0.126
+세계기상,1.1.1 여러 지점  URL 발행 -->,347,https://apihub.kma.go.kr/api/typ01/url/ncei_gsoh_data.php,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=988,200,text/plain,2429,2,False,,0.283
+세계기상,1.3 해당 연도의 파일 목록  URL 발행 -->,348,https://apihub.kma.go.kr/api/typ01/url/ncei_gsoh_list.php,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=988,200,text/plain,455043,13473,False,,6.849
+세계기상,2.1.1 여러 지점  URL 발행 -->,350,https://apihub.kma.go.kr/api/typ01/url/ncei_gsod_data.php,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=988,200,text/plain,1040,2,False,,0.189
+세계기상,2.3 해당 연도의 파일 목록  URL 발행 -->,351,https://apihub.kma.go.kr/api/typ01/url/ncei_gsod_list.php,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=988,200,text/plain,394083,12318,False,,4.872
+세계기상,3.1.1 여러 지점  URL 발행 -->,353,https://apihub.kma.go.kr/api/typ01/url/ncei_gsom_data.php,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=988,200,text/plain,3136,3,False,,0.283
+세계기상,3.3 파일 목록  URL 발행 -->,354,https://apihub.kma.go.kr/api/typ01/url/ncei_gsom_list.php,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=988,200,text/plain,2097152,77872,False,,49.705
+세계기상,4.1.1 여러 지점  URL 발행 -->,356,https://apihub.kma.go.kr/api/typ01/url/ncei_gsoy_data.php,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=988,200,text/plain,3299,3,False,,0.197
+세계기상,4.3 파일 목록  URL 발행 -->,357,https://apihub.kma.go.kr/api/typ01/url/ncei_gsoy_list.php,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=988,200,text/plain,2097152,80081,False,,29.682
+세계기상,5.1.1 여러 지점  URL 발행 -->,359,https://apihub.kma.go.kr/api/typ01/url/ncei_upp_data.php,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=988,200,text/plain,20156,326,False,,0.265
+세계기상,5.3 파일 목록  URL 발행 -->,360,https://apihub.kma.go.kr/api/typ01/url/ncei_upp_list.php,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=988,200,text/plain,82081,2787,False,,0.939
+세계기상,6.1.1 여러 지점  URL 발행 -->,362,https://apihub.kma.go.kr/api/typ01/url/ncei_gsea_data.php,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=988,200,text/plain,1971,2,False,,0.277
+세계기상,6.3 해당 연월의 파일 목록  URL 발행 -->,363,https://apihub.kma.go.kr/api/typ01/url/ncei_gsea_list.php,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=988,200,text/plain,18496,476,False,,0.373
+세계기상,1.1 GTS 지상관측 조회(TAC)  URL 발행 -->,839,https://apihub.kma.go.kr/api/typ01/url/gts_syn1.php,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=298,200,text/plain,150290,882,False,,0.644
+세계기상,1.2 GTS 지상관측 조회(BUFR자료를 TAC 형태로 변환)  URL 발행 -->,840,https://apihub.kma.go.kr/api/typ01/url/gts_bufr_syn1.php,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=298,200,text/plain,58226,334,False,,0.27
+세계기상,1.3 GTS 지상관측 조회(BUFR)  URL 발행 -->,841,https://apihub.kma.go.kr/api/typ01/url/gts_bufr_syn.php,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=298,200,text/plain,49496,334,False,,0.249
+세계기상,1.4 TAC+BUFR (TAC포맷)  URL 발행 -->,842,https://apihub.kma.go.kr/api/typ01/url/gts_syn.php,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=298,200,text/plain,150626,882,False,,0.405
+세계기상,2.1 TAC  URL 발행 -->,843,https://apihub.kma.go.kr/api/typ01/url/gts_ship1.php,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=298,200,text/plain,654309,2636,False,,1.478
+세계기상,2.2 BUFR  URL 발행 -->,844,https://apihub.kma.go.kr/api/typ01/url/gts_bufr_ship.php,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=298,200,text/plain,494841,2356,False,,1.578
+세계기상,2.3 TAC+BUFR:TAC포맷  URL 발행 -->,845,https://apihub.kma.go.kr/api/typ01/url/gts_ship.php,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=298,200,text/plain,2097152,8476,False,,4.036
+세계기상,URL 발행 -->,846,https://apihub.kma.go.kr/api/typ01/url/gts_buoy1.php,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=298,200,text/plain,308876,2309,False,,0.587
+세계기상,3.2 TAC  URL 발행 -->,847,https://apihub.kma.go.kr/api/typ01/url/gts_buoy2.php,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=298,200,text/plain,22648,159,False,,0.417
+세계기상,3.3 BUFR  URL 발행 -->,848,https://apihub.kma.go.kr/api/typ01/url/gts_bufr_buoy.php,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=298,200,text/plain,747912,5610,False,,1.545
+세계기상,3.4 TAC+BUFR  URL 발행 -->,849,https://apihub.kma.go.kr/api/typ01/url/gts_buoy.php,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=298,200,text/plain,786216,5896,False,,1.634
+세계기상,4.1 TAC  URL 발행 -->,850,https://apihub.kma.go.kr/api/typ01/url/gts_temp1.php,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=298,200,text/plain,441637,5513,False,,1.315
+세계기상,4.2 BUFR  URL 발행 -->,851,https://apihub.kma.go.kr/api/typ01/url/gts_bufr_temp.php,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=298,200,text/plain,2097152,24661,False,,9.909
+세계기상,4.3 TAC+BUFR  URL 발행 -->,852,https://apihub.kma.go.kr/api/typ01/url/gts_temp.php,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=298,200,text/plain,441637,5513,False,,0.878
+세계기상,URL 발행 -->,853,https://apihub.kma.go.kr/api/typ01/url/gts_pilot.php,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=298,200,text/plain,297383,4630,False,,0.859
+세계기상,URL 발행 -->,854,https://apihub.kma.go.kr/api/typ01/url/gts_airep1.php,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=298,200,text/plain,133561,710,False,,0.512
+세계기상,URL 발행 -->,855,https://apihub.kma.go.kr/api/typ01/url/gts_metar_dec.php,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=298,200,text/plain,2097152,10582,False,,19.873
+세계기상,7.1.1 전체영역  URL 발행 -->,856,https://apihub.kma.go.kr/api/typ01/cgi-bin/url/nph-amdar_bufr,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=298,200,text/plain,2097152,16636,False,,8.181
+세계기상,8.1 TAC기반  URL 발행 -->,857,https://apihub.kma.go.kr/api/typ01/url/gts_cht_sfc.php,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=298,200,text/plain,928786,8428,False,,1.54
+세계기상,8.2 TAC+BUFR (TAC포맷)  URL 발행 -->,858,https://apihub.kma.go.kr/api/typ01/url/gts_cht_sfc_tot.php,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=298,200,text/plain,1010406,9170,False,,2.193
+세계기상,8.3.1 TAC+BUFR (BUOY반영)  URL 발행 -->,859,https://apihub.kma.go.kr/api/typ01/url/gts_cht_syn.php,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=298,200,text/plain,1210642,10794,False,,2.635
+세계기상,9.1 특정 영역 자료만 추출  URL 발행 -->,860,https://apihub.kma.go.kr/api/typ01/url/gts_cht_temp.php,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=298,200,text/plain,2097152,19413,False,,20.5
+세계기상,URL 발행 -->,861,https://apihub.kma.go.kr/api/typ01/url/gts_cht_pilot.php,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=298,200,text/plain,423729,4593,False,,1.092
+세계기상,1.1 GTS 지점정보 조회  URL 발행 -->,877,https://apihub.kma.go.kr/api/typ01/url/stn_gts1.php,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=322,200,text/plain,2097152,10687,False,,3.962
+세계기상,11.1 부이(BUOY) 조회  URL 발행 -->,878,https://apihub.kma.go.kr/api/typ02/openApi/GtsInfoService/getBuoy,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=298,200,application/xml,178,2,False,,0.138
+세계기상,2.1 GTS 지점조회  URL 발행 -->,879,https://apihub.kma.go.kr/api/typ02/openApi/GtsInfoService/getGtsStn,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=322,200,application/xml,1230,2,False,,0.197
+세계기상,11.2 지상(SYNOP) 조회  URL 발행 -->,880,https://apihub.kma.go.kr/api/typ02/openApi/GtsInfoService/getSynop,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=298,200,application/xml,178,2,False,,0.149
+세계기상,11.3 고층(TEMP) 조회  URL 발행 -->,881,https://apihub.kma.go.kr/api/typ02/openApi/GtsInfoService/getTemp,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=298,200,application/xml,178,2,False,,0.138
+세계기상,1.2 1개 지점의 해당 연도  URL 발행 -->,920,https://apihub.kma.go.kr/api/typ01/url/ncei_gsoh_file.php,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=988,200,text/plain,2097152,5998,False,,6.45
+세계기상,2.2 1개 지점의 해당 연도  URL 발행 -->,921,https://apihub.kma.go.kr/api/typ01/url/ncei_gsod_file.php,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=988,200,text/plain,84259,366,False,,0.243
+세계기상,3.2 1개 지점의 전체 자료  URL 발행 -->,922,https://apihub.kma.go.kr/api/typ01/url/ncei_gsom_file.php,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=988,200,text/plain,128556,511,False,,0.339
+세계기상,4.2 1개 지점의 전체 자료  URL 발행 -->,923,https://apihub.kma.go.kr/api/typ01/url/ncei_gsoy_file.php,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=988,200,text/plain,4927,32,False,,0.141
+세계기상,5.2 1개 지점의 전체 자료  URL 발행 -->,924,https://apihub.kma.go.kr/api/typ01/url/ncei_upp_file.php,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=988,200,text/plain,2097152,35982,False,,19.267
+세계기상,6.2 해당 영역의 해당 년월자료  URL 발행 -->,925,https://apihub.kma.go.kr/api/typ01/url/ncei_gsea_file.php,https://apihub.kma.go.kr/apiList.do?seqApi=12&seqApiSub=988,200,text/plain,3369,11,False,,0.107
+예특보,2.2 초단기예보  URL 발행 -->,1008,https://apihub.kma.go.kr/api/typ01/cgi-bin/url/nph-dfs_vsrt_grd,https://apihub.kma.go.kr/apiList.do?seqApi=10&seqApiSub=286,200,text/plain,341297,2024,False,,0.702
+예특보,2.3 실황  URL 발행 -->,1009,https://apihub.kma.go.kr/api/typ01/cgi-bin/url/nph-dfs_odam_grd,https://apihub.kma.go.kr/apiList.do?seqApi=10&seqApiSub=286,200,text/plain,341297,2024,False,,0.556
+예특보,2.4.1 동네예보 격자 번호 → 위·경도 변환  URL 발행 -->,1010,https://apihub.kma.go.kr/api/typ01/cgi-bin/url/nph-dfs_xy_lonlat,https://apihub.kma.go.kr/apiList.do?seqApi=10&seqApiSub=286,200,text/plain,284,1,False,,0.336
+예특보,7.1 동네예보 격자데이터 위경도 조회  URL 발행 -->,1117,https://apihub.kma.go.kr/api/typ01/cgi-bin/url/nph-dfs_latlon_api,https://apihub.kma.go.kr/apiList.do?seqApi=10&seqApiSub=286,200,text/plain,418478,3796,False,,0.744
+예특보,7.2 동네예보 격자데이터 위경도 파일(NetCDF) 다운로드  URL 발행 -->,1118,https://apihub.kma.go.kr/api/typ01/url/dfs_latlon_file_down.php,https://apihub.kma.go.kr/apiList.do?seqApi=10&seqApiSub=286,200,application/x-zip-compressed,127586,3013,False,,0.278
+예특보,URL 발행 -->,11656,https://apihub.kma.go.kr/api/typ03/cgi/dfs/nph-dfs_shrt_ana_5d,https://apihub.kma.go.kr/apiList.do?seqApi=10&seqApiSub=286,200,image/png,19752,518,False,,0.157
+예특보,3.1 기상개황조회  URL 발행 -->,747,https://apihub.kma.go.kr/api/typ02/openApi/VilageFcstMsgService/getWthrSituation,https://apihub.kma.go.kr/apiList.do?seqApi=10&seqApiSub=286,200,application/xml,3324,42,False,,0.11
+예특보,3.2 육상예보조회  URL 발행 -->,748,https://apihub.kma.go.kr/api/typ02/openApi/VilageFcstMsgService/getLandFcst,https://apihub.kma.go.kr/apiList.do?seqApi=10&seqApiSub=286,200,application/xml,2085,2,False,,0.349
+예특보,3.3 해상예보조회  URL 발행 -->,749,https://apihub.kma.go.kr/api/typ02/openApi/VilageFcstMsgService/getSeaFcst,https://apihub.kma.go.kr/apiList.do?seqApi=10&seqApiSub=286,200,application/xml,2084,2,False,,0.114
+예특보,1.1 단기 예보구역  URL 발행 -->,750,https://apihub.kma.go.kr/api/typ01/url/fct_shrt_reg.php,https://apihub.kma.go.kr/apiList.do?seqApi=10&seqApiSub=286,200,text/plain,30208,563,False,,0.248
+예특보,"1.2 단기 개황, disp=1(JSON)  URL 발행 -->",751,https://apihub.kma.go.kr/api/typ01/url/fct_afs_ds.php,https://apihub.kma.go.kr/apiList.do?seqApi=10&seqApiSub=286,200,text/plain,117136,2014,False,,0.59
+예특보,1.3 단기 육상예보  URL 발행 -->,752,https://apihub.kma.go.kr/api/typ01/url/fct_afs_dl.php,https://apihub.kma.go.kr/apiList.do?seqApi=10&seqApiSub=286,200,text/plain,182484,1624,False,,0.664
+예특보,URL 발행 -->,753,https://apihub.kma.go.kr/api/typ01/url/fct_afs_dl2.php,https://apihub.kma.go.kr/apiList.do?seqApi=10&seqApiSub=286,200,text/plain,366632,3216,False,,0.8
+예특보,1.5 단기 해상예보  URL 발행 -->,754,https://apihub.kma.go.kr/api/typ01/url/fct_afs_do.php,https://apihub.kma.go.kr/apiList.do?seqApi=10&seqApiSub=286,200,text/plain,47986,392,False,,0.258
+예특보,2.1 단기예보  URL 발행 -->,758,https://apihub.kma.go.kr/api/typ01/cgi-bin/url/nph-dfs_shrt_grd,https://apihub.kma.go.kr/apiList.do?seqApi=10&seqApiSub=286,200,text/plain,341297,2024,False,,0.689
+예특보,URL 발행 -->,760,https://apihub.kma.go.kr/api/typ03/cgi/dfs/nph-dfs_vsrt_ana2,https://apihub.kma.go.kr/apiList.do?seqApi=10&seqApiSub=286,200,image/png,21854,554,False,,0.288
+예특보,1.1 중기 예보구역  URL 발행 -->,762,https://apihub.kma.go.kr/api/typ01/url/fct_medm_reg.php,https://apihub.kma.go.kr/apiList.do?seqApi=10&seqApiSub=287,200,text/plain,12337,240,False,,0.362
+예특보,"1.2 중기 개황, disp=1(JSON)  URL 발행 -->",763,https://apihub.kma.go.kr/api/typ01/url/fct_afs_ws.php,https://apihub.kma.go.kr/apiList.do?seqApi=10&seqApiSub=287,200,text/plain,8815,118,False,,0.344
+예특보,1.3 중기 육상예보  URL 발행 -->,764,https://apihub.kma.go.kr/api/typ01/url/fct_afs_wl.php,https://apihub.kma.go.kr/apiList.do?seqApi=10&seqApiSub=287,200,text/plain,29507,374,False,,0.202
+예특보,1.4 중기 기온예보  URL 발행 -->,765,https://apihub.kma.go.kr/api/typ01/url/fct_afs_wc.php,https://apihub.kma.go.kr/apiList.do?seqApi=10&seqApiSub=287,200,text/plain,26455,348,False,,0.416
+예특보,1.5 중기 해상예보  URL 발행 -->,766,https://apihub.kma.go.kr/api/typ01/url/fct_afs_wo.php,https://apihub.kma.go.kr/apiList.do?seqApi=10&seqApiSub=287,200,text/plain,23086,286,False,,0.211
+예특보,1.1 특보구역  URL 발행 -->,769,https://apihub.kma.go.kr/api/typ01/url/wrn_reg.php,https://apihub.kma.go.kr/apiList.do?seqApi=10&seqApiSub=288,200,text/plain,44743,414,False,,0.347
+예특보,1.2 특보자료  URL 발행 -->,770,https://apihub.kma.go.kr/api/typ01/url/wrn_met_data.php,https://apihub.kma.go.kr/apiList.do?seqApi=10&seqApiSub=288,200,text/plain,143646,1567,False,,0.631
+예특보,1.3 기상정보  URL 발행 -->,771,https://apihub.kma.go.kr/api/typ01/url/wrn_inf_rpt.php,https://apihub.kma.go.kr/apiList.do?seqApi=10&seqApiSub=288,200,text/plain,1333672,17932,False,,1.855
+예특보,1.4 날씨해설  URL 발행 -->,772,https://apihub.kma.go.kr/api/typ01/url/wthr_cmt_rpt.php,https://apihub.kma.go.kr/apiList.do?seqApi=10&seqApiSub=288,200,text/plain,46070,431,False,,0.23
+예특보,URL 발행 -->,773,https://apihub.kma.go.kr/api/typ01/url/wrn_now_data.php,https://apihub.kma.go.kr/apiList.do?seqApi=10&seqApiSub=288,200,text/plain,46369,281,False,,0.287
+예특보,URL 발행 -->,774,https://apihub.kma.go.kr/api/typ01/url/wrn_now_data_new.php,https://apihub.kma.go.kr/apiList.do?seqApi=10&seqApiSub=288,200,text/plain,46418,281,False,,0.245
+예특보,3.1 임의지역 특보이미지  URL 발행 -->,775,https://apihub.kma.go.kr/api/typ03/cgi/wrn/nph-wrn7,https://apihub.kma.go.kr/apiList.do?seqApi=10&seqApiSub=288,200,image/png,26087,687,False,,0.719
+예특보,1.1.1 폭염영향예보 기간 조회(발효시각 기준)  URL 발행 -->,776,https://apihub.kma.go.kr/api/typ01/url/ifs_fct_pstt.php,https://apihub.kma.go.kr/apiList.do?seqApi=10&seqApiSub=289,200,text/plain,318624,4531,False,,2.444
+예특보,2.1.1 기간 설정  URL 발행 -->,777,https://apihub.kma.go.kr/api/typ01/url/ifs_ilvl_zone_cnt.php,https://apihub.kma.go.kr/apiList.do?seqApi=10&seqApiSub=289,200,text/plain,81063,554,False,,2.855
+예특보,3.1.1 일 설정  URL 발행 -->,779,https://apihub.kma.go.kr/api/typ01/url/ifs_ilvl_dmap.php,https://apihub.kma.go.kr/apiList.do?seqApi=10&seqApiSub=289,200,text/plain,333954,8473,False,,0.607
+예특보,1.1 예보구역코드조회  URL 발행 -->,782,https://apihub.kma.go.kr/api/typ02/openApi/FcstZoneInfoService/getFcstZoneCd,https://apihub.kma.go.kr/apiList.do?seqApi=10&seqApiSub=321,200,application/xml,517,2,False,,0.33
+예특보,3.1 AWS가 속한 특보구역 코드  URL 발행 -->,783,https://apihub.kma.go.kr/api/typ01/url/wrn_reg_aws.php,https://apihub.kma.go.kr/apiList.do?seqApi=10&seqApiSub=321,200,text/plain,72056,745,False,,0.346
+예특보,3.2 AWS가 속한 특보구역 코드(특보구역명 포함)  URL 발행 -->,784,https://apihub.kma.go.kr/api/typ01/url/wrn_reg_aws2.php,https://apihub.kma.go.kr/apiList.do?seqApi=10&seqApiSub=321,200,text/plain,89511,711,False,,0.539
+예특보,2.1 특보구역코드조회  URL 발행 -->,785,https://apihub.kma.go.kr/api/typ02/openApi/WethrBasicInfoService/getWrnZoneCd,https://apihub.kma.go.kr/apiList.do?seqApi=10&seqApiSub=321,200,application/xml,1221,2,False,,0.127
+예특보,4.1 초단기실황조회  URL 발행 -->,796,https://apihub.kma.go.kr/api/typ02/openApi/VilageFcstInfoService_2.0/getUltraSrtNcst,https://apihub.kma.go.kr/apiList.do?seqApi=10&seqApiSub=286,200,application/xml,175,2,False,,0.159
+예특보,4.2 초단기예보조회  URL 발행 -->,797,https://apihub.kma.go.kr/api/typ02/openApi/VilageFcstInfoService_2.0/getUltraSrtFcst,https://apihub.kma.go.kr/apiList.do?seqApi=10&seqApiSub=286,200,application/xml,175,2,False,,0.127
+예특보,4.3 단기예보조회  URL 발행 -->,798,https://apihub.kma.go.kr/api/typ02/openApi/VilageFcstInfoService_2.0/getVilageFcst,https://apihub.kma.go.kr/apiList.do?seqApi=10&seqApiSub=286,200,application/xml,175,2,False,,0.142
+예특보,4.4 예보버전조회  URL 발행 -->,799,https://apihub.kma.go.kr/api/typ02/openApi/VilageFcstInfoService_2.0/getFcstVersion,https://apihub.kma.go.kr/apiList.do?seqApi=10&seqApiSub=286,200,application/xml,175,2,False,,0.121
+예특보,2.1 중기해상예보조회  URL 발행 -->,804,https://apihub.kma.go.kr/api/typ02/openApi/MidFcstInfoService/getMidSeaFcst,https://apihub.kma.go.kr/apiList.do?seqApi=10&seqApiSub=287,200,application/xml,198,2,False,,0.151
+예특보,2.2 중기기온조회  URL 발행 -->,805,https://apihub.kma.go.kr/api/typ02/openApi/MidFcstInfoService/getMidTa,https://apihub.kma.go.kr/apiList.do?seqApi=10&seqApiSub=287,200,application/xml,198,2,False,,0.112
+예특보,2.3 중기육상예보조회  URL 발행 -->,806,https://apihub.kma.go.kr/api/typ02/openApi/MidFcstInfoService/getMidLandFcst,https://apihub.kma.go.kr/apiList.do?seqApi=10&seqApiSub=287,200,application/xml,198,2,False,,0.113
+예특보,2.4 중기전망조회  URL 발행 -->,807,https://apihub.kma.go.kr/api/typ02/openApi/MidFcstInfoService/getMidFcst,https://apihub.kma.go.kr/apiList.do?seqApi=10&seqApiSub=287,200,application/xml,198,2,False,,0.127
+융합기상,1.1 cctv지점별도로날씨조회(위경도정보/과거자료 포함)  URL 발행 -->,1003,https://apihub.kma.go.kr/api/typ01/url/cctv_ana_info.php,https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=293,200,text/plain,1792,7,False,,0.178
+융합기상,1.2 표준노드링크별도로날씨조회(위경도정보/과거자료 포함)  URL 발행 -->,1004,https://apihub.kma.go.kr/api/typ01/url/cctv_ana_info_link.php,https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=293,200,text/plain,3748,24,False,,0.164
+융합기상,1.3 CCTV지점별 고속도로정보 조회  URL 발행 -->,1005,https://apihub.kma.go.kr/api/typ01/url/cctv_road_info.php,https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=293,200,text/plain,18563,622,False,,0.16
+융합기상,1.6.1 격자자료 위도  URL 발행 -->,1036,https://apihub.kma.go.kr/api/typ01/cgi-bin/url/nph-sfc_obs_latlon_api,https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=936,200,text/plain,2097152,20775,False,,16.977
+융합기상,2.1 특정지점(단일 위경도) 연평균 격자통계값 조회  URL 발행 -->,1063,https://apihub.kma.go.kr/api/typ01/url/sfc_obs_nc_sts_pt_api.php,https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=936,504,,0,0,False,HTTP_504,30.106
+융합기상,2.2.1 행정구역 연평균 격자통계값 조회  URL 발행 -->,1064,https://apihub.kma.go.kr/api/typ01/url/sfc_obs_nc_sts_area_api.php,https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=936,504,,0,0,False,HTTP_504,30.118
+융합기상,2.3 전체영역 연평균 격자통계값 파일다운로드(NetCDF4)  URL 발행 -->,1065,https://apihub.kma.go.kr/api/typ01/url/sfc_grid_nc_sts_down.php,https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=936,200,application/x-zip-compressed,290396,7600,False,,0.622
+융합기상,2.4.1 행정구역 연평균 격자통계 분포도이미지  URL 발행 -->,1066,https://apihub.kma.go.kr/api/typ01/url/sfc_obs_nc_sts_img.php,https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=936,504,,0,0,False,HTTP_504,30.162
+융합기상,3.1.1 지점번호로 조회  URL 발행 -->,10708,https://apihub.kma.go.kr/api/typ01/url/road_stn_obs.php,https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=293,200,text/plain,5957,24,False,,0.554
+융합기상,2.1 재현바람장 남한영역 격자조회  URL 발행 -->,11632,https://apihub.kma.go.kr/api/typ01/cgi-bin/url/nph-rawm_data_api,https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=983,200,text/plain,2097152,23344,False,,6.157
+융합기상,2.2 재현바람장 위·경도 추출 조회  URL 발행 -->,11633,https://apihub.kma.go.kr/api/typ01/cgi-bin/url/nph-rawm_latlon_api,https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=983,200,text/plain,2864,90,False,,9.284
+융합기상,1.2 텍스트  URL 발행 -->,643,https://apihub.kma.go.kr/api/typ01/cgi-bin/sat/nph-sat_ana_txt,https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=983,200,text/plain,2097152,9488,False,,13.688
+융합기상,1.1 이미지  URL 발행 -->,644,https://apihub.kma.go.kr/api/typ01/cgi-bin/sat/nph-sat_ana_img,https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=983,200,image/png,127444,3019,False,,0.479
+융합기상,1.3.1 이진 파일 다운로드(NetCDF4)  URL 발행 -->,645,https://apihub.kma.go.kr/api/typ01/url/sat_file_down2.php,https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=983,200,application/x-zip-compressed,2097152,38025,False,,12.646
+융합기상,2.1 꽃가루농도위험지수(참나무)조회  URL 발행 -->,811,https://apihub.kma.go.kr/api/typ02/openApi/HealthWthrIdxServiceV2/getOakPollenRiskIdxV2,https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=292,200,application/xml,211,2,False,,0.158
+융합기상,2.2 꽃가루농도위험지수(소나무)조회  URL 발행 -->,812,https://apihub.kma.go.kr/api/typ02/openApi/HealthWthrIdxServiceV2/getPinePollenRiskIdxV2,https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=292,200,application/xml,211,2,False,,0.145
+융합기상,2.3 꽃가루농도위험지수(잡초류)조회  URL 발행 -->,813,https://apihub.kma.go.kr/api/typ02/openApi/HealthWthrIdxServiceV2/getWeedsPollenRiskndxV2,https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=292,200,application/xml,212,2,False,,0.123
+융합기상,1.1 대상환경별 체감온도(여름철)조회(~'26.5.10.)  URL 발행 -->,815,https://apihub.kma.go.kr/api/typ02/openApi/LivingWthrIdxServiceV3/getSenTaIdxV3,https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=292,200,application/xml,175,2,False,,0.13
+융합기상,1.2 자외선지수조회  URL 발행 -->,817,https://apihub.kma.go.kr/api/typ02/openApi/LivingWthrIdxServiceV3/getUVIdxV3,https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=292,200,application/xml,175,2,False,,0.118
+융합기상,1.3 대기정체지수조회  URL 발행 -->,818,https://apihub.kma.go.kr/api/typ02/openApi/LivingWthrIdxServiceV3/getAirDiffusionIdxV3,https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=292,200,application/xml,147,2,False,,0.113
+융합기상,1.4 CCTV지점별도로날씨조회  URL 발행 -->,819,https://apihub.kma.go.kr/api/typ02/openApi/RoadWthrInfoService/getCctvStnRoadWthr,https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=293,200,application/xml,252,2,False,,0.115
+융합기상,1.5 표준노드링크별도로날씨조회  URL 발행 -->,820,https://apihub.kma.go.kr/api/typ02/openApi/RoadWthrInfoService/getStdNodeLinkRoadWw,https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=293,200,application/xml,252,2,False,,0.113
+융합기상,1.1 시군구별관광기후지수조회  URL 발행 -->,821,https://apihub.kma.go.kr/api/typ02/openApi/TourStnInfoService/getCityTourClmIdx,https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=987,200,application/xml,138,2,False,,0.15
+융합기상,1.2 동네예보조회  URL 발행 -->,823,https://apihub.kma.go.kr/api/typ02/openApi/TourStnInfoService/getTourStnVilageFcst,https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=987,200,application/xml,138,2,False,,0.116
+융합기상,2.1 주산지특보현황조회  URL 발행 -->,824,https://apihub.kma.go.kr/api/typ02/openApi/FmlandWthrInfoService/getFmlandPwn,https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=987,200,application/xml,252,2,False,,0.357
+융합기상,2.2 주산지동네예보조회  URL 발행 -->,825,https://apihub.kma.go.kr/api/typ02/openApi/FmlandWthrInfoService/getFmlandVilageFcst,https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=987,200,application/xml,138,2,False,,0.18
+융합기상,2.3 주산지동네예보실황조회  URL 발행 -->,826,https://apihub.kma.go.kr/api/typ02/openApi/FmlandWthrInfoService/getFmlandVilageNcst,https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=987,200,application/xml,252,2,False,,0.117
+융합기상,2.4 월통계조회  URL 발행 -->,827,https://apihub.kma.go.kr/api/typ02/openApi/FmlandWthrInfoService/getMmStatistics,https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=987,200,application/xml,138,2,False,,0.402
+융합기상,2.5 순통계조회  URL 발행 -->,828,https://apihub.kma.go.kr/api/typ02/openApi/FmlandWthrInfoService/getPureStatistics,https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=987,200,application/xml,138,2,False,,0.139
+융합기상,2.6 일통계조회  URL 발행 -->,829,https://apihub.kma.go.kr/api/typ02/openApi/FmlandWthrInfoService/getDayStatistics,https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=987,200,application/xml,678,2,False,,0.188
+융합기상,3.1 해수욕장 초단기예보조회  URL 발행 -->,830,https://apihub.kma.go.kr/api/typ02/openApi/BeachInfoservice/getUltraSrtFcstBeach,https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=987,200,application/json,103,0,False,,0.115
+융합기상,3.2 해수욕장 파고조회  URL 발행 -->,831,https://apihub.kma.go.kr/api/typ02/openApi/BeachInfoservice/getWhBuoyBeach,https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=987,200,application/json,207,1,False,,0.331
+융합기상,3.3 해수욕장 조석정보  URL 발행 -->,832,https://apihub.kma.go.kr/api/typ02/openApi/BeachInfoservice/getTideInfoBeach,https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=987,200,application/json,65,0,False,,0.114
+융합기상,3.4 해수욕장 일출일몰조회  URL 발행 -->,833,https://apihub.kma.go.kr/api/typ02/openApi/BeachInfoservice/getSunInfoBeach,https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=987,200,application/json,225,1,False,,0.17
+융합기상,3.5 해수욕장 수온조회  URL 발행 -->,834,https://apihub.kma.go.kr/api/typ02/openApi/BeachInfoservice/getTwBuoyBeach,https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=987,200,application/json,208,1,False,,0.464
+융합기상,3.6 해수욕장 단기예보조회  URL 발행 -->,835,https://apihub.kma.go.kr/api/typ02/openApi/BeachInfoservice/getVilageFcstBeach,https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=987,200,application/json,103,0,False,,0.113
+융합기상,4.1 서리발생예측정보조회  URL 발행 -->,836,https://apihub.kma.go.kr/api/typ02/openApi/FrstFcstInfoService/getFrstOcurFcst,https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=987,200,application/xml,252,2,False,,0.119
+융합기상,2.1 도로위험기상정보  URL 발행 -->,837,https://apihub.kma.go.kr/api/typ04/url/road_file_down.php,https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=293,200,application/x-zip-compressed,287556,4137,False,,0.4
+융합기상,6.1 전력기상지수 조회  URL 발행 -->,931,https://apihub.kma.go.kr/api/typ08/getPowerWeather,https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=987,200,application/json,2097152,1,False,,8.172
+융합기상,URL 발행 -->,932,https://apihub.kma.go.kr/api/typ08/getMountainWeather,https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=987,200,application/json,115424,536,False,,3.536
+융합기상,1.1 전체영역 단일요소  URL 발행 -->,973,https://apihub.kma.go.kr/api/typ01/cgi-bin/url/nph-sfc_obs_nc_api,https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=936,200,text/plain,2097152,29553,False,,18.206
+융합기상,1.2 특정지점 단일요소  URL 발행 -->,974,https://apihub.kma.go.kr/api/typ01/cgi-bin/url/nph-sfc_obs_nc_pt_api,https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=936,200,text/plain,819,19,False,,1.133
+융합기상,1.3 특정지점 다중요소  URL 발행 -->,975,https://apihub.kma.go.kr/api/typ01/url/sfc_nc_var.php,https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=936,200,text/plain,1165,19,False,,1.032
+융합기상,1.4 파일 다운로드(NetCDF4)  URL 발행 -->,976,https://apihub.kma.go.kr/api/typ01/url/sfc_grid_nc_down.php,https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=936,200,application/x-zip-compressed,440358,11436,False,,0.754
+융합기상,1.5 분포도 이미지  URL 발행 -->,977,https://apihub.kma.go.kr/api/typ01/cgi-bin/url/nph-sfc_obs_nc_img,https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=936,200,image/png,72863,1662,False,,0.319
+지상관측,1.1.1 기온 기후통계 데이터 일자료 조회(전체지점)  URL 발행 -->,1150,https://apihub.kma.go.kr/api/typ01/url/sts_ta.php,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=1131,200,text/plain,130436,736,False,,0.543
+지상관측,2.1.1 일사 기후통계 데이터 일자료 조회(전체지점)  URL 발행 -->,1151,https://apihub.kma.go.kr/api/typ01/url/sts_si.php,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=1131,200,text/plain,9301,97,False,,0.25
+지상관측,3.1.1 일조 기후통계 데이터 일자료 조회(전체지점)  URL 발행 -->,1152,https://apihub.kma.go.kr/api/typ01/url/sts_ss.php,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=1131,200,text/plain,7162,97,False,,0.228
+지상관측,4.1.1 기압 기후통계 데이터 일자료 조회(전체지점)  URL 발행 -->,1153,https://apihub.kma.go.kr/api/typ01/url/sts_pa.php,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=1131,200,text/plain,97174,736,False,,1.067
+지상관측,5.1.1 바람 기후통계 데이터 일자료 조회(전체지점)  URL 발행 -->,1154,https://apihub.kma.go.kr/api/typ01/url/sts_wind.php,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=1131,200,text/plain,109711,736,False,,0.572
+지상관측,6.1.1 이슬점온도 기후통계 데이터 일자료 조회(전체지점)  URL 발행 -->,1155,https://apihub.kma.go.kr/api/typ01/url/sts_td.php,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=1131,200,text/plain,10718,97,False,,0.24
+지상관측,7.1.1 지면온도 기후통계 데이터 일자료 조회(전체지점)  URL 발행 -->,1156,https://apihub.kma.go.kr/api/typ01/url/sts_ts.php,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=1131,200,text/plain,74694,736,False,,0.682
+지상관측,8.1.1 초상온도 기후통계 데이터 일자료 조회(전체지점)  URL 발행 -->,1157,https://apihub.kma.go.kr/api/typ01/url/sts_tg.php,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=1131,200,text/plain,52326,736,False,,0.585
+지상관측,9.1.1 지중온도 기후통계 데이터 일자료 조회(전체지점)  URL 발행 -->,1158,https://apihub.kma.go.kr/api/typ01/url/sts_te.php,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=1131,200,text/plain,494465,736,False,,1.599
+지상관측,10.1.1 습도 기후통계 데이터 일자료 조회(전체지점)  URL 발행 -->,1159,https://apihub.kma.go.kr/api/typ01/url/sts_rhm.php,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=1131,200,text/plain,59085,736,False,,0.462
+지상관측,11.1.1 증기압 기후통계 데이터 일자료 조회(전체지점)  URL 발행 -->,1160,https://apihub.kma.go.kr/api/typ01/url/sts_pv.php,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=1131,200,text/plain,10788,97,False,,0.271
+지상관측,12.1.1 구름 기후통계 데이터 일자료 조회(전체지점)  URL 발행 -->,1161,https://apihub.kma.go.kr/api/typ01/url/sts_cloud.php,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=1131,200,text/plain,13462,97,False,,0.348
+지상관측,13.1.1 시정 기후통계 데이터 일자료 조회(전체지점)  URL 발행 -->,1162,https://apihub.kma.go.kr/api/typ01/url/sts_vs.php,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=1131,200,text/plain,7418,97,False,,0.545
+지상관측,14.1.1 강수량 기후통계 데이터 일자료 조회(전체지점)  URL 발행 -->,1163,https://apihub.kma.go.kr/api/typ01/url/sts_rn.php,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=1131,200,text/plain,109527,736,False,,0.903
+지상관측,15.1.1 적설 기후통계 데이터 일자료 조회(전체지점)  URL 발행 -->,1164,https://apihub.kma.go.kr/api/typ01/url/sts_sd.php,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=1131,200,text/plain,10468,97,False,,0.241
+지상관측,16.1.1 증발량 기후통계 데이터 일자료 조회(전체지점)  URL 발행 -->,1165,https://apihub.kma.go.kr/api/typ01/url/sts_ev.php,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=1131,200,text/plain,7653,97,False,,0.248
+지상관측,17.1.1 황사 기후통계 데이터 일자료 조회(전체지점)  URL 발행 -->,1166,https://apihub.kma.go.kr/api/typ01/url/sts_ydst.php,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=1131,200,text/plain,2194,27,False,,0.342
+지상관측,18.1.1 안개 기후통계 데이터 일자료 조회(전체지점)  URL 발행 -->,1167,https://apihub.kma.go.kr/api/typ01/url/sts_fog.php,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=1131,200,text/plain,6509,97,False,,0.247
+지상관측,3.1 연요약자료조회  URL 발행 -->,401,https://apihub.kma.go.kr/api/typ02/openApi/SfcYearlyInfoService/getYearSumry,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=238,200,application/xml,55825,1900,False,,0.225
+지상관측,3.2 연요약자료(2)조회  URL 발행 -->,402,https://apihub.kma.go.kr/api/typ02/openApi/SfcYearlyInfoService/getYearSumry2,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=238,200,application/xml,51588,1900,False,,0.185
+지상관측,3.3 평균기온평년차조회  URL 발행 -->,403,https://apihub.kma.go.kr/api/typ02/openApi/SfcYearlyInfoService/getAvgTaAnamaly,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=238,200,application/xml,32212,1228,False,,0.146
+지상관측,3.4 강수량평년차  URL 발행 -->,404,https://apihub.kma.go.kr/api/typ02/openApi/SfcYearlyInfoService/getRnAnamaly,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=238,200,application/xml,34016,1228,False,,0.166
+지상관측,3.5 지점별현상데이터조회  URL 발행 -->,405,https://apihub.kma.go.kr/api/typ02/openApi/SfcYearlyInfoService/getStnPhnmnData,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=238,200,application/xml,41449,1524,False,,0.165
+지상관측,3.6 지점별현상데이터(2)조회  URL 발행 -->,406,https://apihub.kma.go.kr/api/typ02/openApi/SfcYearlyInfoService/getStnPhnmnData2,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=238,200,application/xml,44827,1624,False,,0.256
+지상관측,3.7 지점별현상데이터(3)조회  URL 발행 -->,407,https://apihub.kma.go.kr/api/typ02/openApi/SfcYearlyInfoService/getStnPhnmnData3,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=238,200,application/xml,42385,1504,False,,0.202
+지상관측,4.1 일러두기조회  URL 발행 -->,408,https://apihub.kma.go.kr/api/typ02/openApi/SfcMtlyInfoService/getNote,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=238,200,application/xml,7748,47,False,,0.162
+지상관측,4.2 지상관측지점일람표조회  URL 발행 -->,409,https://apihub.kma.go.kr/api/typ02/openApi/SfcMtlyInfoService/getSfcStnLstTbl,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=238,200,application/xml,20240,952,False,,0.188
+지상관측,4.3 월요약자료조회  URL 발행 -->,410,https://apihub.kma.go.kr/api/typ02/openApi/SfcMtlyInfoService/getMmSumry,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=238,200,application/xml,39202,1742,False,,0.235
+지상관측,4.4 월요약자료(2)조회  URL 발행 -->,411,https://apihub.kma.go.kr/api/typ02/openApi/SfcMtlyInfoService/getMmSumry2,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=238,200,application/xml,46038,2058,False,,0.176
+지상관측,4.5 해당월의일별기상자료조회  URL 발행 -->,412,https://apihub.kma.go.kr/api/typ02/openApi/SfcMtlyInfoService/getDailyWthrData,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=238,200,application/xml,15112,721,False,,0.403
+지상관측,1.1 시간자료  URL 발행 -->,418,https://apihub.kma.go.kr/api/typ01/url/kma_sfctm2.php,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=238,200,text/plain,28993,96,False,,0.162
+지상관측,1.2 시간자료(기간 조회)  URL 발행 -->,419,https://apihub.kma.go.kr/api/typ01/url/kma_sfctm3.php,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=238,200,text/plain,22599,72,False,,0.23
+지상관측,1.3 일자료  URL 발행 -->,420,https://apihub.kma.go.kr/api/typ01/url/kma_sfcdd.php,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=238,200,text/plain,30011,94,False,,0.193
+지상관측,1.4 일자료(기간 조회)  URL 발행 -->,421,https://apihub.kma.go.kr/api/typ01/url/kma_sfcdd3.php,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=238,200,text/plain,5289,4,False,,0.372
+지상관측,1.5 요소별 조회  URL 발행 -->,422,https://apihub.kma.go.kr/api/typ01/url/kma_sfctm5.php,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=238,200,text/plain,6050,94,False,,0.377
+지상관측,URL 발행 -->,423,https://apihub.kma.go.kr/api/typ01/url/sfc_norm1.php,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=238,200,text/plain,46755,438,False,,0.23
+지상관측,5.1 현상(관서)  URL 발행 -->,424,https://apihub.kma.go.kr/api/typ03/php/alw/sfc/sfc_ww_pnt.php,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=238,200,image/png,12155,313,False,,1.75
+지상관측,5.1 지점별월요약자료조회  URL 발행 -->,426,https://apihub.kma.go.kr/api/typ02/openApi/AwsYearlyInfoService/getStnbyMmSumry,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=239,200,application/xml,37877,1495,False,,0.23
+지상관측,5.2 연요약자료조회  URL 발행 -->,427,https://apihub.kma.go.kr/api/typ02/openApi/AwsYearlyInfoService/getYearSumry,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=239,200,application/xml,221157,9086,False,,0.361
+지상관측,5.3 방재기상관측지점일람표조회  URL 발행 -->,428,https://apihub.kma.go.kr/api/typ02/openApi/AwsYearlyInfoService/getAwsStnLstTbl,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=239,200,application/xml,76354,3828,False,,0.221
+지상관측,5.4 일러두기조회  URL 발행 -->,429,https://apihub.kma.go.kr/api/typ02/openApi/AwsYearlyInfoService/getNote,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=239,200,application/xml,4580,39,False,,0.131
+지상관측,6.1 일별방재기상관측자료조회  URL 발행 -->,430,https://apihub.kma.go.kr/api/typ02/openApi/AwsMtlyInfoService/getDailyAwsData,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=239,200,application/xml,8442,347,False,,0.124
+지상관측,6.2 월요약자료조회  URL 발행 -->,431,https://apihub.kma.go.kr/api/typ02/openApi/AwsMtlyInfoService/getMmSumry,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=239,200,application/xml,265515,8806,False,,0.763
+지상관측,6.3 방재기상관측지점일람표조회  URL 발행 -->,432,https://apihub.kma.go.kr/api/typ02/openApi/AwsMtlyInfoService/getAwsStnLstTbl,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=239,200,application/xml,103798,4405,False,,0.609
+지상관측,6.4 일러두기조회  URL 발행 -->,433,https://apihub.kma.go.kr/api/typ02/openApi/AwsMtlyInfoService/getNote,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=239,200,application/xml,3897,37,False,,0.105
+지상관측,1.1 AWS 매분자료  URL 발행 -->,434,https://apihub.kma.go.kr/api/typ01/cgi-bin/url/nph-aws2_min,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=239,200,text/plain,94948,716,False,,0.499
+지상관측,1.2 AWS 초상온도  URL 발행 -->,435,https://apihub.kma.go.kr/api/typ01/cgi-bin/url/nph-aws2_min_lst,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=239,200,text/plain,94968,716,False,,0.43
+지상관측,1.3 AWS 운고 운량  URL 발행 -->,436,https://apihub.kma.go.kr/api/typ01/cgi-bin/url/nph-aws2_min_cloud,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=239,200,text/plain,7422,95,False,,0.337
+지상관측,1.4 AWS 운고 운량(특정기간 평균 값)  URL 발행 -->,437,https://apihub.kma.go.kr/api/typ01/cgi-bin/url/nph-aws2_min_ca2,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=239,200,text/plain,7042,79,False,,1.284
+지상관측,1.5 AWS 운고 운량(특정기간 최소/최고 값)  URL 발행 -->,438,https://apihub.kma.go.kr/api/typ01/cgi-bin/url/nph-aws2_min_ca3,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=239,200,text/plain,6707,81,False,,0.84
+지상관측,1.6 AWS2 시정자료  URL 발행 -->,439,https://apihub.kma.go.kr/api/typ01/cgi-bin/url/nph-aws2_min_vis,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=239,200,text/plain,18414,231,False,,0.251
+지상관측,1.7 AWS2 시정자료(평균·최소·최고 시정)  URL 발행 -->,440,https://apihub.kma.go.kr/api/typ01/cgi-bin/url/nph-aws2_min_vis3,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=239,200,text/plain,21000,233,False,,0.529
+지상관측,1.8 AWS2 현천자료  URL 발행 -->,441,https://apihub.kma.go.kr/api/typ01/cgi-bin/url/nph-aws2_min_ww1,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=239,200,text/plain,16276,237,False,,0.915
+지상관측,"1.9 AWS2 현천, 분석  URL 발행 -->",442,https://apihub.kma.go.kr/api/typ01/cgi-bin/url/nph-aws2_min_ww2,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=239,200,text/plain,16514,231,False,,0.345
+지상관측,3.1.1 기온  URL 발행 -->,443,https://apihub.kma.go.kr/api/typ01/url/awsh.php,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=239,200,text/plain,43425,678,False,,0.244
+지상관측,4.1 요소별 조회  URL 발행 -->,445,https://apihub.kma.go.kr/api/typ01/url/sfc_aws_day.php,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=239,200,text/plain,43639,674,False,,0.418
+지상관측,URL 발행 -->,447,https://apihub.kma.go.kr/api/typ03/cgi/aws3/nph-aws_min_img1,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=239,200,image/png,6363,196,False,,0.8
+지상관측,URL 발행 -->,448,https://apihub.kma.go.kr/api/typ03/cgi/aws3/nph-aws_min_img2,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=239,200,image/png,291,13,False,,1.403
+지상관측,URL 발행 -->,449,https://apihub.kma.go.kr/api/typ03/php/alw/aws/aws_obs_pnt.php,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=239,200,image/png,10016,249,False,,19.648
+지상관측,URL 발행 -->,450,https://apihub.kma.go.kr/api/typ03/php/alw/sea/sea_obs_pnt.php,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=239,200,image/png,7559,185,False,,1.859
+지상관측,URL 발행 -->,451,https://apihub.kma.go.kr/api/typ03/cgi/aws3/nph-aws_day_img1,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=239,200,image/png,15699,397,False,,1.414
+지상관측,10.1 6시간  URL 발행 -->,452,https://apihub.kma.go.kr/api/typ03/cgi/aws3/nph-awsm_tms_h06,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=239,200,text/html,2219,38,False,,0.277
+지상관측,10.2 12시간  URL 발행 -->,453,https://apihub.kma.go.kr/api/typ03/cgi/aws3/nph-awsm_tms_h12,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=239,200,text/html,2219,38,False,,0.172
+지상관측,10.3 24시간  URL 발행 -->,454,https://apihub.kma.go.kr/api/typ03/cgi/aws2/nph-awsm_tms_h24,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=239,200,text/html,2219,38,False,,0.179
+지상관측,10.4 2일  URL 발행 -->,455,https://apihub.kma.go.kr/api/typ03/cgi/aws2/nph-awsm_tms_d02,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=239,200,text/html,2219,38,False,,0.133
+지상관측,10.5 4일  URL 발행 -->,456,https://apihub.kma.go.kr/api/typ03/cgi/aws2/nph-awsm_tms_d04,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=239,200,text/html,2219,38,False,,0.148
+지상관측,10.6 8일  URL 발행 -->,457,https://apihub.kma.go.kr/api/typ03/cgi/aws2/nph-awsm_tms_d08,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=239,200,text/html,2219,38,False,,0.168
+지상관측,10.7 12일  URL 발행 -->,458,https://apihub.kma.go.kr/api/typ03/cgi/aws2/nph-awsm_tms_d12,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=239,200,text/html,2219,38,False,,0.124
+지상관측,7.1 현상(현천계)  URL 발행 -->,460,https://apihub.kma.go.kr/api/typ03/php/alw/aws/aws_ww_pnt.php,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=239,200,image/png,15046,380,False,,1.787
+지상관측,URL 발행 -->,466,https://apihub.kma.go.kr/api/typ01/url/sfc_nko_norm1.php,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=240,200,text/plain,7211,54,False,,0.327
+지상관측,1.1 북한 지상관측  URL 발행 -->,467,https://apihub.kma.go.kr/api/typ01/url/nko_sfctm.php,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=240,200,text/plain,4606,27,False,,0.242
+지상관측,URL 발행 -->,472,https://apihub.kma.go.kr/api/typ01/url/kma_pm10.php,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=243,200,text/plain,5104,124,False,,0.567
+지상관측,2.1 황사지점정보  URL 발행 -->,473,https://apihub.kma.go.kr/api/typ01/url/stn_pm10_inf.php,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=243,200,text/plain,5506,27,False,,0.386
+지상관측,2.2 황사(PM10) 관측자료  URL 발행 -->,474,https://apihub.kma.go.kr/api/typ01/url/dst_pm10_tm.php,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=243,200,text/plain,3539,25,False,,0.359
+지상관측,2.3 황사(PM10) 시간통계자료  URL 발행 -->,475,https://apihub.kma.go.kr/api/typ01/url/dst_pm10_hr.php,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=243,200,text/plain,3629,25,False,,0.19
+지상관측,1.1 적설관측지점  URL 발행 -->,477,https://apihub.kma.go.kr/api/typ01/url/stn_snow.php,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=244,200,text/plain,8409,78,False,,0.207
+지상관측,1.2.1 적설  URL 발행 -->,478,https://apihub.kma.go.kr/api/typ01/url/kma_snow1.php,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=244,200,text/plain,5353,52,False,,0.624
+지상관측,1.3 기간  URL 발행 -->,479,https://apihub.kma.go.kr/api/typ01/url/kma_snow2.php,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=244,200,text/plain,134416,1107,False,,0.435
+지상관측,"1.4.1 최심적설,최심신적설  URL 발행 -->",480,https://apihub.kma.go.kr/api/typ01/url/kma_snow_day.php,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=244,200,text/plain,33344,364,False,,0.428
+지상관측,URL 발행 -->,481,https://apihub.kma.go.kr/api/typ01/url/kma_sfctm_uv.php,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=245,200,text/plain,2053,16,False,,0.156
+지상관측,URL 발행 -->,499,https://apihub.kma.go.kr/api/typ01/cgi-bin/aws/nph-aws_min_obj,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=248,200,text/plain,2097152,386,False,,5.981
+지상관측,URL 발행 -->,502,https://apihub.kma.go.kr/api/typ01/cgi-bin/aws/nph-sfc_obs_img,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=248,200,image/png,39076,1011,False,,1.477
+지상관측,1.1.1 지상  URL 발행 -->,503,https://apihub.kma.go.kr/api/typ01/url/stn_inf.php,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=317,200,text/plain,22654,96,False,,0.182
+지상관측,11.2 강우감지  URL 발행 -->,507,https://apihub.kma.go.kr/api/typ03/cgi/aws3/nph-aws_min_imgp1,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=239,200,text/html,723,0,False,,0.815
+지상관측,3.1 황사위성영상조회  URL 발행 -->,515,https://apihub.kma.go.kr/api/typ02/openApi/YdstInfoService/getYdstSatlitImg,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=243,200,application/xml,198,2,False,,0.135
+지상관측,3.2 황사관측조회  URL 발행 -->,516,https://apihub.kma.go.kr/api/typ02/openApi/YdstInfoService/getYdstObs,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=243,200,application/xml,167,2,False,,0.141
+지상관측,3.3 황사일기도조회  URL 발행 -->,517,https://apihub.kma.go.kr/api/typ02/openApi/YdstInfoService/getYdstSfcChart,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=243,200,application/xml,198,2,False,,0.122
+지상관측,1.1.1 단일지점 전요소 기간조회  URL 발행 -->,518,https://apihub.kma.go.kr/api/typ01/url/sfc_ssn.php,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=926,200,text/plain,5495,119,False,,1.279
+지상관측,2.1.1 전지점 전요소 조회  URL 발행 -->,519,https://apihub.kma.go.kr/api/typ01/url/sfc_ssn_norm.php,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=926,200,text/plain,44170,1109,False,,0.218
+지상관측,11.3 바람벡터  URL 발행 -->,916,https://apihub.kma.go.kr/api/typ03/cgi/aws3/nph-aws_min_imgp2,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=239,200,text/html,717,0,False,,1.06
+지상관측,11.1 일 최고기온  URL 발행 -->,917,https://apihub.kma.go.kr/api/typ03/cgi/aws3/nph-aws_day_imgp1,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=239,200,text/html,708,0,False,,0.432
+지상관측,2.1 이동형 관측자료  URL 발행 -->,982,https://apihub.kma.go.kr/api/typ01/cgi-bin/url/nph-aws3_min_mob,https://apihub.kma.go.kr/apiList.do?seqApi=2&seqApiSub=239,200,text/plain,1282,0,False,,1.801
+해양관측,3.1 일러두기조회  URL 발행 -->,520,https://apihub.kma.go.kr/api/typ02/openApi/SeaMtlyInfoService/getNote,https://apihub.kma.go.kr/apiList.do?seqApi=3&seqApiSub=249,200,application/xml,5055,22,False,,0.117
+해양관측,3.2 지점일람표(부이)조회  URL 발행 -->,521,https://apihub.kma.go.kr/api/typ02/openApi/SeaMtlyInfoService/getBuoyLstTbl,https://apihub.kma.go.kr/apiList.do?seqApi=3&seqApiSub=249,200,application/xml,5310,225,False,,0.11
+해양관측,3.3 지점일람표(등표)조회  URL 발행 -->,522,https://apihub.kma.go.kr/api/typ02/openApi/SeaMtlyInfoService/getLhawsLstTbl,https://apihub.kma.go.kr/apiList.do?seqApi=3&seqApiSub=249,200,application/xml,2813,121,False,,0.111
+해양관측,3.4 지점일람표(파고부이)조회  URL 발행 -->,523,https://apihub.kma.go.kr/api/typ02/openApi/SeaMtlyInfoService/getWaveBuoyLstTbl,https://apihub.kma.go.kr/apiList.do?seqApi=3&seqApiSub=249,200,application/xml,13234,641,False,,0.138
+해양관측,3.5 관측개시연도조회  URL 발행 -->,524,https://apihub.kma.go.kr/api/typ02/openApi/SeaMtlyInfoService/getObsOpenYear,https://apihub.kma.go.kr/apiList.do?seqApi=3&seqApiSub=249,200,application/xml,46111,757,False,,0.154
+해양관측,3.6 해양기상부이월요약자료조회  URL 발행 -->,525,https://apihub.kma.go.kr/api/typ02/openApi/SeaMtlyInfoService/getBuoyMmSumry,https://apihub.kma.go.kr/apiList.do?seqApi=3&seqApiSub=249,200,application/xml,5794,208,False,,0.116
+해양관측,3.7 해양기상부이월요약자료(2)조회  URL 발행 -->,526,https://apihub.kma.go.kr/api/typ02/openApi/SeaMtlyInfoService/getBuoyMmSumry2,https://apihub.kma.go.kr/apiList.do?seqApi=3&seqApiSub=249,200,application/xml,6968,242,False,,0.129
+해양관측,3.8 일별(부이)기상자료조회  URL 발행 -->,527,https://apihub.kma.go.kr/api/typ02/openApi/SeaMtlyInfoService/getDailyBuoy,https://apihub.kma.go.kr/apiList.do?seqApi=3&seqApiSub=249,200,application/xml,15895,755,False,,0.15
+해양관측,3.9 등표기상관측장비월요약자료조회  URL 발행 -->,528,https://apihub.kma.go.kr/api/typ02/openApi/SeaMtlyInfoService/getLhawsMmSumry,https://apihub.kma.go.kr/apiList.do?seqApi=3&seqApiSub=249,200,application/xml,3896,139,False,,0.118
+해양관측,3.10 등표기상관측장비월요약자료(2)조회  URL 발행 -->,529,https://apihub.kma.go.kr/api/typ02/openApi/SeaMtlyInfoService/getLhawsMmSumry2,https://apihub.kma.go.kr/apiList.do?seqApi=3&seqApiSub=249,200,application/xml,4092,139,False,,0.127
+해양관측,3.11 일별(등표)기상자료조회  URL 발행 -->,530,https://apihub.kma.go.kr/api/typ02/openApi/SeaMtlyInfoService/getDailyLhaws,https://apihub.kma.go.kr/apiList.do?seqApi=3&seqApiSub=249,200,application/xml,15755,789,False,,0.158
+해양관측,3.12 파고부이월요약자료조회  URL 발행 -->,531,https://apihub.kma.go.kr/api/typ02/openApi/SeaMtlyInfoService/getWaveBuoyMmSumry,https://apihub.kma.go.kr/apiList.do?seqApi=3&seqApiSub=249,200,application/xml,17399,641,False,,0.152
+해양관측,3.13 파고부이월요약자료(2)조회  URL 발행 -->,532,https://apihub.kma.go.kr/api/typ02/openApi/SeaMtlyInfoService/getWaveBuoyMmSumry2,https://apihub.kma.go.kr/apiList.do?seqApi=3&seqApiSub=249,200,application/xml,18213,641,False,,0.133
+해양관측,3.14 일별(파고부이)기상자료조회  URL 발행 -->,533,https://apihub.kma.go.kr/api/typ02/openApi/SeaMtlyInfoService/getDailyWaveBuoy,https://apihub.kma.go.kr/apiList.do?seqApi=3&seqApiSub=249,200,application/xml,15820,755,False,,0.131
+해양관측,1.1 해양기상종합관측(해양기상부이·파고부이·표류부이 등)  URL 발행 -->,534,https://apihub.kma.go.kr/api/typ01/url/sea_obs.php,https://apihub.kma.go.kr/apiList.do?seqApi=3&seqApiSub=249,200,text/plain,24962,169,False,,0.181
+해양관측,2.1 해양기상부이  URL 발행 -->,535,https://apihub.kma.go.kr/api/typ01/url/kma_buoy.php,https://apihub.kma.go.kr/apiList.do?seqApi=3&seqApiSub=249,200,text/plain,7429,58,False,,0.171
+해양관측,URL 발행 -->,538,https://apihub.kma.go.kr/api/typ01/url/kma_lhaws.php,https://apihub.kma.go.kr/apiList.do?seqApi=3&seqApiSub=250,200,text/plain,64490,540,False,,0.373
+해양관측,URL 발행 -->,539,https://apihub.kma.go.kr/api/typ01/url/kma_lhaws2.php,https://apihub.kma.go.kr/apiList.do?seqApi=3&seqApiSub=250,200,text/plain,1544282,12966,False,,2.271
+해양관측,URL 발행 -->,541,https://apihub.kma.go.kr/api/typ01/url/kma_kship.php,https://apihub.kma.go.kr/apiList.do?seqApi=3&seqApiSub=251,200,text/plain,3809,12,False,,0.47
+해양관측,1.1 BUOY  URL 발행 -->,544,https://apihub.kma.go.kr/api/typ01/url/stn_inf.php,https://apihub.kma.go.kr/apiList.do?seqApi=3&seqApiSub=318,200,text/plain,4278,32,False,,0.144
+해양관측,4.1 해양:파고  URL 발행 -->,979,https://apihub.kma.go.kr/api/typ03/cgi/aws3/nph-sea_obs_imgp1,https://apihub.kma.go.kr/apiList.do?seqApi=3&seqApiSub=249,200,text/html,665,0,False,,0.249
+해양관측,1.2 해양기상부이(기간조회)  URL 발행 -->,990,https://apihub.kma.go.kr/api/typ01/url/kma_buoy2.php,https://apihub.kma.go.kr/apiList.do?seqApi=3&seqApiSub=249,200,text/plain,197497,1419,False,,0.521

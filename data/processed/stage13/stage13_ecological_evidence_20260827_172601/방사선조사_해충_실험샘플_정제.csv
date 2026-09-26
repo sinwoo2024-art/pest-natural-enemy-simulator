@@ -1,0 +1,61 @@
+﻿원천행ID,방사선조사종류,조사선량,선량률,조사전 해충종류 학명,조사전 해충 세대,조사전 해충 태,조사전 해충 기간,조사후 해충 발육상태,조사후 해충 발육상태 값,조사후 해충 세대 종류,조사후 해충 태 종류,조사선량_Gy,선량률_수치,발육상태값_수치,내용중복여부,자료종류,현장방제모델사용,해석제한
+KAERI_SAMPLE_0001,감마선,0Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Sex ratio (males/total),0.5ratio,F0,성충,0.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0002,감마선,10Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Sex ratio (males/total),0.5ratio,F0,성충,10.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0003,감마선,30Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Sex ratio (males/total),0.45ratio,F0,성충,30.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0004,감마선,50Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Sex ratio (males/total),0.46ratio,F0,성충,50.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0005,감마선,70Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Sex ratio (males/total),0.46ratio,F0,성충,70.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0006,감마선,90Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Sex ratio (males/total),0.44ratio,F0,성충,90.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0007,감마선,0Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Weight,10.3mg,F0,번데기,0.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0008,감마선,10Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Weight,10.1mg,F0,번데기,10.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0009,감마선,30Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Weight,9.5mg,F0,번데기,30.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0010,감마선,50Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Weight,8.6mg,F0,번데기,50.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0011,감마선,70Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Weight,8.7mg,F0,번데기,70.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0012,감마선,90Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Weight,-mg,F0,번데기,90.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0013,감마선,0Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Length,4.8mm,F0,번데기,0.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0014,감마선,10Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Length,4.7mm,F0,번데기,10.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0015,감마선,30Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Length,4.4mm,F0,번데기,30.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0016,감마선,50Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Length,4.2mm,F0,번데기,50.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0017,감마선,70Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Length,4.1mm,F0,번데기,70.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0018,감마선,90Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Length,-mm,F0,번데기,90.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0019,감마선,0Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Diameter,2mm,F0,번데기,0.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0020,감마선,10Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Diameter,2mm,F0,번데기,10.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0021,감마선,30Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Diameter,1.9mm,F0,번데기,30.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0022,감마선,50Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Diameter,1.8mm,F0,번데기,50.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0023,감마선,70Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Diameter,1.8mm,F0,번데기,70.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0024,감마선,90Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Diameter,-mm,F0,번데기,90.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0025,감마선,0Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Flight ability (5cm),80.2%,F0,성충,0.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0026,감마선,10Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Flight ability (5cm),73.7%,F0,성충,10.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0027,감마선,30Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Flight ability (5cm),71%,F0,성충,30.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0028,감마선,50Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Flight ability (5cm),72.2%,F0,성충,50.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0029,감마선,70Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Flight ability (5cm),66.2%,F0,성충,70.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0030,감마선,90Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Flight ability (5cm),68%,F0,성충,90.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0031,감마선,0Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Flight ability (10cm),68.7%,F0,성충,0.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0032,감마선,10Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Flight ability (10cm),67%,F0,성충,10.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0033,감마선,30Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Flight ability (10cm),67.5%,F0,성충,30.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0034,감마선,50Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Flight ability (10cm),63%,F0,성충,50.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0035,감마선,70Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Flight ability (10cm),62.7%,F0,성충,70.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0036,감마선,90Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Flight ability (10cm),59.2%,F0,성충,90.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0037,감마선,0Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Flight ability (15cm),58%,F0,성충,0.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0038,감마선,10Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Flight ability (15cm),56.7%,F0,성충,10.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0039,감마선,30Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Flight ability (15cm),53.7%,F0,성충,30.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0040,감마선,50Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Flight ability (15cm),52%,F0,성충,50.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0041,감마선,70Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Flight ability (15cm),49.2%,F0,성충,70.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0042,감마선,90Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Flight ability (15cm),45%,F0,성충,90.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0043,감마선,0Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Flight ability (20cm),38%,F0,성충,0.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0044,감마선,10Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Flight ability (20cm),37.2%,F0,성충,10.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0045,감마선,30Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Flight ability (20cm),36.2%,F0,성충,30.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0046,감마선,50Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Flight ability (20cm),32.7%,F0,성충,50.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0047,감마선,70Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Flight ability (20cm),28%,F0,성충,70.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0048,감마선,90Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Flight ability (20cm),27.7%,F0,성충,90.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0049,감마선,0Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Flight ability (25cm),19.5%,F0,성충,0.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0050,감마선,10Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Flight ability (25cm),19.5%,F0,성충,10.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0051,감마선,30Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Flight ability (25cm),16.5%,F0,성충,30.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0052,감마선,50Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Flight ability (25cm),16.5%,F0,성충,50.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0053,감마선,70Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Flight ability (25cm),12.7%,F0,성충,70.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0054,감마선,90Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Flight ability (25cm),10.2%,F0,성충,90.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0055,감마선,0Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Flight ability (30cm),7.5%,F0,성충,0.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0056,감마선,10Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Flight ability (30cm),6.2%,F0,성충,10.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0057,감마선,30Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Flight ability (30cm),5.5%,F0,성충,30.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0058,감마선,50Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Flight ability (30cm),5.5%,F0,성충,50.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0059,감마선,70Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Flight ability (30cm),4%,F0,성충,70.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님
+KAERI_SAMPLE_0060,감마선,90Gy,66Gy/min,Bactrocera zonata,F0,번데기,7day,Flight ability (30cm),2.7%,F0,성충,90.0,66.0,,N,공식 제공 실험 샘플,N,단일 해충·감마선 실험 샘플이며 천적 투입·농가 현장 방제효과 근거가 아님

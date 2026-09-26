@@ -1,0 +1,159 @@
+{
+  "run_id": "stage4_kma_fusion_45_revalidate_20260828_120726",
+  "status": "catalogue_complete_live_partial",
+  "key_status": "configured",
+  "key_length": 22,
+  "key_plaintext_persisted": false,
+  "official_documented_endpoints": 45,
+  "app_catalogue_connected": 45,
+  "previous_full_audit": "data/reports/stage4/stage4_kma_domains_full_audit_20260827_061934/endpoint_audit.csv",
+  "previous_live_http_200": 42,
+  "focused_endpoint_count": 3,
+  "api_request_count": 6,
+  "live_http_200_after_recheck": 42,
+  "permission_denied_count": 0,
+  "gateway_or_transport_pending": 3,
+  "all_45_catalogued": true,
+  "all_45_live_validated": false,
+  "results": [
+    {
+      "category": "융합기상",
+      "service_name": "2.1 특정지점(단일 위경도) 연평균 격자통계값 조회  URL 발행 -->",
+      "data_api": "1063",
+      "endpoint": "https://apihub.kma.go.kr/api/typ01/url/sfc_obs_nc_sts_pt_api.php",
+      "document_url": "https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=936",
+      "parameters_without_key": {
+        "var": "ta_avg",
+        "tm1": "2022",
+        "tm2": "2023",
+        "lat": "38.249774",
+        "lon": "128.5643",
+        "disp": "0"
+      },
+      "attempts": [
+        {
+          "http_status": 504,
+          "content_type": "",
+          "response_bytes_sampled": 0,
+          "response_rows": 0,
+          "permission_denied": false,
+          "error_code": "HTTP_504",
+          "elapsed_seconds": 30.122,
+          "attempt": 1
+        },
+        {
+          "http_status": 504,
+          "content_type": "",
+          "response_bytes_sampled": 0,
+          "response_rows": 0,
+          "permission_denied": false,
+          "error_code": "HTTP_504",
+          "elapsed_seconds": 30.14,
+          "attempt": 2
+        }
+      ],
+      "final": {
+        "http_status": 504,
+        "content_type": "",
+        "response_bytes_sampled": 0,
+        "response_rows": 0,
+        "permission_denied": false,
+        "error_code": "HTTP_504",
+        "elapsed_seconds": 30.122,
+        "attempt": 1
+      }
+    },
+    {
+      "category": "융합기상",
+      "service_name": "2.2.1 행정구역 연평균 격자통계값 조회  URL 발행 -->",
+      "data_api": "1064",
+      "endpoint": "https://apihub.kma.go.kr/api/typ01/url/sfc_obs_nc_sts_area_api.php",
+      "document_url": "https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=936",
+      "parameters_without_key": {
+        "var": "ta_avg",
+        "tm1": "2022",
+        "tm2": "2023",
+        "admcode": "11000000",
+        "disp": "0",
+        "reduce": "0"
+      },
+      "attempts": [
+        {
+          "http_status": 504,
+          "content_type": "",
+          "response_bytes_sampled": 0,
+          "response_rows": 0,
+          "permission_denied": false,
+          "error_code": "HTTP_504",
+          "elapsed_seconds": 30.173,
+          "attempt": 1
+        },
+        {
+          "http_status": 504,
+          "content_type": "",
+          "response_bytes_sampled": 0,
+          "response_rows": 0,
+          "permission_denied": false,
+          "error_code": "HTTP_504",
+          "elapsed_seconds": 30.127,
+          "attempt": 2
+        }
+      ],
+      "final": {
+        "http_status": 504,
+        "content_type": "",
+        "response_bytes_sampled": 0,
+        "response_rows": 0,
+        "permission_denied": false,
+        "error_code": "HTTP_504",
+        "elapsed_seconds": 30.173,
+        "attempt": 1
+      }
+    },
+    {
+      "category": "융합기상",
+      "service_name": "2.4.1 행정구역 연평균 격자통계 분포도이미지  URL 발행 -->",
+      "data_api": "1066",
+      "endpoint": "https://apihub.kma.go.kr/api/typ01/url/sfc_obs_nc_sts_img.php",
+      "document_url": "https://apihub.kma.go.kr/apiList.do?seqApi=971&seqApiSub=936",
+      "parameters_without_key": {
+        "var": "ta_avg",
+        "tm": "2023",
+        "admcode": "11000000"
+      },
+      "attempts": [
+        {
+          "http_status": 504,
+          "content_type": "",
+          "response_bytes_sampled": 0,
+          "response_rows": 0,
+          "permission_denied": false,
+          "error_code": "HTTP_504",
+          "elapsed_seconds": 30.165,
+          "attempt": 1
+        },
+        {
+          "http_status": 504,
+          "content_type": "",
+          "response_bytes_sampled": 0,
+          "response_rows": 0,
+          "permission_denied": false,
+          "error_code": "HTTP_504",
+          "elapsed_seconds": 30.393,
+          "attempt": 2
+        }
+      ],
+      "final": {
+        "http_status": 504,
+        "content_type": "",
+        "response_bytes_sampled": 0,
+        "response_rows": 0,
+        "permission_denied": false,
+        "error_code": "HTTP_504",
+        "elapsed_seconds": 30.165,
+        "attempt": 1
+      }
+    }
+  ],
+  "validated_at": "2026-08-28T12:10:32+09:00"
+}

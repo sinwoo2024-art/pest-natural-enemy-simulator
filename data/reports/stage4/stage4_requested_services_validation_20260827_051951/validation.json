@@ -1,0 +1,236 @@
+{
+  "run_id": "stage4_requested_services_validation_20260827_051951",
+  "key_status": "configured",
+  "key_length": 22,
+  "key_plaintext_persisted": false,
+  "api_request_count": 10,
+  "approved_count": 9,
+  "actual_data_count": 9,
+  "results": [
+    {
+      "category": "예특보",
+      "service_id": "fct_shrt_reg",
+      "service_name": "단기 예보구역 최신자료",
+      "endpoint": "https://apihub.kma.go.kr/api/typ01/url/fct_shrt_reg.php",
+      "request_parameters_without_key": {
+        "tmfc": 0
+      },
+      "http_status": 200,
+      "start_marker": true,
+      "end_marker": true,
+      "rows": 563,
+      "total_count": null,
+      "error_code": "",
+      "approval_confirmed": true,
+      "actual_data_confirmed": true,
+      "application_use": "작업일·예찰일의 단기 기상 위험 안내"
+    },
+    {
+      "category": "예특보",
+      "service_id": "wrn_now_data_new",
+      "service_name": "현재 기상특보 현황",
+      "endpoint": "https://apihub.kma.go.kr/api/typ01/url/wrn_now_data_new.php",
+      "request_parameters_without_key": {
+        "fe": "f",
+        "tm": "",
+        "disp": 0,
+        "help": 1
+      },
+      "http_status": 200,
+      "start_marker": true,
+      "end_marker": false,
+      "rows": 281,
+      "total_count": null,
+      "error_code": "",
+      "approval_confirmed": true,
+      "actual_data_confirmed": true,
+      "application_use": "강풍·호우·폭염 등 농작업 안전 경보"
+    },
+    {
+      "category": "예특보",
+      "service_id": "wrn_now_data",
+      "service_name": "현재 기상특보 현황(기존 서비스)",
+      "endpoint": "https://apihub.kma.go.kr/api/typ01/url/wrn_now_data.php",
+      "request_parameters_without_key": {
+        "fe": "f",
+        "tm": "",
+        "disp": 0,
+        "help": 1
+      },
+      "http_status": 200,
+      "start_marker": true,
+      "end_marker": false,
+      "rows": 281,
+      "total_count": null,
+      "error_code": "",
+      "approval_confirmed": true,
+      "actual_data_confirmed": true,
+      "application_use": "신규 특보 endpoint 미승인 시 기존 승인 서비스 교차확인"
+    },
+    {
+      "category": "융합기상",
+      "service_id": "sfc_nc_var",
+      "service_name": "500m 격자 특정지점 다중요소",
+      "endpoint": "https://apihub.kma.go.kr/api/typ01/url/sfc_nc_var.php",
+      "request_parameters_without_key": {
+        "tm1": "202608270120",
+        "tm2": "202608270210",
+        "lon": 126.96579,
+        "lat": 37.57141,
+        "obs": "ta,td,hm,ws_10m,rn_60m",
+        "itv": 10,
+        "help": 1
+      },
+      "http_status": 200,
+      "start_marker": true,
+      "end_marker": true,
+      "rows": 6,
+      "total_count": null,
+      "error_code": "",
+      "approval_confirmed": true,
+      "actual_data_confirmed": true,
+      "application_use": "관측소가 없는 시군구의 보조 격자 근거(실측과 분리)"
+    },
+    {
+      "category": "융합기상",
+      "service_id": "sfc_obs_nc_sts_pt_api",
+      "service_name": "특정지점 연평균 격자통계",
+      "endpoint": "https://apihub.kma.go.kr/api/typ01/url/sfc_obs_nc_sts_pt_api.php",
+      "request_parameters_without_key": {
+        "var": "ta_avg",
+        "tm1": 2024,
+        "tm2": 2024,
+        "lat": 37.57141,
+        "lon": 126.96579,
+        "disp": 0
+      },
+      "http_status": 0,
+      "start_marker": false,
+      "end_marker": false,
+      "rows": 0,
+      "total_count": null,
+      "error_code": "TIMEOUT",
+      "approval_confirmed": false,
+      "actual_data_confirmed": false,
+      "application_use": "장기 기후 기준선 검토(발생관측 직접대체 금지)"
+    },
+    {
+      "category": "세계기상",
+      "service_id": "gts_syn",
+      "service_name": "GTS 지상 SYNOP 통합",
+      "endpoint": "https://apihub.kma.go.kr/api/typ01/url/gts_syn.php",
+      "request_parameters_without_key": {
+        "tm": "202608261700",
+        "dtm": 3,
+        "stn": 47108,
+        "help": 1
+      },
+      "http_status": 200,
+      "start_marker": true,
+      "end_marker": true,
+      "rows": 4,
+      "total_count": null,
+      "error_code": "",
+      "approval_confirmed": true,
+      "actual_data_confirmed": true,
+      "application_use": "국내 관측과 같은 시각·지점이 확인될 때만 교차검증"
+    },
+    {
+      "category": "세계기상",
+      "service_id": "gts_ship",
+      "service_name": "GTS 선박 관측 통합",
+      "endpoint": "https://apihub.kma.go.kr/api/typ01/url/gts_ship.php",
+      "request_parameters_without_key": {
+        "tm": "202608261700",
+        "dtm": 1,
+        "help": 1
+      },
+      "http_status": 200,
+      "start_marker": true,
+      "end_marker": true,
+      "rows": 7789,
+      "total_count": null,
+      "error_code": "",
+      "approval_confirmed": true,
+      "actual_data_confirmed": true,
+      "application_use": "해양 관측 공백 검토용 별도 국제 보조자료"
+    },
+    {
+      "category": "산업특화",
+      "service_id": "sun_sfc_day",
+      "service_name": "지상 일통계(일사·일조·기온·습도)",
+      "endpoint": "https://apihub.kma.go.kr/api/typ01/url/sun_sfc_day.php",
+      "request_parameters_without_key": {
+        "stn": 0,
+        "tm1": "20260826",
+        "tm2": "20260826",
+        "help": 1,
+        "disp": 1
+      },
+      "http_status": 200,
+      "start_marker": true,
+      "end_marker": true,
+      "rows": 96,
+      "total_count": null,
+      "error_code": "",
+      "approval_confirmed": true,
+      "actual_data_confirmed": true,
+      "application_use": "작물 생육·시설원예 일사 및 열환경 근거"
+    },
+    {
+      "category": "산업특화",
+      "service_id": "sun_sfc_norm",
+      "service_name": "지상 평년값(일조·구름·기온·습도)",
+      "endpoint": "https://apihub.kma.go.kr/api/typ01/url/sun_sfc_norm.php",
+      "request_parameters_without_key": {
+        "stn": 108,
+        "norm": "M",
+        "tmst": 2021,
+        "MM1": 8,
+        "DD1": 100,
+        "MM2": 8,
+        "DD2": 300
+      },
+      "http_status": 200,
+      "start_marker": false,
+      "end_marker": false,
+      "rows": 1,
+      "total_count": null,
+      "error_code": "",
+      "approval_confirmed": true,
+      "actual_data_confirmed": true,
+      "application_use": "월별 전망의 평년 기준선(실제 연도 관측과 분리)"
+    },
+    {
+      "category": "융합기상",
+      "service_id": "nph_sfc_obs_nc_pt_api",
+      "service_name": "500m 격자 특정지점 단일요소",
+      "endpoint": "https://apihub.kma.go.kr/api/typ01/cgi-bin/url/nph-sfc_obs_nc_pt_api",
+      "request_parameters_without_key": {
+        "obs": "ta",
+        "tm1": "202608270120",
+        "tm2": "202608270210",
+        "itv": 10,
+        "lon": 126.96579,
+        "lat": 37.57141
+      },
+      "http_status": 200,
+      "start_marker": false,
+      "end_marker": false,
+      "rows": 6,
+      "total_count": null,
+      "error_code": "",
+      "approval_confirmed": true,
+      "actual_data_confirmed": true,
+      "application_use": "다중요소 응답 불일치 시 값 교차검증"
+    }
+  ],
+  "existing_evidence": {
+    "surface_validation": "data/reports/stage4/stage4_20260825_212325/validation.json",
+    "marine_validation": "data/reports/stage4/stage4_marine_all_validation_20260827_025739/validation.json",
+    "surface_raw_preserved": true,
+    "marine_raw_preserved": true
+  },
+  "world_weather_policy": "국내 자료와 시공간 기준이 일치할 때만 보조 교차검증; 국내 결측값 대체 금지",
+  "validated_at": "2026-08-27T05:20:30+09:00"
+}

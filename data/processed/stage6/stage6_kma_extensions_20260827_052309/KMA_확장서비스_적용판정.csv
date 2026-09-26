@@ -1,0 +1,11 @@
+﻿분야,서비스ID,공식서비스명,endpoint,HTTP상태,시작마커,종료마커,응답행수,오류코드,승인확인,실자료확인,분석역할,현재적용판정,판정근거,2027모델직접입력,필수연결키,자료정책
+예특보,fct_shrt_reg,단기 예보구역 최신자료,https://apihub.kma.go.kr/api/typ01/url/fct_shrt_reg.php,200,True,True,563,,True,True,운영 예보구역,운영연결 후보,예보요소·유효시각 추가 검증 후 작업일 안내에 사용,False,발표시각·예보구역,현재 경보와 예측학습자료 분리
+예특보,wrn_now_data_new,현재 기상특보 현황,https://apihub.kma.go.kr/api/typ01/url/wrn_now_data_new.php,200,True,False,281,,True,True,농작업 경보,사용 불가,endpoint 이용승인 필요,False,발표시각·예보구역,현재 경보와 예측학습자료 분리
+예특보,wrn_now_data,현재 기상특보 현황(기존 서비스),https://apihub.kma.go.kr/api/typ01/url/wrn_now_data.php,200,True,False,281,,True,True,농작업 경보,사용 불가,endpoint 이용승인 필요,False,발표시각·예보구역,현재 경보와 예측학습자료 분리
+융합기상,sfc_nc_var,500m 격자 특정지점 다중요소,https://apihub.kma.go.kr/api/typ01/url/sfc_nc_var.php,200,True,True,6,,True,True,500m 공간보조,교차검증,객관분석 격자이며 실측과 분리해 시군구 공백 진단에 사용,False,관측시각·위경도·요소·단위,실측과 객관분석 분리
+융합기상,sfc_obs_nc_sts_pt_api,특정지점 연평균 격자통계,https://apihub.kma.go.kr/api/typ01/url/sfc_obs_nc_sts_pt_api.php,0,False,False,0,TIMEOUT,False,False,장기 격자통계,판정 보류,시간초과 원인과 응답기간 재검증 필요,False,관측시각·위경도·요소·단위,실측과 객관분석 분리
+세계기상,gts_syn,GTS 지상 SYNOP 통합,https://apihub.kma.go.kr/api/typ01/url/gts_syn.php,200,True,True,4,,True,True,국내 SYNOP 대조,교차검증,동일 시각·지점·요소·단위가 일치할 때만 ASOS 대조,False,관측시각·위경도·요소·단위,국내 결측 대체 금지
+세계기상,gts_ship,GTS 선박 관측 통합,https://apihub.kma.go.kr/api/typ01/url/gts_ship.php,200,True,True,7789,,True,True,국제 선박관측,해양 교차검증,국내 해양 결측 대체가 아닌 위치·시각 일치 자료 대조,False,관측시각·위경도·요소·단위,국내 결측 대체 금지
+산업특화,sun_sfc_day,지상 일통계(일사·일조·기온·습도),https://apihub.kma.go.kr/api/typ01/url/sun_sfc_day.php,200,True,True,96,,True,True,농업 일환경,이력수집 후보,전국 과거기간 확보 후 일사·일조·열환경 특징으로 검토,False,관측일·지점번호·요소·단위·평년기준기간,실제 관측과 평년값 분리
+산업특화,sun_sfc_norm,지상 평년값(일조·구름·기온·습도),https://apihub.kma.go.kr/api/typ01/url/sun_sfc_norm.php,200,False,False,1,,True,True,평년 기준선,참고 기준값,실제 연도 관측과 합산하지 않고 편차 기준선으로만 사용,False,관측일·지점번호·요소·단위·평년기준기간,실제 관측과 평년값 분리
+융합기상,nph_sfc_obs_nc_pt_api,500m 격자 특정지점 단일요소,https://apihub.kma.go.kr/api/typ01/cgi-bin/url/nph-sfc_obs_nc_pt_api,200,False,False,6,,True,True,500m 단일요소,교차검증,다중요소 격자 응답의 값·시각 교차검증,False,관측시각·위경도·요소·단위,실측과 객관분석 분리

@@ -1,0 +1,29 @@
+{
+  "source_run": "stage4_aws_minute_20260826_201011",
+  "source_chunk_count": 7056,
+  "source_rows": 51008400,
+  "station_daily_rows": 35423,
+  "station_monthly_rows": 12340,
+  "province_daily_rows": 784,
+  "province_monthly_rows": 272,
+  "unique_stations": 741,
+  "first_time": "2024-01-10",
+  "last_time": "2026-09-16",
+  "year_rows": {
+    "2024": 37230480,
+    "2026": 13777920
+  },
+  "duplicate_rows": 0,
+  "station_join_rate_percent": 100.0,
+  "missing_percent": {
+    "평균기온_C": 4.7991,
+    "평균습도_퍼센트": 7.3766,
+    "누적강수량_mm": 6.2248,
+    "평균풍속_m_s": 5.0419,
+    "최대풍속_m_s": 5.6686
+  },
+  "zero_missing_policy": "0은 실제 관측으로 유지하고 -50 이하 공식 결측코드는 NaN 처리",
+  "rain_policy": "RN-DAY의 지점·일 최대값을 일 누적강수량으로 사용; 매분값을 합산하지 않음",
+  "snapshot_notice": "수집 실행의 완료된 gzip 청크만 읽은 스냅샷이며 원본·체크포인트를 수정하지 않음",
+  "validated_at": "2026-08-27T01:55:50+09:00"
+}

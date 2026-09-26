@@ -1,0 +1,31 @@
+{
+  "run_id": "stage4_surface_marine_aggregate_20260828_124213",
+  "source_marine_run": "stage4_marine_long_term_20240101",
+  "history_shard_count": 901,
+  "history_observation_rows": 163253,
+  "history_valid_rows": 162182,
+  "daily_rows": 6926,
+  "monthly_rows": 368,
+  "latest_spatial_rows": 217,
+  "surface_latest_spatial_rows": 97,
+  "asos_source_rows_scanned": 2250493,
+  "latest_spatial_unique_keys": 217,
+  "latest_duplicate_keys": 0,
+  "missing_rates_percent": {
+    "유의파고": 42.9327,
+    "풍속": 42.6344,
+    "돌풍속": 42.6154,
+    "수온": 26.1827,
+    "기온": 52.4352,
+    "해면기압": 50.3348,
+    "상대습도": 83.1985
+  },
+  "surface_archive_status": {
+    "ASOS": "complete",
+    "AWS": "running"
+  },
+  "marine_archive_status": "request_cap_reached",
+  "no_imputation": true,
+  "actual_zero_preserved": true,
+  "validated_at": "2026-08-28T12:43:08+09:00"
+}

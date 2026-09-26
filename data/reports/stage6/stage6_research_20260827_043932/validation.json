@@ -1,0 +1,110 @@
+{
+  "run_id": "stage6_research_20260827_043932",
+  "inputs": {
+    "asos_file": "data/processed/stage4/stage4_20260825_212325/ASOS_시간관측.csv",
+    "asos_rows_scanned": 2250493,
+    "ncpms_file": "data/processed/stage4/stage4_ncpms_daily_full_20260826_191124_reprocessed_20260826_194433/NCPMS_발생관측_조사일연결.csv",
+    "ncpms_rows": 18419,
+    "stage5_run": "stage5_weather_forecast_20260826_204324"
+  },
+  "analysis": {
+    "station_day_rows": 93859,
+    "province_day_rows": 15488,
+    "rolling_feature_rows": 15488,
+    "analysis_unit_rows": 17519,
+    "feature_relationship_rows": 2505,
+    "reference_or_stronger_relationships": 534,
+    "common_pair_rows": 3041,
+    "forecast_evidence_rows": 1330,
+    "forecast_available_rows": 551,
+    "confidence_counts": {
+      "낮음": 822,
+      "보통": 301,
+      "높음": 207
+    }
+  },
+  "join": {
+    "pre_survey_weather_linked_rows": 18227,
+    "pre_survey_weather_unlinked_rows": 192,
+    "pre_survey_weather_join_percent": 98.9576,
+    "weather_feature_missing_percent": {
+      "기온평균_7일": 0.999,
+      "기온평균_14일": 1.0424,
+      "기온평균_30일": 1.0424,
+      "기온최고_30일": 1.0424,
+      "습도평균_7일": 0.999,
+      "습도평균_14일": 1.0424,
+      "습도평균_30일": 1.0424,
+      "고습노출_30일": 1.0424,
+      "강수누적_7일": 95.0106,
+      "강수누적_14일": 91.6988,
+      "강수누적_30일": 94.9509,
+      "풍속평균_30일": 1.0424,
+      "풍속최대_30일": 1.0424,
+      "고온노출_30일": 1.0424,
+      "강풍노출_30일": 1.0424
+    }
+  },
+  "benchmark": {
+    "selected_model": "persistence",
+    "selected_mae": 8.3163,
+    "models": [
+      {
+        "모델코드": "persistence",
+        "기준선": "2024 값 유지",
+        "검증쌍수": 3041,
+        "MAE": 8.3163,
+        "RMSE": 24.507,
+        "순위상관": 0.5144,
+        "검증방식": "2024 정보로 2026 공통 1~6회차 분리 재현",
+        "주의": "두 연도 내부 비교이며 독립 외부검증이 아님",
+        "선정": true
+      },
+      {
+        "모델코드": "shrinkage",
+        "기준선": "2024 값 75% + 동일 병해충·작물 평균 25%",
+        "검증쌍수": 3041,
+        "MAE": 8.4281,
+        "RMSE": 21.3378,
+        "순위상관": 0.4614,
+        "검증방식": "2024 정보로 2026 공통 1~6회차 분리 재현",
+        "주의": "두 연도 내부 비교이며 독립 외부검증이 아님",
+        "선정": false
+      },
+      {
+        "모델코드": "weather_analog",
+        "기준선": "축소 기준선 + 2024 학습 시차기상 아날로그(±10점)",
+        "검증쌍수": 3041,
+        "MAE": 8.5261,
+        "RMSE": 21.3345,
+        "순위상관": 0.452,
+        "검증방식": "2024 정보로 2026 공통 1~6회차 분리 재현",
+        "주의": "두 연도 내부 비교이며 독립 외부검증이 아님",
+        "선정": false
+      }
+    ],
+    "external_validation": false
+  },
+  "archive": {
+    "aws_response_rows": 12924000,
+    "aws_valid_rows": 12751224,
+    "aws_first_observation": "202401010000",
+    "aws_last_observation": "202401131159",
+    "aws_model_use": "coverage_only_partial_period",
+    "marine_rows": 109275,
+    "marine_model_use": "context_only_partial_period"
+  },
+  "checks": {
+    "source_rows_preserved": true,
+    "actual_zero_distinct_from_missing": true,
+    "future_leakage_violation_rows": 0,
+    "survey_day_excluded_from_weather": true,
+    "forecast_range_0_100": true,
+    "interval_contains_point": true,
+    "no_imputation": true,
+    "aws_partial_not_mixed": true,
+    "marine_partial_not_mixed": true,
+    "year_2026_marked_partial": true
+  },
+  "validated_at": "2026-08-27T04:42:01+09:00"
+}

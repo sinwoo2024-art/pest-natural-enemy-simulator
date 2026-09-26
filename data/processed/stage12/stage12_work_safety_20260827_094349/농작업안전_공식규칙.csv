@@ -1,0 +1,90 @@
+﻿안전항목ID,원천페이지,위험분류,세부분류,안전수칙,출처,원본파일
+RDA-SAFE-0001,3,농업기계,복장,소매나 바짓부리가 덜렁거리지 않는 적절한 작업복을 착용하여 기계에 옷이 말려,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0002,3,농업기계,복장,"작업에 적절한 작업복, 작업모, 안전화, 안전장갑 등의 보호구를 착용한다.",농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0003,3,농업기계,안전점검,"정기적으로 점검 / 수리하며, 사용 전에 부품 상태 및 긴급정지 장치를 점검한다.",농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0004,3,농업기계,안전점검,회전 부위 등 사고위험이 있는 곳에는 방호커버나 안전장치를 설치한다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0005,3,농업기계,안전점검,회전체 등 농기계를 점검/수리 할 때는 반드시 먼저 시동을 끈다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0006,3,농업기계,안전운전,"경사지, 좁은 농로, 방향 전환 시 속도를 줄인다.",농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0007,3,농업기계,안전운전,"야간 및 악천후를 대비해 야간반사판, 등화장치 등 안전장치를 점검한다.",농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0008,3,농업기계,안전운전,"주/정차 시에는 반드시 시동을 끄고, 주차 브레이크를 걸어준다.",농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0009,3,농업기계,안전운전,도로에서는 반드시 교통법규를 준수한다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0010,3,농업기계,안전운전,음주운전은 절대로 하지 않는다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0011,4,폭염/자외선,,"햇빛에 장시간 노출되는 야외작업을 할 때는 자외선 차단제를 바르고, 모자, 긴팔,",농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0012,4,폭염/자외선,,폭염특보 시 가장 더운 시간대(낮 12시~오후 5시)에는 작업을 중단한다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0013,4,폭염/자외선,,작업하는 동안 시원한 곳에서 적절한 휴식을 자주 취한다,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0014,4,폭염/자외선,,물을 항상 휴대하며 자주 마신다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0015,4,폭염/자외선,,"무더위로 인한 탈수, 열사병 등에 대한 예방과 응급조치 방법을 알고 있다.",농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0016,4,폭염/자외선,,가능한 2인 1조로 작업한다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0017,4,폭염/자외선,,여름철에는 낮 시간대를 피한 새벽이나 늦은 오후에 작업을 한다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0018,4,응급처치,,위급상황 시 응급조치 방법을 잘 알고 있다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0019,4,응급처치,,구급상자를 즉시 사용할 수 있는 위치에 두거나 작업장에 가지고 다닌다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0020,4,안전의식,안전보험,농업인안전보험 또는 농기계종합보험에 가입한다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0021,4,안전의식,교육/훈련,농작업 관련 유해/위험요인 및 안전관리에 대한 교육/훈련을 받는다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0022,5,농약,개인보호구,"농약 살포시 방제복, 마스크, 보안경, 모자, 장갑, 보호장화를 모두 착용한다.",농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0023,5,농약,개인보호구,"농약 살포 전 농약을 희석할 때에도 마스크, 보안경, 장갑 등을 착용한다.",농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0024,5,농약,개인보호구,"개인보호구 사용 전에 상태를 점검하고, 사용 후에는 일반 옷과 분리하여",농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0025,5,농약,개인보호구,농약방제복의 바짓부리는 장화 밖으로 빼서 입는다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0026,5,농약,위험알림,농약 살포 중과 살포 후에 ‘농약살포지역’을 알리는 위험안내 표지판을 설치한다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0027,5,농약,안전관리,SS기의 운전석이 농약노출로부터 안전하게 차단될 수 있도록 한다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0028,5,농약,안전관리,농약살포 후에는 빠른 시간 내에 비누로 샤워한다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0029,5,농약,안전관리,농약을 살포한 장소에 일정시간 들어가지 않는다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0030,5,농약,안전관리,"고독성농약을 마신 경우 119를 호출하며, 농약명을 의료진에게 알려준다.",농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0031,5,농약,농약 보관/처리,농약은 잠금장치가 있는 보관함에 종류별로 구분하여 보관한다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0032,5,농약,농약 보관/처리,사용한 농약병과 폐기물은 별도의 장소에 보관 후 안전하게 처리한다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0033,5,농약,농약 보관/처리,농약 희석 시에는 남은 농약을 다른 병에 옮겨 담지 않는다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0034,6,추락/미끄러짐/넘어짐,작업환경,"미끄러운 바닥, 발에 걸리는 턱, 패인 곳 등 위험한 바닥을 개선한다.",농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0035,6,추락/미끄러짐/넘어짐,작업환경,통로 폭과 농작업 환경을 사람과 운반차가 이동하기 적합하게 정리한다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0036,6,추락/미끄러짐/넘어짐,작업화,미끄럼 방지 기능이 우수한 농작업화를 착용한다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0037,6,추락/미끄러짐/넘어짐,작업화,미끄러지지 않도록 신발 바닥의 이물질을 자주 제거한다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0038,6,추락/미끄러짐/넘어짐,사다리,사용 전에 사다리 파손 여부를 확인한다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0039,6,추락/미끄러짐/넘어짐,사다리,"안전모, 개인보호구, 작업화를 반드시 착용한다.",농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0040,6,추락/미끄러짐/넘어짐,사다리,평평하고 견고한 지면에 사다리를 설치하여 사용한다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0041,6,추락/미끄러짐/넘어짐,사다리,사다리와 지면과의 각도는 75도 이내로 유지하여 설치한다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0042,6,추락/미끄러짐/넘어짐,사다리,계단식(A자형) 사다리는 펼침 방지 장치와 전도 방지대를 부착한다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0043,6,추락/미끄러짐/넘어짐,사다리,사다리의 위쪽 3개 발판 아래에서 작업한다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0044,6,추락/미끄러짐/넘어짐,사다리,두 손과 두 다리 중 세 군데를 사다리에 접촉하여 유지한다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0045,6,추락/미끄러짐/넘어짐,과수원,사다리나 고소작업차 작업을 할 때 2인 1조로 작업한다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0046,6,추락/미끄러짐/넘어짐,과수원,사다리를 경사지에서 사용 시 경사가 낮은 곳에서 높은 방향으로 설치한다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0047,6,추락/미끄러짐/넘어짐,과수원,고소작업차 작업 시 경사지 전복사고에 주의한다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0048,6,추락/미끄러짐/넘어짐,과수원,고소작업차 작업 시 최대 적재중량을 초과하지 않는다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0049,7,근골격계질환,스트레칭,농작업 전/중/후에 바른 자세로 스트레칭을 한다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0050,7,근골격계질환,편이장비,허리를 구부리거나 쪼그리고 앉는 자세를 피하도록 보조도구를 사용한다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0051,7,근골격계질환,편이장비,"반복적인 작업에는 작업대를 사용하고, 작업대 높이는 팔꿈치 정도 혹은",농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0052,7,근골격계질환,편이장비,"의자에 앉아 작업하는 경우, 등받이가 있는 적절한 높이의 의자를 사용한다.",농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0053,7,근골격계질환,무거운 물건,"무거운 물건을 운반하는 경우, 운반차 등 바퀴가 달린 기구나 롤러 등을 이용한다.",농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0054,7,근골격계질환,무거운 물건,"운반거리를 최소화하고, 가능한 무게와 크기를 줄여서 여러 번에 나누어 운반한다.",농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0055,7,근골격계질환,무거운 물건,"바닥에 있는 물건을 들어 올리는 경우, 허리를 곧게 편 상태에서 무릎을 굽히고,",농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0056,7,근골격계질환,작업관리,"서로 다른 신체부위를 사용하는 작업을 교대로 하여, 신체부담을 줄인다.",농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0057,7,근골격계질환,작업관리,오래 일하고 길게 쉬는 것보다 짧고 잦은 휴식을 취한다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0058,8,시설환경,통로,통로를 넓고 깨끗하게 정리한다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0059,8,시설환경,통로,계단으로 된 곳에는 경사로를 만들어 턱이 없도록 한다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0060,8,시설환경,조명,"창고, 축사, 작업장, 계단 등에는 충분한 밝기의 조명을 설치한다.",농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0061,8,시설환경,조명,"조명을 설치/해체하는 경우, 전원을 차단하고 안전보호구를 착용한다.",농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0062,8,시설환경,정리,연장이나 농기구를 찾기 쉽게 정리해 둔다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0063,8,시설환경,정리,작업장을 편리하게 이용할 수 있도록 정리정돈한다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0064,8,시설환경,청결,곰팡이나 미생물 방지를 위해 청결을 유지한다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0065,8,시설환경,청결,쾌적한 작업 환경을 위해 환기를 자주 한다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0066,8,시설환경,위험장소,"위험장소(사일로, 비료저장고, 화학물질 저장고, 축사 등)의 문은 어린이나",농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0067,8,시설환경,위험장소,위험장소의 입구에 적절한 ‘안전표지’를 부착한다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0068,9,축사,복장/개인보호구,"작업에 적절한 안전모, 미끄럼방지 작업화, 방진마스크, 보안경 등 개인보호구를 착용한다.",농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0069,9,축사,복장/개인보호구,주사바늘 찔림사고 방지를 위해 안전장갑을 착용한다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0070,9,축사,복장/개인보호구,"분뇨처리 시설에서는 송기마스크, 가스경보장치 등 안전장비를 착용한다.",농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0071,9,축사,전기,전선 및 전선 연결 부위를 정기적으로 점검한다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0072,9,축사,전기,동물에 의한 전기 시설의 손상을 예방하고 점검한다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0073,9,축사,전기,인체감전방지용 누전차단기를 설치하고 정기적으로 점검한다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0074,9,축사,환경,환기 시설의 성능을 정기적으로 점검하고 관리한다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0075,9,축사,환경,"분뇨처리 시설에 ‘경고표지’를 부착하고, 작업 시 질식사고 예방수칙을 철저히 준수한다.",농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0076,9,축사,환경,끼임사고의 위험이 있는 기계에 방호물을 설치한다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0077,9,축사,환경,소화기와 구급함은 눈에 띄는 장소에 비치한다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0078,9,축사,환경,작업장의 정리정돈을 생활화한다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0079,9,축사,작업,위험한 작업의 경우 2인 1조로 작업한다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0080,10,감염성 질환,"진드기 매개 감염병(SFTS, 쯔쯔가무시증), 설치류 매개 감염병","피부 노출을 최소화하는 작업복을 입고 모자, 목수건, 토시, 장갑, 양말,",농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0081,10,감염성 질환,"진드기 매개 감염병(SFTS, 쯔쯔가무시증), 설치류 매개 감염병","작업복의 목과 소매 주위를 단단히 여미고, 바짓 부리는 양말 안으로 넣어 입는다.",농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0082,10,감염성 질환,"진드기 매개 감염병(SFTS, 쯔쯔가무시증), 설치류 매개 감염병",농작업 전 진드기 기피제를 충분히 뿌린다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0083,10,감염성 질환,"진드기 매개 감염병(SFTS, 쯔쯔가무시증), 설치류 매개 감염병",풀밭에 눕거나 풀숲 위에 옷을 벗어놓지 않는다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0084,10,감염성 질환,"진드기 매개 감염병(SFTS, 쯔쯔가무시증), 설치류 매개 감염병",농작업 후에 바로 샤워를 한다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0085,10,감염성 질환,"진드기 매개 감염병(SFTS, 쯔쯔가무시증), 설치류 매개 감염병",사용한 작업복은 일반 세탁물과 분리하여 세탁한다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0086,10,감염성 질환,인수공통감염병,"분만, 유산 처리를 할 때는 마스크, 보호복, 보호장갑(방수장갑), 앞치마,",농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0087,10,감염성 질환,인수공통감염병,신발의 세척 및 위생 관리를 철저히 한다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0088,10,감염성 질환,인수공통감염병,작업 중 음식물이나 음료를 섭취하지 않는다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf
+RDA-SAFE-0089,10,감염성 질환,인수공통감염병,주기적인 건강검진을 통해 의학적 건강관리를 한다.,농촌진흥청 농작업 안전 자가점검 체크리스트,data/raw_external/rda_work_safety_self_check.pdf

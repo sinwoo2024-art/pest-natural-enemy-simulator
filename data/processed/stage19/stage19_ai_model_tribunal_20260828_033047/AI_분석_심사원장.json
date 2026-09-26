@@ -1,0 +1,48 @@
+{
+  "status": "complete",
+  "run_id": "stage19_ai_model_tribunal_20260828_033047",
+  "source_stage6": "stage6_research_20260827_043932",
+  "analysis_design": "matched-unit retrospective model tribunal",
+  "target_label_years": [
+    2024,
+    2026
+  ],
+  "common_spatiotemporal_pairs": 3041,
+  "bootstrap_repeats": 1000,
+  "random_seed": 20270827,
+  "candidate_models": 3,
+  "selected_model": "persistence",
+  "selected_model_name": "2024 값 유지",
+  "selected_mae": 8.3163,
+  "selected_mae_ci95": [
+    7.5889,
+    9.1802
+  ],
+  "leave_one_region_out_scenarios": 14,
+  "selection_stability_percent": 100.0,
+  "subgroup_error_rows": 231,
+  "feature_stability_rows": 15,
+  "comparison_evidence": [
+    {
+      "선정모델": "persistence",
+      "비교모델": "shrinkage",
+      "MAE개선_평균": 0.107,
+      "MAE개선_95하한": -0.0828,
+      "MAE개선_95상한": 0.2809,
+      "선정모델_우세확률": 0.88,
+      "해석": "양수이면 선정모델의 절대오차가 더 작음"
+    },
+    {
+      "선정모델": "persistence",
+      "비교모델": "weather_analog",
+      "MAE개선_평균": 0.2048,
+      "MAE개선_95하한": 0.0175,
+      "MAE개선_95상한": 0.3743,
+      "선정모델_우세확률": 0.979,
+      "해석": "양수이면 선정모델의 절대오차가 더 작음"
+    }
+  ],
+  "leakage_guard": "2024 information only for 2026 retrospective validation",
+  "zero_missing_policy": "observed zero preserved; missing not imputed as zero",
+  "claim_boundary": "relative-risk outlook, not occurrence probability or causal treatment effect"
+}

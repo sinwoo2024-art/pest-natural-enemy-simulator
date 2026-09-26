@@ -1,0 +1,3 @@
+# Preserve reviewed data snapshot bytes and the manifest hashes across platforms.
+/data/** -text
+*.xlsx -text

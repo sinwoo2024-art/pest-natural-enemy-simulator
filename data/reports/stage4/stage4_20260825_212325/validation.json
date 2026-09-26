@@ -1,0 +1,270 @@
+{
+  "2026_data_status": "부분연도",
+  "actual_api_request_count": 23390,
+  "completion_rule": "선택한 모든 자료종류의 시작~종료 시간별 shard가 존재하고, 실패 시각 0건, 지점정보 완료, 필수 열과 최종 CSV가 모두 검증된 경우만 true",
+  "daily_quota": {
+    "date_kst": "2026-08-25",
+    "detected_at": "2026-08-25T22:47:57+09:00",
+    "resume_after_kst": "2026-08-26T00:00:00+09:00",
+    "service": "ASOS",
+    "source_file": "data/raw/kma/stage4_20260825_212325/raw_responses/ASOS/00020138_ASOS_202604131900_attempt1.txt",
+    "status": "reached"
+  },
+  "end_hour": "202608252000",
+  "expected_hour_count": 23229,
+  "full_collection_verified": false,
+  "mode": "full",
+  "run_id": "stage4_20260825_212325",
+  "run_status": "validation_incomplete",
+  "services": {
+    "ASOS": {
+      "calls_failed": 2,
+      "calls_succeeded": 23229,
+      "checkpoint_shard_count": 23229,
+      "duplicate_count": 0,
+      "failed_hour_count": 0,
+      "first_observation_time": "2024-01-01 00:00:00",
+      "last_observation_time": "2026-08-25 20:00:00",
+      "missing_rates_percent": {
+        "강수량": 90.501459,
+        "기온": 0.068296,
+        "상대습도": 0.146146,
+        "일사": 64.455566,
+        "일조": 44.908649,
+        "지면온도": 0.218797,
+        "풍속": 0.124462,
+        "풍향": 0.127439
+      },
+      "no_data_hour_count": 0,
+      "output_file": "data/processed/stage4/stage4_20260825_212325/ASOS_시간관측.csv",
+      "raw_fields_preserved": [
+        "BF",
+        "CA_MID",
+        "CA_TOT",
+        "CH_MIN",
+        "CT",
+        "CT_LOW",
+        "CT_MID",
+        "CT_TOP",
+        "GST_TM",
+        "GST_WD",
+        "GST_WS",
+        "HM",
+        "IR",
+        "IX",
+        "PA",
+        "PR",
+        "PS",
+        "PT",
+        "PV",
+        "RN",
+        "RN_DAY",
+        "RN_INT",
+        "RN_JUN",
+        "SD_DAY",
+        "SD_HR3",
+        "SD_TOT",
+        "SI",
+        "SS",
+        "STN",
+        "ST_GD",
+        "ST_SEA",
+        "TA",
+        "TD",
+        "TE_005",
+        "TE_01",
+        "TE_02",
+        "TE_03",
+        "TM",
+        "TS",
+        "VS",
+        "WC",
+        "WD",
+        "WH",
+        "WP",
+        "WS",
+        "WW"
+      ],
+      "required_columns_present": true,
+      "row_count": 2250493,
+      "station_count": 97,
+      "status": "complete",
+      "yearly_rows": {
+        "2024": 850960,
+        "2025": 848771,
+        "2026": 550762
+      }
+    },
+    "AWS": {
+      "calls_failed": 2,
+      "calls_succeeded": 0,
+      "checkpoint_shard_count": 0,
+      "duplicate_count": 0,
+      "failed_hour_count": 1,
+      "first_observation_time": null,
+      "last_observation_time": null,
+      "missing_rates_percent": {
+        "강수량": null,
+        "기온": null,
+        "상대습도": null,
+        "일사": null,
+        "일조": null,
+        "지면온도": null,
+        "풍속": null,
+        "풍향": null
+      },
+      "no_data_hour_count": 0,
+      "output_file": "data/processed/stage4/stage4_20260825_212325/AWS_시간관측.csv",
+      "raw_fields_preserved": [],
+      "required_columns_present": true,
+      "row_count": 0,
+      "station_count": 0,
+      "status": "access_not_approved",
+      "yearly_rows": {}
+    }
+  },
+  "start_hour": "202401010000",
+  "stations": {
+    "access_not_approved_types": [],
+    "calls_failed": 26,
+    "calls_succeeded": 8,
+    "errors": [
+      {
+        "at": "2026-08-25T21:23:29+09:00",
+        "error": "KMA API 활용신청 권한 없음 HTTP 403",
+        "label": "SFC_202401010000"
+      },
+      {
+        "at": "2026-08-25T21:23:35+09:00",
+        "error": "KMA API 활용신청 권한 없음 HTTP 403",
+        "label": "AWS_202401010000"
+      },
+      {
+        "at": "2026-08-25T21:27:49+09:00",
+        "error": "KMA API 활용신청 권한 없음 HTTP 403",
+        "label": "SFC_202401010000"
+      },
+      {
+        "at": "2026-08-25T21:27:52+09:00",
+        "error": "KMA API 활용신청 권한 없음 HTTP 403",
+        "label": "AWS_202401010000"
+      },
+      {
+        "at": "2026-08-25T21:30:41+09:00",
+        "error": "KMA API 활용신청 권한 없음 HTTP 403",
+        "label": "SFC_202401010000"
+      },
+      {
+        "at": "2026-08-25T21:30:45+09:00",
+        "error": "KMA API 활용신청 권한 없음 HTTP 403",
+        "label": "AWS_202401010000"
+      },
+      {
+        "at": "2026-08-25T21:32:41+09:00",
+        "error": "KMA API 활용신청 권한 없음 HTTP 403",
+        "label": "SFC_202401010000"
+      },
+      {
+        "at": "2026-08-25T21:32:47+09:00",
+        "error": "KMA API 활용신청 권한 없음 HTTP 403",
+        "label": "AWS_202401010000"
+      },
+      {
+        "at": "2026-08-25T21:34:47+09:00",
+        "error": "KMA API 활용신청 권한 없음 HTTP 403",
+        "label": "SFC_202401010000"
+      },
+      {
+        "at": "2026-08-25T21:34:54+09:00",
+        "error": "KMA API 활용신청 권한 없음 HTTP 403",
+        "label": "AWS_202401010000"
+      },
+      {
+        "at": "2026-08-25T21:38:38+09:00",
+        "error": "KMA API 활용신청 권한 없음 HTTP 403",
+        "label": "SFC_202401010000"
+      },
+      {
+        "at": "2026-08-25T21:38:41+09:00",
+        "error": "KMA API 활용신청 권한 없음 HTTP 403",
+        "label": "AWS_202401010000"
+      },
+      {
+        "at": "2026-08-25T21:46:51+09:00",
+        "error": "KMA API 활용신청 권한 없음 HTTP 403",
+        "label": "SFC_202401010000"
+      },
+      {
+        "at": "2026-08-25T21:46:54+09:00",
+        "error": "KMA API 활용신청 권한 없음 HTTP 403",
+        "label": "AWS_202401010000"
+      },
+      {
+        "at": "2026-08-25T22:02:12+09:00",
+        "error": "KMA API 활용신청 권한 없음 HTTP 403",
+        "label": "SFC_202401010000"
+      },
+      {
+        "at": "2026-08-25T22:02:17+09:00",
+        "error": "KMA API 활용신청 권한 없음 HTTP 403",
+        "label": "AWS_202401010000"
+      },
+      {
+        "at": "2026-08-25T22:36:10+09:00",
+        "error": "KMA API 활용신청 권한 없음 HTTP 403",
+        "label": "SFC_202401010000"
+      },
+      {
+        "at": "2026-08-25T22:36:15+09:00",
+        "error": "KMA API 활용신청 권한 없음 HTTP 403",
+        "label": "AWS_202401010000"
+      },
+      {
+        "at": "2026-08-25T22:52:25+09:00",
+        "error": "요청 재시도 소진 service=STATION, endpoint=https://apihub.kma.go.kr/api/typ01/url/stn_inf.php, params={'inf': 'SFC', 'stn': 0, 'tm': '202401010000', 'help': 0}, error=URLError",
+        "label": "SFC_202401010000"
+      },
+      {
+        "at": "2026-08-25T22:52:40+09:00",
+        "error": "요청 재시도 소진 service=STATION, endpoint=https://apihub.kma.go.kr/api/typ01/url/stn_inf.php, params={'inf': 'SFC', 'stn': 0, 'tm': '202501010000', 'help': 0}, error=URLError",
+        "label": "SFC_202501010000"
+      },
+      {
+        "at": "2026-08-25T22:52:55+09:00",
+        "error": "요청 재시도 소진 service=STATION, endpoint=https://apihub.kma.go.kr/api/typ01/url/stn_inf.php, params={'inf': 'SFC', 'stn': 0, 'tm': '202601010000', 'help': 0}, error=URLError",
+        "label": "SFC_202601010000"
+      },
+      {
+        "at": "2026-08-25T22:53:10+09:00",
+        "error": "요청 재시도 소진 service=STATION, endpoint=https://apihub.kma.go.kr/api/typ01/url/stn_inf.php, params={'inf': 'SFC', 'stn': 0, 'tm': '202608252000', 'help': 0}, error=URLError",
+        "label": "SFC_202608252000"
+      },
+      {
+        "at": "2026-08-25T22:53:25+09:00",
+        "error": "요청 재시도 소진 service=STATION, endpoint=https://apihub.kma.go.kr/api/typ01/url/stn_inf.php, params={'inf': 'AWS', 'stn': 0, 'tm': '202401010000', 'help': 0}, error=URLError",
+        "label": "AWS_202401010000"
+      },
+      {
+        "at": "2026-08-25T22:53:40+09:00",
+        "error": "요청 재시도 소진 service=STATION, endpoint=https://apihub.kma.go.kr/api/typ01/url/stn_inf.php, params={'inf': 'AWS', 'stn': 0, 'tm': '202501010000', 'help': 0}, error=URLError",
+        "label": "AWS_202501010000"
+      },
+      {
+        "at": "2026-08-25T22:53:55+09:00",
+        "error": "요청 재시도 소진 service=STATION, endpoint=https://apihub.kma.go.kr/api/typ01/url/stn_inf.php, params={'inf': 'AWS', 'stn': 0, 'tm': '202601010000', 'help': 0}, error=URLError",
+        "label": "AWS_202601010000"
+      },
+      {
+        "at": "2026-08-25T22:54:10+09:00",
+        "error": "요청 재시도 소진 service=STATION, endpoint=https://apihub.kma.go.kr/api/typ01/url/stn_inf.php, params={'inf': 'AWS', 'stn': 0, 'tm': '202608252000', 'help': 0}, error=URLError",
+        "label": "AWS_202608252000"
+      }
+    ],
+    "failed_labels": {},
+    "output_row_count": 847,
+    "raw_snapshot_row_count": 3337,
+    "row_count": 3337,
+    "status": "complete"
+  },
+  "validated_at": "2026-08-26T15:25:21+09:00"
+}

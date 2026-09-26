@@ -1,0 +1,23 @@
+.review { color: #173f2a; min-width: 0; font-size: 13px; line-height: 1.65; }
+.review h3 { margin: 0 0 12px; font-size: 21px; }
+.review h4 { margin: 0 0 10px; font-size: 15px; }
+.review p { overflow-wrap: anywhere; }
+.step { padding: 18px 0; border-bottom: 1px solid #dce3dc; }
+.inputs { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; }
+.review label { display: flex; flex-direction: column; gap: 6px; margin: 8px 0; font-weight: 600; }
+.review input,.review select { width: 100%; min-width: 0; padding: 9px; border: 1px solid #bacdbd; border-radius: 4px; background: white; color: #173f2a; font: inherit; }
+.review small { font-weight: 400; color: #52665a; }
+.review .check { flex-direction: row; align-items: center; }
+.check input { width: auto; }
+.review dl { margin: 10px 0; }
+.review dt { font-weight: 700; }
+.review dd { margin: 0 0 8px; overflow-wrap: anywhere; }
+.review a { text-decoration: underline; }
+.tableWrap { overflow-x: auto; max-width: 100%; }
+.review table { border-collapse: collapse; width: 100%; font-size: 12px; }
+.review th,.review td { border-bottom: 1px solid #dce3dc; padding: 8px; text-align: right; white-space: nowrap; }
+.review caption { text-align: left; font-weight: 700; }
+.verdict { margin-top: 18px; padding: 18px; border-left: 4px solid #dc6c27; background: #f1f6ef; }
+.verdict strong { font-size: 20px; }
+.notice { padding: 14px; background: #fff6ec; border: 1px solid #ead8c7; }
+@media(max-width:600px) { .inputs { grid-template-columns: 1fr; } .review h3 { font-size: 18px; } }

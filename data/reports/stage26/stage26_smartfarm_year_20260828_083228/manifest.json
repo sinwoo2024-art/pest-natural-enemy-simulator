@@ -1,0 +1,27 @@
+{
+  "run_id": "stage26_smartfarm_year_20260828_083228",
+  "created_at": "2026-08-28T08:33:50+09:00",
+  "credential": {
+    "environment": "SMARTFARM_API_KEY",
+    "configured": true,
+    "length": 32,
+    "raw_value_recorded": false
+  },
+  "requests": {
+    "actual": 1883,
+    "success": 1883,
+    "failure": 0
+  },
+  "summary": {
+    "farm_count": 238,
+    "farm_season_rows": 651,
+    "season_date_rows": 651,
+    "crop_count": 5,
+    "province_count": 12,
+    "district_count": 67,
+    "management_output_observed_seasons": 161,
+    "management_cost_observed_seasons": 7
+  },
+  "output": "data\\processed\\stage26\\stage26_smartfarm_year_20260828_083228\\smartfarm_year_evidence.json",
+  "raw_directory": "data\\raw\\smartfarm\\stage26_smartfarm_year_20260828_083228"
+}

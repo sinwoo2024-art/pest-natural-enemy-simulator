@@ -1,0 +1,53 @@
+{
+  "input": {
+    "ncpms_file": "data/processed/stage4/stage4_ncpms_daily_full_20260826_191124_reprocessed_20260826_194433/NCPMS_발생관측_조사일연결.csv",
+    "ncpms_rows": 18419,
+    "asos_file": "data/processed/stage4/stage4_1_asos_ncpms_20260826_145717/ASOS_시도월별_집계.csv"
+  },
+  "join": {
+    "linked_rows": 18235,
+    "unlinked_rows": 184,
+    "join_success_percent": 99.001,
+    "true_region_mismatch_rows": 0,
+    "unmatched_regions_within_available_months": [],
+    "outside_asos_available_period_rows": 184,
+    "outside_asos_available_period_year_months": [
+      "2026-09"
+    ],
+    "weather_missing_percent": {
+      "평균기온_C": 0.999,
+      "평균습도_퍼센트": 0.999,
+      "지점평균누적강수량_mm": 0.999,
+      "평균풍속_m_s": 0.999
+    }
+  },
+  "duplicate_control": {
+    "source_rows_preserved": 18419,
+    "content_duplicate_extra_rows": 823,
+    "analytical_representative_rows": 17596
+  },
+  "analysis": {
+    "region_month_pest_crop_rows": 4980,
+    "relationship_rows": 668,
+    "relationship_reference_or_stronger": 133,
+    "forecast_rows": 1330,
+    "forecast_available": 551,
+    "weather_adjusted_rows": 0,
+    "max_absolute_weather_adjustment": 0,
+    "weather_support_index_nonzero_rows": 524,
+    "weather_support_index_abs_0_3_or_more_rows": 0,
+    "weather_support_index_min": -0.0932,
+    "weather_support_index_max": 0.206,
+    "monthly_outlook_rows": 15960,
+    "monthly_scores_available": 1958
+  },
+  "checks": {
+    "source_rows_not_deleted": true,
+    "zero_distinct_from_missing": true,
+    "forecast_range_0_100": true,
+    "weather_adjustment_bounded_3": true,
+    "no_2027_weather_imputation": true,
+    "year_2026_marked_partial": true
+  },
+  "validated_at": "2026-08-26T20:43:38+09:00"
+}
