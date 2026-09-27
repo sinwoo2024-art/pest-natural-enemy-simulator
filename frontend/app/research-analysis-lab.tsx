@@ -413,6 +413,11 @@ export default function ResearchAnalysisLab({
           </div>
         </header>
 
+        <aside aria-label="Kiln 연동 상태">
+          <strong>Kiln · {process.env.KILN_MODEL} (연동 예정)</strong>
+          <p>Kiln 팀 계정 및 API 접근권한 대기 중</p>
+        </aside>
+
         {loading && <div className={styles.state}>225만 ASOS 시간자료 기반 연구근거를 불러오는 중입니다.</div>}
         {error && <div className={`${styles.state} ${styles.error}`}>{error}</div>}
         {!loading && !error && data?.status !== "complete" && (

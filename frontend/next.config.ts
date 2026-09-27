@@ -1,7 +1,14 @@
 import type { NextConfig } from "next";
 
+// Model identifier only: never expose credentials via Next.js env configuration.
+const kilnModel = process.env.KILN_MODEL?.trim() || "Qwen3-32B";
+if (kilnModel !== "Qwen3-32B") {
+  throw new Error("KILN_MODEL must be Qwen3-32B. Kiln integration remains pending.");
+}
+
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  env: { KILN_MODEL: kilnModel },
   async headers() {
     return [
       {
