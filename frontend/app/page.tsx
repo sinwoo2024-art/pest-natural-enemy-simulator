@@ -522,6 +522,7 @@ export default function Home() {
   }
 
   async function handleCropChange(nextCrop: string) {
+    if (nextCrop === crop) return;
     simulationRequestSequence.current += 1;
     setLoading(false);
     setCrop(nextCrop);
@@ -532,6 +533,7 @@ export default function Home() {
   }
 
   async function handlePestChange(nextPest: string) {
+    if (nextPest === pest) return;
     simulationRequestSequence.current += 1;
     setLoading(false);
     setPest(nextPest);
@@ -542,6 +544,7 @@ export default function Home() {
   }
 
   function handleRegionChange(nextRegion: string) {
+    if (nextRegion === region) return;
     simulationRequestSequence.current += 1;
     setLoading(false);
     setRegion(nextRegion);
@@ -555,6 +558,7 @@ export default function Home() {
     nextPest = pest,
     nextCrop = crop,
     nextRegion = region,
+    reveal = true,
   ) {
     if (!nextPest) {
       setSimulationError("분석할 병해충을 선택하세요.");
@@ -563,7 +567,7 @@ export default function Home() {
 
     const requestSequence = ++simulationRequestSequence.current;
     setLoading(true);
-    revealSimulationResultRef.current = true;
+    revealSimulationResultRef.current = reveal;
     setSimulationError(null);
     try {
       const params = new URLSearchParams({ pest: nextPest });
@@ -574,12 +578,26 @@ export default function Home() {
       setResult(simulation);
     } catch (error) {
       if (requestSequence !== simulationRequestSequence.current) return;
-      setResult(null);
       setSimulationError(`분석 요청 실패 · ${messageFromError(error)}`);
     } finally {
       if (requestSequence === simulationRequestSequence.current) setLoading(false);
     }
   }
+
+  const lastAnalysisCondition = useRef(`${crop}|${pest}|${region}`);
+  useEffect(() => {
+    const condition = `${crop}|${pest}|${region}`;
+    if (lastAnalysisCondition.current === condition) return;
+    lastAnalysisCondition.current = condition;
+    const sequence = simulationRequestSequence.current;
+    setLoading(true);
+    const timer = window.setTimeout(() => {
+      if (sequence === simulationRequestSequence.current) void runSimulation(pest, crop, region, false);
+    }, 300);
+    return () => window.clearTimeout(timer);
+    // Explicit current selection; avoid a request on unrelated rerenders.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [crop, pest, region]);
 
   useEffect(() => {
     if (!result || !revealSimulationResultRef.current) return;
@@ -1030,6 +1048,7 @@ export default function Home() {
           </aside>
 
           <div className="resultsPanel" id="analysis-output" ref={simulationResultRef} tabIndex={-1}>
+            {simulationError && result && <p role="alert">{simulationError} · 같은 조건의 마지막 성공 결과를 유지합니다.</p>}
             {!result ? (
               <div className={`emptyState${simulationError ? " isError" : ""}`} role={simulationError ? "alert" : "status"}>
                 <Activity size={32} />
@@ -1102,6 +1121,71 @@ export default function Home() {
               </>
             )}
           </div>
+        </div>
+      </section>
+
+      <section className="recommendSection" id="evidence">
+        <div className="sectionHeading light">
+          <div><span className="sectionNumber">03</span><div><p>{result?.is_natural_enemy_target === false ? "TYPE-SPECIFIC RESPONSE" : "NATURAL ENEMY MATCH"}</p><h2>{result?.is_natural_enemy_target === false ? (result.category === "선충" ? "식물기생선충 관리 안내" : `${result.category} 관리 안내`) : "추천 천적곤충과 활용 근거"}</h2></div></div>
+          <p>{result?.is_natural_enemy_target === false ? <>천적곤충을 잘못 연결하지 않고 병해충 유형에 맞는<br />예찰·재배환경·전문가 확인 중심의 대응을 안내합니다.</> : <>단순 이름 매칭이 아니라 대상해충·이용방법·공식 출처를<br />함께 제시해 설명 가능한 추천을 만듭니다.</>}</p>
+        </div>
+        {result && (
+          <div className="responseRouteStatus">
+            <CheckCircle2 size={20} />
+            <div>
+              <small>RESPONSE ROUTE CONNECTED</small>
+              <b>
+                {result.pest} → {result.is_natural_enemy_target
+                  ? `천적곤충 추천 ${result.recommendations.length}건`
+                  : `${result.category} 통합관리 프로토콜`}
+              </b>
+              <p>
+                {result.is_natural_enemy_target
+                  ? "대상해충명이 천적 DB의 적용 대상과 일치한 결과입니다."
+                  : result.category === "해충"
+                    ? "직접 일치하는 천적 근거가 없어 임의 추천하지 않고 해충 통합관리 경로로 연결합니다."
+                    : `${result.category}은 천적곤충 유무가 아니라 진단·예방·환경·등록 방제 경로로 연결됩니다.`}
+              </p>
+            </div>
+            <span>{result.is_natural_enemy_target ? "천적 연결" : "유형별 대응 연결"}</span>
+          </div>
+        )}
+        <div className="enemyGrid">
+          {result?.is_natural_enemy_target && result.recommendations.slice(0, 3).map((enemy, index) => <article className="enemyCard" key={`${enemy.name}-${index}`}><div className="enemyIcon"><Bug size={24} /></div><span className="rank">추천 {String(index + 1).padStart(2, "0")}</span><h3>{enemy.name}</h3><i>{enemy.scientific_name}</i><div className="tags"><span>{enemy.type}</span><span>{enemy.source}</span></div><p>{enemy.usage && enemy.usage !== "nan" ? enemy.usage.slice(0, 150) + (enemy.usage.length > 150 ? "…" : "") : `${enemy.target} 방제에 활용 가능한 천적곤충입니다.`}</p><footer><CheckCircle2 size={16} /> 대상해충 매칭 확인</footer></article>)}
+          {result?.is_natural_enemy_target && result.recommendations.length === 0 && <div className="emptyEnemies">현재 DB에서 연결된 천적곤충을 찾지 못했습니다. 대상해충을 다시 확인하거나 천적 DB의 근거를 추가하세요.</div>}
+          {result && !result.is_natural_enemy_target && (
+            <article className="managementResponseCard">
+              <div className="managementRouteHeader">
+                <span><ShieldCheck size={24} /></span>
+                <div>
+                  <small>{result.pest} 대응 경로</small>
+                  <h3>{result.category} · {displayedResponseType}</h3>
+                </div>
+                <strong>연결 완료</strong>
+              </div>
+              <p className="managementMessage">
+                {displayedManagementMessage}
+              </p>
+              {displayedManagementSteps.length ? (
+                <ol className="managementSteps">
+                  {displayedManagementSteps.map((step, index) => (
+                    <li key={`${index}-${step}`}>{step}</li>
+                  ))}
+                </ol>
+              ) : null}
+              {displayedManagementCaution ? (
+                <p className="managementCaution">
+                  ※ 현장 적용 주의: {displayedManagementCaution}
+                </p>
+              ) : null}
+              {displayedManagementEvidence ? (
+                <small className="managementEvidence">
+                  근거: {displayedManagementEvidence}
+                </small>
+              ) : null}
+            </article>
+          )}
+          {!result && <div className="emptyEnemies" role="status">{loading ? "선택 조건의 천적 근거를 함께 확인하고 있습니다." : simulationError ?? "분석 조건을 선택하면 천적 근거를 함께 조회합니다."}<button type="button" disabled={loading} onClick={() => runSimulation(pest, crop, region, false)}>현재 조건 다시 분석</button></div>}
         </div>
       </section>
 
@@ -1189,70 +1273,6 @@ export default function Home() {
 
       <KmaObservationAtlas apiBase={API} />
 
-      <section className="recommendSection" id="evidence">
-        <div className="sectionHeading light">
-          <div><span className="sectionNumber">03</span><div><p>{result?.is_natural_enemy_target === false ? "TYPE-SPECIFIC RESPONSE" : "NATURAL ENEMY MATCH"}</p><h2>{result?.is_natural_enemy_target === false ? (result.category === "선충" ? "식물기생선충 관리 안내" : `${result.category} 관리 안내`) : "추천 천적곤충과 활용 근거"}</h2></div></div>
-          <p>{result?.is_natural_enemy_target === false ? <>천적곤충을 잘못 연결하지 않고 병해충 유형에 맞는<br />예찰·재배환경·전문가 확인 중심의 대응을 안내합니다.</> : <>단순 이름 매칭이 아니라 대상해충·이용방법·공식 출처를<br />함께 제시해 설명 가능한 추천을 만듭니다.</>}</p>
-        </div>
-        {result && (
-          <div className="responseRouteStatus">
-            <CheckCircle2 size={20} />
-            <div>
-              <small>RESPONSE ROUTE CONNECTED</small>
-              <b>
-                {result.pest} → {result.is_natural_enemy_target
-                  ? `천적곤충 추천 ${result.recommendations.length}건`
-                  : `${result.category} 통합관리 프로토콜`}
-              </b>
-              <p>
-                {result.is_natural_enemy_target
-                  ? "대상해충명이 천적 DB의 적용 대상과 일치한 결과입니다."
-                  : result.category === "해충"
-                    ? "직접 일치하는 천적 근거가 없어 임의 추천하지 않고 해충 통합관리 경로로 연결합니다."
-                    : `${result.category}은 천적곤충 유무가 아니라 진단·예방·환경·등록 방제 경로로 연결됩니다.`}
-              </p>
-            </div>
-            <span>{result.is_natural_enemy_target ? "천적 연결" : "유형별 대응 연결"}</span>
-          </div>
-        )}
-        <div className="enemyGrid">
-          {result?.is_natural_enemy_target && result.recommendations.slice(0, 3).map((enemy, index) => <article className="enemyCard" key={`${enemy.name}-${index}`}><div className="enemyIcon"><Bug size={24} /></div><span className="rank">추천 {String(index + 1).padStart(2, "0")}</span><h3>{enemy.name}</h3><i>{enemy.scientific_name}</i><div className="tags"><span>{enemy.type}</span><span>{enemy.source}</span></div><p>{enemy.usage && enemy.usage !== "nan" ? enemy.usage.slice(0, 150) + (enemy.usage.length > 150 ? "…" : "") : `${enemy.target} 방제에 활용 가능한 천적곤충입니다.`}</p><footer><CheckCircle2 size={16} /> 대상해충 매칭 확인</footer></article>)}
-          {result?.is_natural_enemy_target && result.recommendations.length === 0 && <div className="emptyEnemies">현재 DB에서 연결된 천적곤충을 찾지 못했습니다. 대상해충을 다시 확인하거나 천적 DB의 근거를 추가하세요.</div>}
-          {result && !result.is_natural_enemy_target && (
-            <article className="managementResponseCard">
-              <div className="managementRouteHeader">
-                <span><ShieldCheck size={24} /></span>
-                <div>
-                  <small>{result.pest} 대응 경로</small>
-                  <h3>{result.category} · {displayedResponseType}</h3>
-                </div>
-                <strong>연결 완료</strong>
-              </div>
-              <p className="managementMessage">
-                {displayedManagementMessage}
-              </p>
-              {displayedManagementSteps.length ? (
-                <ol className="managementSteps">
-                  {displayedManagementSteps.map((step, index) => (
-                    <li key={`${index}-${step}`}>{step}</li>
-                  ))}
-                </ol>
-              ) : null}
-              {displayedManagementCaution ? (
-                <p className="managementCaution">
-                  ※ 현장 적용 주의: {displayedManagementCaution}
-                </p>
-              ) : null}
-              {displayedManagementEvidence ? (
-                <small className="managementEvidence">
-                  근거: {displayedManagementEvidence}
-                </small>
-              ) : null}
-            </article>
-          )}
-          {!result && <div className="emptyEnemies">병해충을 선택하고 위험도 분석을 실행하면 유형별 대응 결과가 표시됩니다.</div>}
-        </div>
-      </section>
 
       <footer className="footer"><div className="brand"><span className="brandMark"><Leaf size={18} /></span><span>공생의 알고리즘 AI</span></div><p>데이터로 예방하고, 자연으로 방제합니다.</p><span>Research Console · NCPMS 2024·2025·2026</span></footer>
 

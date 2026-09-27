@@ -57,8 +57,8 @@ export default function AdoptionReview() {
       </>}
       <details><summary>계산식·반올림 기준 확인 (입력값은 위에 표시)</summary>{Object.values(economy?.formulas ?? {}).map((formula) => <p key={formula}>{formula}</p>)}<p>{economy?.rounding}</p></details>
     </div>
-    <div className={styles.verdict} aria-live="polite"><h4>7. 최종 상태와 이유</h4><strong>{loading ? "입력 조건 검토 중" : error ? "판단 자료 연결 실패" : review?.status ?? "자료 부족"}</strong><p>{error ?? review?.reason}</p>{error && <button type="button" onClick={retry}>다시 계산</button>}<p>{review?.decision_notice ?? "최종 결정은 농업인과 전문가가 현장 확인 후 수행합니다. 방사 명령이 아닙니다."}</p></div>
-    <div className={styles.step}><h4>8. 추가로 필요한 자료</h4><ul>{(review?.missing ?? ["선택 조건의 근거와 입력값 확인"]).map((item) => <li key={item}>{item}</li>)}</ul>{review?.missing.length === 0 && <p>입력상 필수 관문 충족. 실제 적용 전 현장 재확인과 전문가 검토가 필요합니다.</p>}</div>
+    <div className={styles.verdict} aria-live="polite"><h4>7. 최종 상태</h4><strong>{loading ? "입력 조건 검토 중" : error ? "판단 자료 연결 실패" : !review || review.status === "자료 부족" ? "현장 적용 전 추가 확인 필요" : review.status}</strong>{error && <><p>{error}</p><button type="button" onClick={retry}>다시 계산</button></>}</div>
+    <details className={styles.step}><summary>판정 이유·추가 확인 항목 펼쳐보기</summary><h4>8. 추가로 필요한 자료</h4><p>원래 판정: {review?.status ?? "자료 부족"}</p><p>{review?.reason}</p><p>{review?.decision_notice ?? "최종 결정은 농업인과 전문가가 현장 확인 후 수행합니다. 방사 명령이 아닙니다."}</p><ul>{(review?.missing ?? ["선택 조건의 근거와 입력값 확인"]).map((item) => <li key={item}>{item}</li>)}</ul>{review?.missing.length === 0 && <p>입력상 필수 관문 충족. 실제 적용 전 현장 재확인과 전문가 검토가 필요합니다.</p>}</details>
     <p className={styles.notice}>{review?.disclaimer ?? "본 결과는 사용자 비용·피해액·효과 가정의 시나리오 계산입니다. NCPMS 상대위험도는 피해확률이나 방제효과가 아닙니다. 공식 효과율은 생성하지 않습니다."}</p>
   </section>;
 }

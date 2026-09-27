@@ -145,6 +145,7 @@ export default function HeroDecisionSignal({
   const [featured, setFeatured] = useState<JudgeImpact | null>(initialFeatured);
   const [weather, setWeather] = useState<WeatherContext | null>(initialWeather);
   const [currentError, setCurrentError] = useState<string | null>(null);
+  const [retryVersion, setRetryVersion] = useState(0);
   const [featuredIlluminated, setFeaturedIlluminated] = useState(false);
   const [speaking, setSpeaking] = useState(false);
   const [speechError, setSpeechError] = useState("");
@@ -157,6 +158,9 @@ export default function HeroDecisionSignal({
     }
     let cancelled = false;
     setCurrentError(null);
+    setCurrent(null);
+    setFeatured(null);
+    setWeather(null);
     onReadinessChange?.("loading");
     fetchHeroBootstrap<JudgeImpact, WeatherContext>(apiBase, { crop, pest, region })
       .then((data) => {
@@ -175,7 +179,15 @@ export default function HeroDecisionSignal({
         onReadinessChange?.("error");
       });
     return () => { cancelled = true; };
-  }, [apiBase, crop, pest, region, onReadinessChange]);
+  }, [apiBase, crop, pest, region, onReadinessChange, retryVersion]);
+
+  useEffect(() => {
+    if (!currentError) return;
+    const recover = () => { if (!document.hidden) setRetryVersion(v => v + 1); };
+    window.addEventListener("online", recover);
+    document.addEventListener("visibilitychange", recover);
+    return () => { window.removeEventListener("online", recover); document.removeEventListener("visibilitychange", recover); };
+  }, [currentError]);
 
   useEffect(() => {
     primeSpeechSynthesis();
@@ -273,6 +285,7 @@ export default function HeroDecisionSignal({
         </button>
       </header>
       {speechError && <p className={styles.speechStatus} role="alert">{speechError}</p>}
+      {currentError && <button type="button" className={styles.voiceButton} onClick={() => setRetryVersion(v => v + 1)}>연결 다시 확인</button>}
 
       <section className={styles.current} aria-live="polite">
         <div className={styles.signalTop}>

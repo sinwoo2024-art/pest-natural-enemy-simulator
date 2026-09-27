@@ -77,6 +77,9 @@ for (let i = 0; i < 2; i++) {
   assert.ok(html.includes('어디서 · 어떤 조건에서 · 어떤 천적'));
   assert.ok(html.includes('viewBox="0 0 700 250"'));
   assert.ok(html.includes('id="adoption-review"'));
+  assert.ok(html.indexOf('id="analysis-output"') < html.indexOf('id="evidence"'));
+  assert.ok(html.indexOf('id="evidence"') < html.indexOf('id="landscape-review"'));
+  assert.ok(html.includes('판정 이유·추가 확인 항목 펼쳐보기'));
   assert.ok(html.includes('id="landscape-review"'));
   const cover = html.match(/<section class="hero" id="overview">([\s\S]*?)<\/section>/)?.[1];
   assert.ok(cover?.includes('60초 의사결정 레이더'));

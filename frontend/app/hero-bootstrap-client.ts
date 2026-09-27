@@ -1,3 +1,5 @@
+import { boundedFetchJson } from "./bounded-fetch";
+
 type HeroCondition = {
   crop: string;
   pest: string;
@@ -45,29 +47,21 @@ export function fetchHeroBootstrap<TJudge, TWeather>(
   }
 
   let request: Promise<HeroBootstrapPayload<unknown, unknown>>;
-  request = fetch(url, {
-    headers: { Accept: "application/json" },
-    // 표지와 심사 60초는 동일한 공식 분석 묶음이다. 브라우저·Next 캐시를
-    // 허용해 재방문 시 검증된 응답을 즉시 재사용하고, 서버 캐시 만료 후 갱신한다.
-    cache: "default",
-  })
-   .then(async (response) => {
-  const raw = await response.json() as any;
-
-  const payload = raw.hero ?? raw;
-
-  if (
-    !response.ok ||
-    !payload?.complete ||
-    !payload?.current ||
-    !payload?.featured ||
-    !payload?.weather
-  ) {
-    throw new Error(`bootstrap HTTP ${response.status}`);
-  }
-
-  return payload as HeroBootstrapPayload<unknown, unknown>;
-})
+  request = (async () => {
+    for (let attempt = 0; ; attempt++) {
+      try {
+        const raw = await boundedFetchJson<{hero?: HeroBootstrapPayload<unknown, unknown>} & Partial<HeroBootstrapPayload<unknown, unknown>>>(url, undefined, 25_000);
+        const payload = raw.hero ?? raw;
+        if (!payload.complete || !payload.current || !payload.featured || !payload.weather) {
+          throw new Error("심층 분석 응답 일부 누락");
+        }
+        return payload as HeroBootstrapPayload<unknown, unknown>;
+      } catch (error) {
+        if (attempt >= 1) throw error;
+        await new Promise(resolve => setTimeout(resolve, 1000));
+      }
+    }
+  })()
     .catch((error: unknown) => {
       if (requestCache.get(url)?.request === request) requestCache.delete(url);
       throw error;

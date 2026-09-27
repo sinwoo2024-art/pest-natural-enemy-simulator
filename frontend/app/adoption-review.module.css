@@ -3,6 +3,7 @@
 .review h4 { margin: 0 0 10px; font-size: 15px; }
 .review p { overflow-wrap: anywhere; }
 .step { padding: 18px 0; border-bottom: 1px solid #dce3dc; }
+.step > summary { cursor: pointer; font-size: 15px; font-weight: 750; }
 .inputs { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; }
 .review label { display: flex; flex-direction: column; gap: 6px; margin: 8px 0; font-weight: 600; }
 .review input,.review select { width: 100%; min-width: 0; padding: 9px; border: 1px solid #bacdbd; border-radius: 4px; background: white; color: #173f2a; font: inherit; }

@@ -201,6 +201,7 @@ export default function JudgeImpactTheater({ apiBase, crop, pest, region, initia
   const [activeIndex, setActiveIndex] = useState(0);
   const [touring, setTouring] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [retryVersion, setRetryVersion] = useState(0);
   const [speaking, setSpeaking] = useState(false);
   const [downloadedProtocol, setDownloadedProtocol] = useState("");
   const stageRef = useRef<HTMLElement | null>(null);
@@ -214,6 +215,7 @@ export default function JudgeImpactTheater({ apiBase, crop, pest, region, initia
     let cancelled = false;
 
     setError(null);
+    setData(null);
     fetchHeroBootstrap<JudgeImpact, unknown>(apiBase, { pest, crop, region })
       .then(({ current: payload }) => {
         if (cancelled) return;
@@ -229,7 +231,15 @@ export default function JudgeImpactTheater({ apiBase, crop, pest, region, initia
       });
 
     return () => { cancelled = true; };
-  }, [apiBase, crop, pest, region]);
+  }, [apiBase, crop, pest, region, retryVersion]);
+
+  useEffect(() => {
+    if (!error) return;
+    const recover = () => { if (!document.hidden) setRetryVersion(v => v + 1); };
+    window.addEventListener("online", recover);
+    document.addEventListener("visibilitychange", recover);
+    return () => { window.removeEventListener("online", recover); document.removeEventListener("visibilitychange", recover); };
+  }, [error]);
 
   useEffect(() => {
     if (!touring || !data) return;
@@ -403,7 +413,7 @@ export default function JudgeImpactTheater({ apiBase, crop, pest, region, initia
       {!data && <article className={styles.economicCard}><AdoptionReview /></article>}
 
       {error ? (
-        <div className={styles.error} role="alert">통합 분석 연결 실패 · {error}</div>
+        <div className={styles.error} role="alert"><p>심층 분석을 아직 불러오지 못했습니다. 위험도 그래프·천적 추천과는 별도 요청입니다.</p><small>{error}</small><button type="button" className={styles.tourButton} onClick={() => setRetryVersion(v => v + 1)}>심층 분석 다시 시도</button></div>
       ) : !data || !activeStage ? (
         <div className={styles.loading}><Activity size={22} /> 3개년 근거를 결합하고 있습니다.</div>
       ) : (

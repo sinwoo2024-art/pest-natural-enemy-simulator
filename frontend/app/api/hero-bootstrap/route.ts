@@ -6,7 +6,7 @@ import { resolve } from "node:path";
 export const dynamic = "force-dynamic";
 
 const BACKEND_API_URL = (process.env.BACKEND_API_URL ?? "http://127.0.0.1:8000").replace(/\/+$/, "");
-const BACKEND_TIMEOUT_MS = 6_500;
+const BACKEND_TIMEOUT_MS = 20_000;
 const MEMORY_CACHE_MS = 60 * 60 * 1000;
 const DISK_CACHE_FRESH_MS = 24 * 60 * 60 * 1000;
 const DISK_CACHE_MAX_STALE_MS = 30 * 24 * 60 * 60 * 1000;
