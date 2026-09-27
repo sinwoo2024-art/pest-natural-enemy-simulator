@@ -5,8 +5,10 @@ import re
 
 try:
     from .kiln import router as kiln_router
+    from .agent_finance import router as finance_router
 except ImportError:
     from kiln import router as kiln_router
+    from agent_finance import router as finance_router
 
 try:
     from .landscape_review import LandscapeRequest, review_landscape
@@ -162,6 +164,7 @@ app = FastAPI(
     version="0.1.0",
 )
 app.include_router(kiln_router)
+app.include_router(finance_router)
 
 DEFAULT_CORS_ORIGINS = [
     "http://localhost:3000",

@@ -19,9 +19,9 @@ test('unsupported model configuration fails without echoing its value', () => {
     error.message.includes('KILN_MODEL must be Qwen3-32B') && !error.message.includes('unsupported-model'));
 });
 test('research screen explicitly says Kiln is pending, without a fake provider request', () => {
-  const screen=fs.readFileSync(path.join(__dirname,'../app/research-analysis-lab.tsx'),'utf8');
-  const notice=screen.match(/<aside aria-label="Kiln 연동 상태">([\s\S]*?)<\/aside>/)[1];
-  assert.ok(notice.includes('process.env.KILN_MODEL'));
+  const screen=fs.readFileSync(path.join(__dirname,'../app/kiln-status.tsx'),'utf8');
+  const notice=screen.match(/<aside aria-label="Kiln 연동 상태"[\s\S]*?<\/aside>/)[0];
+  assert.ok(notice.includes('Qwen3-32B'));
   assert.ok(notice.includes('Kiln 팀 계정 및 API 접근권한 대기 중'));
   assert.ok(notice.includes('연동 예정'));
   assert.doesNotMatch(notice,/fetch\(|tokens|energy|API_KEY/);

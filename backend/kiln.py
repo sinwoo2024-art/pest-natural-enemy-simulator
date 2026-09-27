@@ -60,6 +60,9 @@ class KilnJudgment:
     """Future parsed result. Provider content is not log-safe by default."""
     decision: str = field(repr=False)
     usage: TokenUsage = field(default_factory=TokenUsage)
+    # Internal normalized proposal only; TODO map from the documented response.
+    # Must be validated against agent_finance.Candidate and trusted evidence.
+    proposal: dict[str, object] | None = field(default=None, repr=False)
 
 
 class KilnTransport(Protocol):
@@ -107,7 +110,7 @@ class KilnAdapter:
 
     def status(self):
         return {"configured": self.settings.configured, "model": MODEL,
-                "callable": False, "integration_implemented": False,
+                "callable": False, "integration_implemented": False, "connection_verified": False,
                 "last_call_success": None, "last_error_summary": None,
                 **self._unavailable()}
 
