@@ -4,6 +4,11 @@ import os
 import re
 
 try:
+    from .kiln import router as kiln_router
+except ImportError:
+    from kiln import router as kiln_router
+
+try:
     from .landscape_review import LandscapeRequest, review_landscape
 except ImportError:
     from landscape_review import LandscapeRequest, review_landscape
@@ -156,6 +161,8 @@ app = FastAPI(
     description="NCPMS 예찰자료와 천적곤충 정보를 연결하는 분석 API",
     version="0.1.0",
 )
+app.include_router(kiln_router)
+
 DEFAULT_CORS_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",

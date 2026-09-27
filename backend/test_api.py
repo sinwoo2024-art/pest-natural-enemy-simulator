@@ -42,6 +42,15 @@ class ApiTestCase(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json(), {"status": "ok"})
 
+    def test_kiln_status_is_separate_from_existing_health(self) -> None:
+        from unittest.mock import patch
+        with patch.dict("os.environ", {}, clear=True):
+            response = self.client.get("/api/kiln/status")
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json()["code"], "KILN_NOT_CONFIGURED")
+        self.assertFalse(response.json()["callable"])
+        self.assertEqual(self.client.get("/api/health").json(), {"status": "ok"})
+
     def test_summary_uses_each_year_csv(self) -> None:
         expected = {
             2024: {"observations": 5721, "crops": 8, "regions": 14},
