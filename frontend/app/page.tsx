@@ -15,6 +15,7 @@ import {
   Sparkles,
 } from "lucide-react";
 import RiskTrendChart from "./risk-trend-chart";
+import heroTrackStyles from "./hero-track-summary.module.css";
 import LandscapeReview from "./landscape-review";
 import { boundedFetchJson } from "./bounded-fetch";
 import { AdoptionReviewProvider } from "./adoption-review-context";
@@ -805,7 +806,11 @@ export default function Home() {
         <div className="heroContent">
           <div className="eyebrow"><Sparkles size={15} /> 자연이 키운 수호자</div>
           <h1>노지 병해충 위험을 읽고,<br /><em>천적 보호 경관관리</em>를 검토합니다.</h1>
-          <p><b>핵심 분석 트랙: 노지</b></p>
+          <ul className={heroTrackStyles.summary} aria-label="분석 트랙 요약">
+            <li className={heroTrackStyles.primary}>핵심 · 노지 위험·경관관리</li>
+            <li>시설·스마트팜 · 환경·생육·작기 분석</li>
+            <li>향후 확장 · 시설 해충밀도·천적효과 검증</li>
+          </ul>
           <a className="primaryButton" href="#judge-impact">60초 의사결정 레이더 <ArrowRight size={18} /></a>
         </div>
         <div className="heroScanner">

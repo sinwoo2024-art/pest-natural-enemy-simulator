@@ -80,7 +80,10 @@ for (let i = 0; i < 2; i++) {
   assert.ok(html.includes('id="landscape-review"'));
   const cover = html.match(/<section class="hero" id="overview">([\s\S]*?)<\/section>/)?.[1];
   assert.ok(cover?.includes('60초 의사결정 레이더'));
-  assert.ok(cover.includes('핵심 분석 트랙: 노지'));
+  assert.ok(cover.includes('핵심 · 노지 위험·경관관리'));
+  assert.ok(cover.includes('시설·스마트팜 · 환경·생육·작기 분석'));
+  assert.ok(cover.includes('향후 확장 · 시설 해충밀도·천적효과 검증'));
+  assert.ok(!cover.includes('핵심 분석 트랙: 노지'));
   assert.ok(!cover.includes('NCPMS 노지 예찰자료와 기상자료로'));
   assert.ok(!cover.includes('핵심 트랙: 노지 경관관리'));
   assert.ok(html.includes('현재 NCPMS 분석기간만으로 장기 기후변화'));

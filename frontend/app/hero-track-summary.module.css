@@ -1,0 +1,25 @@
+.summary {
+  /* Reuse the former paragraph + whitespace; leave the CTA and hero grid alone. */
+  margin: -12px 0 14.8px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  list-style: none;
+  max-width: 100%;
+  color: #dce8df;
+  font-size: clamp(12px, 1vw, 14px);
+  font-weight: 500;
+  line-height: 20px;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+.summary > li {
+  min-width: 0;
+}
+
+.summary > .primary {
+  color: #f1a264;
+  font-weight: 800;
+}
