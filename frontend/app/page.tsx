@@ -805,9 +805,7 @@ export default function Home() {
         <div className="heroContent">
           <div className="eyebrow"><Sparkles size={15} /> 자연이 키운 수호자</div>
           <h1>노지 병해충 위험을 읽고,<br /><em>천적 보호 경관관리</em>를 검토합니다.</h1>
-          <p><b>핵심 분석 트랙: 노지</b><br/>NCPMS 자료는 노지 작물 예찰자료이며 시설·스마트팜 해충 발생량을 추정하는 데 사용하지 않습니다.<br/>공생AI는 NCPMS 상대위험 신호, 기상 관측, 현장 밀도 조사와 경관 조건을 분리하여 노지 천적 보전관리의 검토 우선순위를 제안합니다.<br/>본 결과는 천적 방사 명령이나 최적 방사 시점의 확정값이 아닙니다.</p>
-          <p>NCPMS 노지 예찰자료와 기상자료로 지역·연도·조사회차별 상대위험과 패턴을 분석하고,<br />노지 천적 보호를 위한 근거 기반 경관관리 검토사항을 제시합니다.<br />스마트팜 확장 연구와 천적 구입·방사 경제성은 별도 트랙이며, 밀도·최적 방사 시점을 추정하지 않습니다.</p>
-          <p><a href="#landscape-review">핵심 트랙: 노지 경관관리 →</a> · 장기 병해충 자료 부족으로 기후변화 인과효과는 판정하지 않음</p>
+          <p><b>핵심 분석 트랙: 노지</b></p>
           <a className="primaryButton" href="#judge-impact">60초 의사결정 레이더 <ArrowRight size={18} /></a>
         </div>
         <div className="heroScanner">

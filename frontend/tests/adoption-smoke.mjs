@@ -78,12 +78,15 @@ for (let i = 0; i < 2; i++) {
   assert.ok(html.includes('viewBox="0 0 700 250"'));
   assert.ok(html.includes('id="adoption-review"'));
   assert.ok(html.includes('id="landscape-review"'));
-  assert.ok(html.includes('핵심 분석 트랙: 노지'));
+  const cover = html.match(/<section class="hero" id="overview">([\s\S]*?)<\/section>/)?.[1];
+  assert.ok(cover?.includes('60초 의사결정 레이더'));
+  assert.ok(cover.includes('핵심 분석 트랙: 노지'));
+  assert.ok(!cover.includes('NCPMS 노지 예찰자료와 기상자료로'));
+  assert.ok(!cover.includes('핵심 트랙: 노지 경관관리'));
   assert.ok(html.includes('현재 NCPMS 분석기간만으로 장기 기후변화'));
   assert.ok(html.includes('경제적 기준 검토 방식'));
   assert.ok(html.includes('천적 보호 경관관리'));
   assert.ok(html.includes('스마트팜 확장 연구 트랙'));
-  assert.ok(html.includes('기후변화 인과효과는 판정하지 않음'));
   assert.ok(!html.includes('next-devtools'));
   assert.ok(!html.includes('방사 검토창 열림'));
   if (i === 0) {
