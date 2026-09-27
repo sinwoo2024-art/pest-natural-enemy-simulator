@@ -805,7 +805,7 @@ export default function Home() {
         <div className="heroGrid" />
         <div className="heroContent">
           <div className="eyebrow"><Sparkles size={15} /> 자연이 키운 수호자</div>
-          <h1>노지 병해충 위험을 읽고,<br /><em>천적 보호 경관관리</em>를 검토합니다.</h1>
+          <h1>노지 병해충 위험을 읽고,<br /><em>천적 보호 경관관리</em>를 <span className={heroTrackStyles.predicate}>검토합니다.</span></h1>
           <ul className={heroTrackStyles.summary} aria-label="분석 트랙 요약">
             <li className={heroTrackStyles.primary}>핵심 · 노지 위험·경관관리</li>
             <li>시설·스마트팜 · 환경·생육·작기 분석</li>

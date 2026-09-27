@@ -8,7 +8,8 @@ const css = fs.readFileSync(path.join(__dirname, '../app/hero-track-summary.modu
 const cover = source.split('<div className="heroContent">')[1].split('<div className="heroScanner">')[0];
 
 test('cover keeps heading and CTA and has exactly three non-interactive track rows', () => {
-  assert.ok(cover.includes('<h1>노지 병해충 위험을 읽고,<br /><em>천적 보호 경관관리</em>를 검토합니다.</h1>'));
+  assert.ok(cover.includes('<h1>노지 병해충 위험을 읽고,<br /><em>천적 보호 경관관리</em>를 <span className={heroTrackStyles.predicate}>검토합니다.</span></h1>'));
+  assert.match(css, /\.predicate\s*\{\s*white-space:\s*nowrap;\s*\}/);
   assert.ok(cover.includes('<a className="primaryButton" href="#judge-impact">60초 의사결정 레이더 <ArrowRight size={18} /></a>'));
   const summary = cover.match(/<ul[^>]*aria-label="분석 트랙 요약"[^>]*>([\s\S]*?)<\/ul>/)[1];
   assert.deepEqual([...summary.matchAll(/<li[^>]*>([^<]*)<\/li>/g)].map(m => m[1]), [
@@ -23,5 +24,5 @@ test('summary styling is scoped, vertical and wrapping without clipping or hero/
   assert.match(css, /overflow-wrap:\s*anywhere/);
   assert.match(css, /white-space:\s*normal/);
   assert.match(css, /\.summary > \.primary\s*\{\s*color:\s*#f1a264;/);
-  assert.doesNotMatch(css, /overflow:\s*hidden|white-space:\s*nowrap|text-overflow|\.heroScanner|\.primaryButton|position:\s*absolute/);
+  assert.doesNotMatch(css.replace(/\.predicate\s*\{[^}]*\}/, ''), /overflow:\s*hidden|white-space:\s*nowrap|text-overflow|\.heroScanner|\.primaryButton|position:\s*absolute/);
 });
