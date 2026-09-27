@@ -1,6 +1,6 @@
 // Bound the entire request, including JSON decoding. Cancellation never leaves
 // a loading state pending even if a transport fails to reject on abort.
-export async function boundedFetchJson<T>(url: string, signal?: AbortSignal, timeoutMs = 15_000): Promise<T> {
+export async function boundedFetchJson<T>(url: string, signal?: AbortSignal, timeoutMs = 15_000, init?: RequestInit): Promise<T> {
   const controller = new AbortController();
   let timedOut = false;
   const cancel = () => controller.abort();
@@ -17,7 +17,7 @@ export async function boundedFetchJson<T>(url: string, signal?: AbortSignal, tim
   try {
     return await Promise.race([
       (async () => {
-        const response = await fetch(url, { signal: controller.signal, cache: "no-store" });
+        const response = await fetch(url, { ...init, signal: controller.signal, cache: "no-store" });
         if (!response.ok) throw new Error(`연결 실패 · HTTP ${response.status}`);
         return await response.json() as T;
       })(),

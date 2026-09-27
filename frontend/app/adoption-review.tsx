@@ -12,7 +12,8 @@ export default function AdoptionReview() {
   const evidence = review?.tracks.evidence;
   const economy = review?.tracks.economics;
   return <section className={styles.review} aria-label="천적 도입 타당성 검토" id="adoption-review">
-    <h3>근거 입력형 경제효과 비교 · 천적 도입 타당성</h3>
+    <h3>별도 트랙 · 천적 구입·방사 경제성 시나리오</h3>
+    <p>노지 경관관리 검토와 스마트팜 확장 연구의 결과를 이 경제성 점수로 합산하지 않습니다. 공식 효과율이 없는 입력은 사용자 가정값이며, 경제성이 긍정적이어도 실제 밀도·근거·현장조건이 부족하면 자료 부족 또는 현장 실증 필요 상태를 유지합니다.</p>
     <p>예찰·환경·효과 근거·사용자 경제성을 분리합니다. 각 결과를 하나의 점수로 합산하지 않습니다. 조건을 바꾸면 이전 조건의 입력값은 초기화됩니다.</p>
     <div className={styles.step}><h4>1. NCPMS 상대위험 신호</h4><p>{review ? `${review.tracks.surveillance.score ?? "—"}점 · ${review.tracks.surveillance.level}` : "신호 확인 중"}</p><small>{review?.tracks.surveillance.meaning ?? "실제 피해확률·예상 피해액·방사 필요성·경제효과가 아닙니다."}</small></div>
     <div className={styles.step}><h4>2. 예찰 행동</h4><p>{review?.tracks.surveillance.action ?? "현장 밀도와 피해 증상을 확인하세요."}</p></div>

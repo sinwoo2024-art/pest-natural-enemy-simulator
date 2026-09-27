@@ -6,6 +6,11 @@ from functools import lru_cache
 from pathlib import Path
 from typing import Any
 
+try:
+    from .landscape_review import SMARTFARM_BOUNDARY
+except ImportError:
+    from landscape_review import SMARTFARM_BOUNDARY
+
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
@@ -152,6 +157,7 @@ def smartfarm_evidence(*, crop: str = "전체", region: str = "전체") -> dict[
             "selected_condition": {"crop": crop or "전체", "region": region or "전체"},
             "message": "스마트팜코리아 작기별 공식 수집 결과가 없습니다.",
             "claim_boundary": {
+                **SMARTFARM_BOUNDARY,
                 "direct_ncpms_field_link": False,
                 "natural_enemy_causal_effect": False,
                 "economic_causal_effect": False,
@@ -270,7 +276,7 @@ def smartfarm_evidence(*, crop: str = "전체", region: str = "전체") -> dict[
             "busiest_start_month": busiest_start["month"] if busiest_start and busiest_start["season_starts"] else None,
             "busiest_end_month": busiest_end["month"] if busiest_end and busiest_end["season_ends"] else None,
             "interpretation": (
-                "작기 시작·종료 분포는 천적 방사일을 자동 확정하지 않고, 생육단계와 센서 확인 시점을 좁히는 맥락 근거로 사용합니다."
+                "작기 시작·종료 분포는 작기·시설환경 맥락 확인용이며, 시설 해충 밀도·방사밀도·최적 방사 시점을 산출하지 않습니다."
             ),
         },
         "distributions": {
@@ -293,10 +299,11 @@ def smartfarm_evidence(*, crop: str = "전체", region: str = "전체") -> dict[
         "sample_cases": sample_cases,
         "approval": _approval_summary(payload),
         "claim_boundary": {
+            **SMARTFARM_BOUNDARY,
             "direct_ncpms_field_link": False,
             "natural_enemy_causal_effect": False,
             "economic_causal_effect": False,
-            "allowed_use": "작물·지역·작기·시설·경영 관측을 천적 도입 검토 구간의 맥락 근거로 사용; 효과·경제성은 별도 검토",
-            "prohibited_claim": "동일 농가·필지 공통키나 대조시험 없이 발생확률·방제효과율·경제효과를 확정하지 않음",
+            "allowed_use": "별도 확장 연구: 작기·시설환경·경영 관측 맥락 확인; 실제 시설 해충 밀도자료 확보 후 검증 예정",
+            "prohibited_claim": "NCPMS 점수 합산, 시설 해충 밀도·방사밀도·최적 시점 추정 금지. 발생확률·방제효과율·경제효과를 확정하지 않음",
         },
     }

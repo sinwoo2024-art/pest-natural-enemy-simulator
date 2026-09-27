@@ -15,6 +15,7 @@ import {
   Sparkles,
 } from "lucide-react";
 import RiskTrendChart from "./risk-trend-chart";
+import LandscapeReview from "./landscape-review";
 import { boundedFetchJson } from "./bounded-fetch";
 import { AdoptionReviewProvider } from "./adoption-review-context";
 import { createCsvFallbackOptions, CSV_FALLBACK_REGIONS } from "./fallback-catalog";
@@ -795,7 +796,7 @@ export default function Home() {
     <AdoptionReviewProvider key={`${crop}|${pest}|${region}`} apiBase={API} crop={crop} pest={pest} region={region}><main>
       <header className="topbar">
         <div className="brand"><span className="brandMark"><Leaf size={20} /></span><span>공생의 알고리즘 <b>AI</b></span></div>
-        <nav><a href="#overview">현황</a><a href="#judge-impact">심사 60초</a><a href="#simulator">위험 분석</a><a href="#risk-map">지역 비교</a><a href="#forecast-2027">2027 전망</a><a href="#smartfarm-release-window">천적 도입 타당성</a><a href="#field-manual">현장 행동</a><a href="#spatial-evidence">지역·축산</a><a href="#research-lab">AI 연구분석</a><a href="#kma-observations">기상 관측</a><a href="#evidence">근거 원장</a></nav>
+        <nav><a href="#overview">현황</a><a href="#judge-impact">심사 60초</a><a href="#simulator">위험 분석</a><a href="#risk-map">지역 비교</a><a href="#forecast-2027">2027 전망</a><a href="#landscape-review">노지 경관관리</a><a href="#smartfarm-release-window">스마트팜 연구</a><a href="#field-manual">현장 행동</a><a href="#spatial-evidence">지역·축산</a><a href="#research-lab">AI 연구분석</a><a href="#kma-observations">기상 관측</a><a href="#evidence">근거 원장</a></nav>
         <div className={`dataBadge ${displayedConnectionStatus}`} title={displayedConnectionMessage}><span /> {connectionLabel}</div>
       </header>
 
@@ -803,8 +804,9 @@ export default function Home() {
         <div className="heroGrid" />
         <div className="heroContent">
           <div className="eyebrow"><Sparkles size={15} /> 자연이 키운 수호자</div>
-          <h1>병해충 위험을 읽고,<br /><em>천적 도입 타당성</em>을 검토합니다.</h1>
-          <p>병해충 예찰 신호·천적 근거·환경조건·사용자 입력 경제성을 분리해<br />천적 도입 검토가 필요한 구간과 추가 근거를 제시하는 의사결정 지원 도구입니다.<br />물리적 방사 가능 여부나 최적 방사 시점을 판정하지 않습니다.</p>
+          <h1>노지 병해충 위험을 읽고,<br /><em>천적 보호 경관관리</em>를 검토합니다.</h1>
+          <p>NCPMS 노지 예찰자료와 기상자료로 지역·연도·조사회차별 상대위험과 패턴을 분석하고,<br />노지 천적 보호를 위한 근거 기반 경관관리 검토사항을 제시합니다.<br />스마트팜 확장 연구와 천적 구입·방사 경제성은 별도 트랙이며, 밀도·최적 방사 시점을 추정하지 않습니다.</p>
+          <p><a href="#landscape-review">핵심 트랙: 노지 경관관리 →</a> · 장기 병해충 자료 부족으로 기후변화 인과효과는 판정하지 않음</p>
           <a className="primaryButton" href="#judge-impact">60초 의사결정 레이더 <ArrowRight size={18} /></a>
         </div>
         <div className="heroScanner">
@@ -1141,6 +1143,8 @@ export default function Home() {
           </div>
         </section>
       )}
+
+      <LandscapeReview key={`${crop}|${pest}|${region}`} apiBase={API} crop={crop} pest={pest} region={region} />
 
       <Forecast2027
         apiBase={API}

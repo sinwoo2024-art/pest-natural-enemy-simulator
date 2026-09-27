@@ -3,6 +3,11 @@ from functools import lru_cache
 import os
 import re
 
+try:
+    from .landscape_review import LandscapeRequest, review_landscape
+except ImportError:
+    from landscape_review import LandscapeRequest, review_landscape
+
 import pandas as pd
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
@@ -784,6 +789,13 @@ def options(
             )
         ],
     }
+
+@app.post("/api/landscape-review")
+def landscape_review(request: LandscapeRequest) -> dict:
+    risk = simulate(year=2026, pest=request.pest, crop=request.crop, region=request.region)
+    enemies = _natural_enemy_gate(request.pest, request.crop, recommendations(clean_name(request.pest)))
+    return review_landscape(request, risk, enemies["recommendations"])
+
 
 @app.post("/api/adoption-review")
 def adoption_review(request: AdoptionRequest) -> dict:

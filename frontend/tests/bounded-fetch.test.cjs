@@ -8,6 +8,14 @@ const source = ts.transpileModule(fs.readFileSync(path.join(__dirname,'../app/bo
 new Function('exports',source)(mod.exports);
 const {boundedFetchJson} = mod.exports;
 
+test('bounded POST preserves the body and times out the same as GET', async () => {
+  const original=global.fetch;
+  try {
+    global.fetch=async (url,init)=>{assert.equal(init.method,'POST');assert.equal(init.body,'{"field":{}}');assert.equal(init.cache,'no-store');return {ok:true,json:async()=>({status:'경관조사 우선'})};};
+    assert.equal((await boundedFetchJson('/api/landscape-review',undefined,100,{method:'POST',body:'{"field":{}}'})).status,'경관조사 우선');
+  } finally {global.fetch=original;}
+});
+
 test('unresponsive transport times out and a subsequent retry succeeds', async () => {
   const original = global.fetch;
   try {

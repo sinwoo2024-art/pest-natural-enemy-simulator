@@ -262,7 +262,7 @@ export default function HeroDecisionSignal({
   }
 
   return (
-    <div className={styles.console} aria-label="시공간 천적 투입 의사결정 신호">
+    <div className={styles.console} aria-label="노지 상대위험과 천적 근거 참고 신호">
       <div className={styles.scan} aria-hidden="true" />
       <header className={styles.header}>
         <span><Radar size={16} /> LIVE ACTION PRISM</span>

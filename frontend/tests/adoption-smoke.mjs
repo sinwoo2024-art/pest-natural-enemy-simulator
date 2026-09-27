@@ -34,6 +34,22 @@ const forecast = await json(`/api/forecast/2027?${query}`);
 assert.ok('forecast_score' in forecast);
 const smartfarm = await json(`/api/smartfarm/evidence?${query}`);
 assert.equal(smartfarm.claim_boundary.economic_causal_effect, false);
+assert.equal(smartfarm.claim_boundary.ncpms_score_combined, false);
+assert.equal(smartfarm.claim_boundary.facility_pest_density, null);
+assert.equal(smartfarm.claim_boundary.facility_release_density, null);
+assert.equal(smartfarm.claim_boundary.optimal_release_timing, null);
+assert.equal(smartfarm.official_summary.farm_count, 238);
+assert.equal(smartfarm.official_summary.farm_season_rows, 651);
+const landscape = await json('/api/landscape-review', condition);
+assert.equal(landscape.status, '경관조사 우선');
+assert.equal(landscape.surveillance.score, simulation.risk_score);
+assert.deepEqual(landscape.surveillance.trend, simulation.trend);
+assert.equal(landscape.density.value, null);
+assert.equal(landscape.threshold.official_value, null);
+assert.equal(landscape.threshold.eil, null);
+assert.equal(landscape.automatic_action, false);
+assert.equal((await json('/api/options')).pests.length, 190);
+console.log('PASS: landscape survey-first, no inferred density/EIL, 190 pests and separate smartfarm track');
 console.log('PASS: simulation trend, recommendations, regional comparison, forecast, separate smartfarm evidence');
 
 // Prewarm the two reference analyses before the short bootstrap bundle deadline.
@@ -51,6 +67,10 @@ for (let i = 0; i < 2; i++) {
   assert.ok(html.includes('어디서 · 어떤 조건에서 · 어떤 천적'));
   assert.ok(html.includes('viewBox="0 0 700 250"'));
   assert.ok(html.includes('id="adoption-review"'));
+  assert.ok(html.includes('id="landscape-review"'));
+  assert.ok(html.includes('천적 보호 경관관리'));
+  assert.ok(html.includes('스마트팜 확장 연구 트랙'));
+  assert.ok(html.includes('기후변화 인과효과는 판정하지 않음'));
   assert.ok(!html.includes('next-devtools'));
   assert.ok(!html.includes('방사 검토창 열림'));
   if (i === 0) {
