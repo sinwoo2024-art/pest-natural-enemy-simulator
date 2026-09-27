@@ -9,7 +9,12 @@ from typing import Literal
 
 from pydantic import BaseModel, ConfigDict, Field, field_validator
 
-CLIMATE_NOTICE = "장기 병해충 자료 부족으로 기후변화 인과효과는 판정하지 않음"
+try:
+    from .economic_threshold import Criterion, EilInputs, review_threshold
+except ImportError:
+    from economic_threshold import Criterion, EilInputs, review_threshold
+
+CLIMATE_NOTICE = "현재 NCPMS 분석기간만으로 장기 기후변화에 따른 해충 발생 변화를 확정할 수 없습니다. 현재 결과는 단기 예찰·기상 연계 탐색 결과입니다. 장기 병해충 자료 부족으로 기후변화 인과효과는 판정하지 않음"
 SMARTFARM_BOUNDARY = {
     "track": "스마트팜 확장 연구 트랙",
     "facility_pest_density": None,
@@ -30,10 +35,10 @@ SOURCES = [
      "verified": True},
 ]
 GRADES = {
-    "A": "동일 또는 매우 유사한 작물·병해충·천적·환경의 직접 처리·대조 근거",
+    "A": "동일 작물·해충·환경의 공식 처리·대조 실험",
     "B": "공식 자료 또는 동료심사 논문의 조건부 근거",
     "C": "일반적인 보전적 생물방제 원칙 또는 현장 실증이 필요한 제안",
-    "자료 부족": "현재 조건에 연결할 수 있는 근거 없음",
+    "자료 없음": "확인 가능한 출처가 없음 또는 현재 조건에 연결할 수 있는 근거 없음",
 }
 Answer = Literal["미확인", "있음", "없음"]
 
@@ -56,8 +61,13 @@ class LandscapeField(BaseModel):
     survey_date: date | None = None
     assumed_threshold: float | None = Field(None, ge=0, le=1e12)
     assumed_threshold_unit: str = Field("", max_length=100)
+    site_name: str = Field("", max_length=200)
+    sample_size: float | None = Field(None, gt=0, le=1e12)
+    sample_unit: str = Field("", max_length=40)
+    enemy_count: int | None = Field(None, ge=0, le=1000000000)
+    last_spray_date: date | None = None
 
-    @field_validator("survey_date")
+    @field_validator("survey_date", "last_spray_date")
     @classmethod
     def not_future(cls, value):
         if value and value > date.today():
@@ -77,12 +87,17 @@ class LandscapeRequest(BaseModel):
     region: str = Field(default="전체", min_length=1, max_length=100)
     enemy_name: str | None = Field(default=None, max_length=100)
     field: LandscapeField = Field(default_factory=LandscapeField)
+    threshold_mode: Literal["direct", "eil"] = "direct"
+    criterion: Criterion = Field(default_factory=Criterion)
+    eil: EilInputs = Field(default_factory=EilInputs)
 
 
 def landscape_state(survey_ready: bool, landscape_ready: bool, evidence_linked: bool,
-                    direct_local_trial: bool = False) -> tuple[str, str]:
-    if not survey_ready or not landscape_ready:
-        return "경관조사 우선", "실제 밀도조사 또는 주변 경관조건을 먼저 확인해야 합니다."
+                    direct_local_trial: bool = False, threshold_ready: bool = False) -> tuple[str, str]:
+    if not landscape_ready:
+        return "경관조사 우선", "주변 경관조건을 먼저 확인해야 합니다."
+    if not survey_ready or not threshold_ready:
+        return "근거자료 부족", "실제 밀도·조사방법·단위·조사일 또는 비교 가능한 경제적 기준이 부족합니다."
     if not evidence_linked:
         return "근거자료 부족", "선택한 병해충·천적에 연결할 경관관리 근거를 확보하지 못했습니다."
     if direct_local_trial:
@@ -100,7 +115,7 @@ def review_landscape(request: LandscapeRequest, risk: dict, enemies: list[dict])
     # This is a group-level reference, not a species-specific efficacy match.
     linked = bool(selected and "진딧물" in request.pest and
                   any(group in name for group in ("무당벌레", "풀잠자리", "꽃등에")))
-    grade = "C" if linked else "자료 부족"
+    grade = "C" if linked else "자료 없음"
     survey_ready = (field.pest_survey == "있음" and field.density is not None and
                     field.method not in ("", "미확인") and field.unit not in ("", "미확인") and
                     field.survey_date is not None)
@@ -109,10 +124,15 @@ def review_landscape(request: LandscapeRequest, risk: dict, enemies: list[dict])
     unknown = [key for key in keys if getattr(field, key) == "미확인"]
     landscape_ready = (len(unknown) < 5 and field.cultivation != "미확인" and
                        field.enemy_observed != "미확인")
+    threshold = review_threshold(request.criterion, request.eil, request.threshold_mode,
+                                 request.crop, request.pest, request.region, field.cultivation,
+                                 field.density, field.unit)
     # No verified local landscape treatment-control record is registered yet.
-    status, reason = landscape_state(bool(survey_ready), landscape_ready, linked)
+    status, reason = landscape_state(bool(survey_ready), landscape_ready, linked, threshold_ready=threshold["ready"])
     methods = []
     habitat = any(getattr(field, k) == "있음" for k in ("edge_vegetation", "flowers", "refuge"))
+    if status == "보전관리 조건부 검토" and not (habitat or field.woody_border == "있음"):
+        status, reason = "근거자료 부족", "보전관리 후보와 연결할 실제 서식처 조건이 확인되지 않았습니다."
     candidates = [
         (field.edge_vegetation == "있음", "포장 가장자리 천적 서식처 보전 검토", "기존 서식처와 이동 경로 확인", "식생의 기주해충·천적 동시 조사"),
         (field.flowers == "있음", "꽃자원과 먹이자원 관리 검토", "먹이·은신처 이용 여부 확인", "개화기와 대상 천적의 먹이 이용·해충 증가 여부"),
@@ -122,6 +142,7 @@ def review_landscape(request: LandscapeRequest, risk: dict, enemies: list[dict])
         (field.nonselective_insecticide != "미확인", "비선택성 살충제 영향 확인", "약제 이력과 관찰 결과 대조", "사용하지 않았어도 주변 비산·과거 사용 이력 확인"),
         (field.woody_border == "있음" or field.land_use in ("산림", "혼합"), "주변 서식처 연결성 조사", "경관의 단절·연결 관계 확인", "주변 토지이용·장벽·천적과 해충 이동 확인"),
         (bool(survey_ready), "천적과 해충의 정기 동시 모니터링 검토", "같은 방법·단위로 변동 기록", "조사 위치·방법·단위·날짜·천적 동정과 무처리 비교구 검토"),
+        (bool(survey_ready) and threshold["ready"], "처리구와 비교구를 둔 현장 검증 검토", "처리 전·후 밀도 차이를 같은 조사방법으로 확인", "무처리 비교구·조사기간·천적 종·실제 약제 이력을 기록"),
     ]
     if linked:
         for enabled, method, purpose, check in candidates:
@@ -140,14 +161,18 @@ def review_landscape(request: LandscapeRequest, risk: dict, enemies: list[dict])
         "selected_condition": {"crop": request.crop, "pest": request.pest, "region": request.region},
         "surveillance": {"year": 2026, "score": risk.get("risk_score"), "level": risk.get("risk_level"),
                          "trend": risk.get("trend", []), "has_observation": risk.get("has_observation", False)},
-        "meaning": "상대위험 신호는 실제 해충 밀도·피해주율·경제적 피해수준·경관관리 효과가 아닙니다.",
+        "meaning": "NCPMS 상대위험도는 실제 해충 개체수, 피해확률 또는 경제적 피해수준이 아닙니다.",
         "density": {"value": field.density, "method": field.method or "미확인", "unit": field.unit or "미확인",
                     "date": field.survey_date, "origin": "사용자 현장 조사값", "complete": bool(survey_ready)},
-        "threshold": {"status": "공식 경제적 피해기준 미확보", "official_value": None,
-                      "source": None, "official_comparable": False, "control_required": None,
-                      "user_assumption": field.assumed_threshold, "user_assumption_unit": field.assumed_threshold_unit,
-                      "user_assumption_label": "사용자 가정값 · 공식 기준 아님",
-                      "eil": None, "eil_note": "비용·작물가치·단위해충당 피해량·방제효율 및 호환 단위의 검증 자료 미확보로 EIL 계산하지 않음"},
+        "threshold": {**threshold, "user_assumption": field.assumed_threshold,
+                      "user_assumption_unit": field.assumed_threshold_unit, "user_assumption_label": "사용자 가정값 · 공식 기준 아님"},
+        "used_data": ["NCPMS 상대위험·조사회차 패턴 (실측 밀도와 별개)", "입력된 현장 조사·경관조건", "연결 가능한 천적 기능군의 일반 출처", "입력 경제적 기준의 단위·조건 또는 EIL 변수 검토"],
+        "unused_data": ["스마트팜 작기자료: 노지 밀도·점수 보정에 사용 안 함", "NCPMS 점수: 밀도·피해확률·EIL 산출에 사용 안 함", "기상 관측: 경관관리 점수·방사일 산출에 사용 안 함", "사용자 출처: 서버가 공식 원문으로 인증하지 않음"],
+        "missing_data": (["실제 밀도·방법·단위·조사일"] if not survey_ready else []) +
+                        (["경관조건·천적 관찰"] if not landscape_ready else []) +
+                        (["비교 가능한 경제적 기준·단위·대상조건"] if not threshold["ready"] else []) +
+                        (["선택 병해충·천적의 경관관리 근거"] if not linked else []) + ["국내 동일 조건의 직접 처리·대조 경관관리 효과"],
+        "next_actions": ["미입력 경관조건과 실제 조사 면적·주수 기록", "동일 단위로 해충·천적의 처리 전·후 밀도 조사", "기준 원문과 작물·병해충·적용조건 확인", "전문가와 처리구·비교구를 둔 현장 검증 설계"],
         "field": field.model_dump(mode="json"), "unknown_fields": unknown,
         "enemies": [{"name": e.get("name"), "source_grade": (e.get("release_standard") or {}).get("evidence_grade") or "미기재"} for e in enemies],
         "selected_enemy": name or None,

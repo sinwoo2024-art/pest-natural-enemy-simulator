@@ -794,7 +794,16 @@ def options(
 def landscape_review(request: LandscapeRequest) -> dict:
     risk = simulate(year=2026, pest=request.pest, crop=request.crop, region=request.region)
     enemies = _natural_enemy_gate(request.pest, request.crop, recommendations(clean_name(request.pest)))
-    return review_landscape(request, risk, enemies["recommendations"])
+    result = review_landscape(request, risk, enemies["recommendations"])
+    try:
+        weather = kma_observation_map(domain="surface", limit=5000)
+        points = [p for p in weather.get("points", []) if request.region == "전체" or p.get("province") == request.region]
+        result["weather"] = {"status": "관측자료 참고" if points else "선택 지역 관측자료 없음",
+            "scope": "시도명 일치 지점 참고 (전체 선택 시 전국). 가까운 필지 관측으로 추정하지 않음. 점수 합산·방사일 계산에 사용하지 않음",
+            "points": [{k: p.get(k) for k in ("station_id", "station_name", "province", "observed_at", "air_temperature", "rainfall", "wind_speed")} for p in points[:3]]}
+    except (OSError, ValueError):
+        result["weather"] = {"status": "기상자료 연결 실패", "scope": "기상 관측 영역에서 다시 확인하세요.", "points": []}
+    return result
 
 
 @app.post("/api/adoption-review")

@@ -8,6 +8,7 @@ from pydantic import ValidationError
 
 from .landscape_review import LandscapeField, LandscapeRequest, review_landscape, landscape_state
 from .main import app
+from .economic_threshold import Criterion
 
 
 def observed_field(**changes):
@@ -23,7 +24,8 @@ class LandscapeTests(unittest.TestCase):
         self.risk = {"risk_score": 99, "risk_level": "높음", "has_observation": True, "trend": [{"round": 1, "score": 99}]}
 
     def review(self, field=None, pest="복숭아혹진딧물", enemies=None):
-        return review_landscape(LandscapeRequest(crop="고추", pest=pest, field=field or LandscapeField()),
+        criterion = Criterion(value=2, unit="마리/잎", crop="고추", pest=pest, cultivation="밭", source="테스트용 사용자 입력 출처 (공식 검증 아님)") if field else Criterion()
+        return review_landscape(LandscapeRequest(crop="고추", pest=pest, field=field or LandscapeField(), criterion=criterion),
                                 self.risk, [self.enemy] if enemies is None else enemies)
 
     def test_high_risk_without_density_never_recommends_action(self):
@@ -40,8 +42,8 @@ class LandscapeTests(unittest.TestCase):
     def test_no_official_threshold_or_control_decision(self):
         value = self.review(observed_field(assumed_threshold=2, assumed_threshold_unit="마리/잎"))
         threshold = value["threshold"]
-        self.assertEqual(threshold["status"], "공식 경제적 피해기준 미확보")
-        for key in ("official_value", "source", "control_required", "eil"):
+        self.assertEqual(threshold["status"], "사용자 입력 기준 · 공식 원문 미검증")
+        for key in ("official_value", "control_required", "eil"):
             self.assertIsNone(threshold[key])
         self.assertFalse(threshold["official_comparable"])
         self.assertIn("사용자 가정값", threshold["user_assumption_label"])
@@ -83,7 +85,7 @@ class LandscapeTests(unittest.TestCase):
 
     def test_each_missing_density_metadata_blocks_ready(self):
         for field in (observed_field(density=None), observed_field(method="미확인"), observed_field(unit=""), observed_field(survey_date=None), observed_field(pest_survey="없음")):
-            self.assertEqual(self.review(field)["status"], "경관조사 우선")
+            self.assertEqual(self.review(field)["status"], "근거자료 부족")
 
     def test_invalid_values_are_rejected(self):
         for change in ({"density": -1}, {"density": float("nan")}, {"survey_date": date.today() + timedelta(days=1)}, {"cultivation": "스마트팜"}):
@@ -91,10 +93,10 @@ class LandscapeTests(unittest.TestCase):
                 observed_field(**change)
 
     def test_all_four_states_require_their_gates(self):
-        self.assertEqual(landscape_state(False, True, True, True)[0], "경관조사 우선")
+        self.assertEqual(landscape_state(False, True, True, True)[0], "근거자료 부족")
         self.assertEqual(landscape_state(True, True, False)[0], "근거자료 부족")
-        self.assertEqual(landscape_state(True, True, True)[0], "보전관리 조건부 검토")
-        self.assertEqual(landscape_state(True, True, True, True)[0], "현장 실증 후보")
+        self.assertEqual(landscape_state(True, True, True, threshold_ready=True)[0], "보전관리 조건부 검토")
+        self.assertEqual(landscape_state(True, True, True, True, threshold_ready=True)[0], "현장 실증 후보")
 
 
 class LandscapeApiTests(unittest.TestCase):
